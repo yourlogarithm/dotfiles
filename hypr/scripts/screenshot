@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+output="/home/vcretu/Pictures/Screenshots"
+
+grim -g "$(slurp -d)" - | wl-copy -t image/png
+mkdir -p $output
+wl-paste >>"$output/$(date +%Y%m%d_%H%M%S).png"
+notify-send -u low -t 2000 -a "slurp" -c "Tools" "Screenshot copied to clipboard"
