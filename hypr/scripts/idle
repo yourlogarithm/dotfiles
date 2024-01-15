@@ -1,9 +1,9 @@
 #!/bin/bash
 
 swayidle -w timeout 10 "if pgrep swaylock; then hyprctl dispatch dpms off; fi" resume "hyprctl dispatch dpms on" \
-    timeout 300 "./lock" \
-    timeout 500 "hyprctl dispatch dpms off" resume "hyprctl dispatch dpms on" \
-    timeout 600 "systemctl suspend" \
-    timeout 1200 "systemctl hibernate" \
-    before-sleep "./lock"
+    timeout 300 "/home/yourlogarithm/.config/hypr/scripts/lock" \
+    # timeout 320 "hyprctl dispatch dpms off" resume "hyprctl dispatch dpms on" \
+    timeout 320 "systemctl suspend" \
+    timeout 500 "systemctl hibernate" \
+    before-sleep "/home/yourlogarithm/.config/hypr/scripts/lock"
 

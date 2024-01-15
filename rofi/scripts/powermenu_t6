@@ -74,5 +74,6 @@ case ${chosen} in
         ;;
     $logout)
         hyprctl dispatch exit
+        killall -9 Hyprland
         ;;
 esac
