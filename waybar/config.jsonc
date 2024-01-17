@@ -20,7 +20,8 @@
     },
     "custom/powermenu": {
         "format": "󰣛",
-        "on-click": "sleep 0.095 && ~/.config/rofi/scripts/powermenu_t6"
+        "on-click": "sleep 0.095 && ~/.config/rofi/scripts/powermenu_t6",
+        "tooltip": false
     }, 
     "bluetooth": {
        "on-click": "overskride",
@@ -71,7 +72,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:  %H:%m   |   󰃮  %d/%m/%y}",
+        "format": "{:  %H:%M   |   󰃮  %d/%m/%y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
