@@ -19,7 +19,7 @@
         }
     },
     "custom/powermenu": {
-        "format": "󰣛",
+        "format": "󰣇",
         "on-click": "sleep 0.095 && ~/.config/rofi/scripts/powermenu_t6",
         "tooltip": false
     }, 
@@ -72,7 +72,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:  %H:%M   |   󰃮  %d/%m/%y}",
+        "format": "  {:%H:%M   |   %d/%m/%y}  󰃮",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
@@ -84,7 +84,7 @@
     "temperature": {
         "critical-threshold": 80,
         "format": "{temperatureC} {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["󱃃", "󰔏", "󱃂"]
     },
     "battery": {
         "states": {
@@ -93,9 +93,9 @@
             "critical": 15
         },
         "format": "{capacity} {icon}",
-        "format-charging": "{capacity} ",
+        "format-charging": "{capacity} 󱐋",
         "format-plugged": "{capacity} ",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
@@ -103,13 +103,13 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "on-click": "iwgtk"
     },
     "pulseaudio": {
         "format": "{volume} {icon}{format_source}",
         "format-bluetooth": "{volume} {icon}{format_source}",
         "format-bluetooth-muted": " {icon}{format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "󰝟 {format_source}",
         "format-source": "",
         "format-source-muted": "",
         "format-icons": {
@@ -119,7 +119,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["", "", "", ""]
         },
         "on-click": "pavucontrol"
     }
