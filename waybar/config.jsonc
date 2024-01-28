@@ -24,7 +24,7 @@
         "tooltip": false
     }, 
     "bluetooth": {
-       "on-click": "overskride",
+       "on-click": "blueman-manager",
        "format": "󰂯",
   	   "format-off": "󰂲",
   	   "format-connected": "",

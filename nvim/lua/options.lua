@@ -20,6 +20,8 @@ vim.wo.cursorline = true
 vim.o.ttyfast = true
 vim.cmd "colorscheme gruvbox"
 vim.o.encoding = 'utf-8'
+vim.cmd 'set list'
+vim.cmd 'set lcs+=space:·'
 
 vim.api.nvim_command('au BufRead,BufNewFile *.falang set filetype=falang')
 vim.api.nvim_command('au BufRead,BufNewfile *.smali set filetype=smali')
