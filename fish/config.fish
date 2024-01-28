@@ -5,6 +5,7 @@ set fish_greeting
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.android-tools/bin:$PATH"
 
 export EDITOR="/usr/bin/nvim"
 export VIEWER="/usr/bin/nvim"
@@ -12,3 +13,7 @@ alias vim="/usr/bin/nvim"
 
 export SHELL="/bin/fish"
 
+alias python=python3.12
+function jadx-gui
+    /usr/bin/jadx-gui $argv > /dev/null 2>&1 & disown
+end
