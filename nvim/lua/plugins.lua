@@ -7,7 +7,7 @@ require("lazy").setup({
     "zbirenbaum/copilot.lua",
     "nvim-treesitter/nvim-treesitter",
     "lukas-reineke/indent-blankline.nvim",
-    {"numToStr/Comment.nvim", opt={}, lazy=false},
+    { "numToStr/Comment.nvim", opt = {}, lazy = false },
     "lewis6991/gitsigns.nvim",
     {
         "folke/todo-comments.nvim",
@@ -26,20 +26,30 @@ require("lazy").setup({
     },
     "ryanoasis/vim-devicons",
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            'BurntSushi/ripgrep',
+            'sharkdp/fd'
+        }
     },
     {
         'hrsh7th/nvim-cmp',
         dependencies = {
-		    "hrsh7th/cmp-nvim-lsp",
-		    "hrsh7th/cmp-nvim-lua",
-		    "hrsh7th/cmp-buffer",
-		    "hrsh7th/cmp-path",
-		    "hrsh7th/cmp-cmdline",
-		    "saadparwaiz1/cmp_luasnip",
-		    "L3MON4D3/LuaSnip",
-	    },
+            "hrsh7th/cmp-nvim-lsp",
+            "hrsh7th/cmp-nvim-lua",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-cmdline",
+            "saadparwaiz1/cmp_luasnip",
+            "L3MON4D3/LuaSnip",
+        },
+    },
+    "mfussenegger/nvim-dap",
+    {
+        "phaazon/hop.nvim",
+        branch = 'v2'
     },
 })
 
@@ -70,11 +80,11 @@ require("nvim-treesitter").setup({})
 require("ibl").setup({})
 require("gruvbox").setup({})
 require("colorizer").setup()
-require("conform").setup({python={"flake8"}})
+require("conform").setup({ python = { "flake8" } })
 require("treesitter-context").setup()
 require("nvim-treesitter.configs").setup({
-    highlight={
-        enable=true
+    highlight = {
+        enable = true
     }
 })
 
@@ -116,3 +126,26 @@ cmp.setup.cmdline(":", {
         { name = "cmdline" },
     }),
 })
+
+require("hop").setup({
+    quit_key = '<SPC>',
+    keys = 'etovxqpdygfblzhckisuran'
+})
+
+require('telescope').setup {
+    pickers = {
+        find_files = {
+            hidden = true,
+            mappings = {
+                n = {
+                    ["cd"] = function(prompt_bufnr)
+                        local selection = require("telescope.actions.state").get_selected_entry()
+                        local dir = vim.fn.fnamemodify(selection.path, ":p:h")
+                        require("telescope.actions").close(prompt_bufnr)
+                        vim.cmd(string.format("silent lcd %s", dir))
+                    end
+                }
+            }
+        }
+    }
+}

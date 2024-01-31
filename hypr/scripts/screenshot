@@ -1,7 +1,10 @@
 #!/usr/bin/bash
 
-output="/home/vcretu/Pictures/Screenshots"
-
-grim -g "$(slurp -d)" - | wl-copy -t image/png
-mkdir -p $output
-wl-paste >>"$output/$(date +%Y%m%d_%H%M%S).png"
+if pgrep -x "slurp" > /dev/null
+then
+    echo "A slurp process is already running."
+else
+    grim -g "$(slurp -d)" - | wl-copy -t image/png
+    mkdir -p $output
+    wl-paste >>"$output/$(date +%Y%m%d_%H%M%S).png"
+fi

@@ -3,6 +3,7 @@ swaylockd \
 --screenshots \
 --indicator \
 --clock \
+--datestr "%a %d/%m/%y" \
 --inside-wrong-color fb4934 \
 --line-wrong-color fb4934 \
 --ring-wrong-color fb4934  \

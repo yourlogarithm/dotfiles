@@ -85,6 +85,7 @@ verbose=true
 vfs_timeout=60
 wrap_mode=true
 xtree_mode=false
+shell_directory_timeout=900
 
 [Colors]
 base_color=
@@ -100,7 +101,7 @@ free_space=true
 horizontal_equal=true
 horizontal_split=false
 keybar_visible=true
-left_panel_size=59
+left_panel_size=57
 menubar_visible=true
 message_visible=false
 output_lines=0

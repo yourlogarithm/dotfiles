@@ -9,6 +9,7 @@ vim.o.expandtab = true
 vim.o.shiftwidth = 4
 vim.o.autoindent = true
 vim.wo.number = true
+vim.wo.relativenumber = true
 vim.o.wildmode = 'longest,list'
 vim.o.colorcolumn = '80'
 vim.cmd 'filetype plugin indent on'
@@ -44,3 +45,5 @@ vim.api.nvim_create_user_command("Format", function(args)
   end
   require("conform").format({ async = true, lsp_fallback = true, range = range })
 end, { range = true })
+
+vim.g.NERDTreeShowHidden=1
