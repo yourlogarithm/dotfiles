@@ -143,6 +143,7 @@ history = 5000
 
 [shell]
 program = "/bin/fish"
+args = ["-l", "-c", "tmux attach || tmux"]
 
 [window]
 decorations = "none"

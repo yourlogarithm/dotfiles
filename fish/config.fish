@@ -7,9 +7,11 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.android-tools/bin:$PATH"
 
-export EDITOR="/usr/bin/nvim"
-export VIEWER="/usr/bin/nvim"
-alias vim="/usr/bin/nvim"
+set nvim "/usr/bin/nvim"
+export EDITOR=$nvim
+export VIEWER=$nvim
+alias vim=$nvim
+alias v="$nvim ."
 
 export SHELL="/bin/fish"
 
