@@ -1,6 +1,0 @@
-ENTRY "home" URL "/home/vcretu"
-ENTRY "work" URL "/home/vcretu/Work"
-ENTRY "downloads" URL "/home/vcretu/Downloads"
-ENTRY "root" URL "/"
-ENTRY "dotfiles" URL "/home/vcretu/.config"
-ENTRY "iris" URL "/ftp://10.230.3.18/share"
