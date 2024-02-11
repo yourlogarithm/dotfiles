@@ -1,4 +1,4 @@
-before-sleep "/home/vcretu/.config/hypr/scripts/lock"
+before-sleep "if ! pgrep swaylock; then /home/vcretu/.config/hypr/scripts/lock; fi"
 timeout 60 "if pgrep swaylock; then hyprctl dispatch dpms off; fi" resume "hyprctl dispatch dpms on"
 timeout 300 "/home/vcretu/.config/hypr/scripts/lock"
 timeout 320 "systemctl suspend"

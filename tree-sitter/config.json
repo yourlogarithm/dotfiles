@@ -1,0 +1,56 @@
+{
+  "parser-directories": [
+    "/home/vcretu/github",
+    "/home/vcretu/src",
+    "/home/vcretu/source"
+  ],
+  "theme": {
+    "constant": 94,
+    "comment": {
+      "italic": true,
+      "color": 245
+    },
+    "punctuation.bracket": 239,
+    "type": 23,
+    "function.builtin": {
+      "color": 26,
+      "bold": true
+    },
+    "attribute": {
+      "italic": true,
+      "color": 124
+    },
+    "constructor": 136,
+    "property": 124,
+    "operator": {
+      "color": 239,
+      "bold": true
+    },
+    "punctuation.delimiter": 239,
+    "constant.builtin": {
+      "color": 94,
+      "bold": true
+    },
+    "module": 136,
+    "string.special": 30,
+    "type.builtin": {
+      "bold": true,
+      "color": 23
+    },
+    "embedded": null,
+    "number": {
+      "bold": true,
+      "color": 94
+    },
+    "function": 26,
+    "keyword": 56,
+    "string": 28,
+    "tag": 18,
+    "variable.builtin": {
+      "bold": true
+    },
+    "variable.parameter": {
+      "underline": true
+    }
+  }
+}

@@ -17,5 +17,5 @@ export SHELL="/bin/fish"
 
 alias python=python3.12
 function jadx-gui
-    /usr/bin/jadx-gui $argv > /dev/null 2>&1 & disown
+    /home/vcretu/.jadx/bin/jadx-gui $argv > /dev/null 2>&1 & disown
 end
