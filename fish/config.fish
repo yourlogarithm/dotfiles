@@ -2,6 +2,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 set fish_greeting
+
+zoxide init fish | source
+
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -18,4 +21,8 @@ export SHELL="/bin/fish"
 alias python=python3.12
 function jadx-gui
     /home/vcretu/.jadx/bin/jadx-gui $argv > /dev/null 2>&1 & disown
+end
+
+function dotenv
+    export (cat $argv |xargs -L 1)
 end
