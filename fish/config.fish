@@ -19,10 +19,3 @@ alias v="$nvim ."
 export SHELL="/bin/fish"
 
 alias python=python3.12
-function jadx-gui
-    /home/vcretu/.jadx/bin/jadx-gui $argv > /dev/null 2>&1 & disown
-end
-
-function dotenv
-    export (cat $argv |xargs -L 1)
-end

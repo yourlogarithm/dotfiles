@@ -143,7 +143,8 @@ history = 5000
 
 [shell]
 program = "/bin/fish"
-args = ["-l", "-c", "tmux attach || tmux"]
+args = ["-l", "-c", "tmux new-session -d -s $(date '+%Y%m%d-%H%M%S'); tmux attach-session -t $(tmux list-sessions -F '#{session_name}' | tail -n 1)"]
+
 
 [window]
 decorations = "none"
