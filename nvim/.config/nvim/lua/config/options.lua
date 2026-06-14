@@ -11,7 +11,13 @@ opt.cursorline = true
 opt.signcolumn = "yes"
 opt.termguicolors = true
 opt.scrolloff = 8
-opt.wrap = false
+
+-- Soft-wrap: visually continue a long line onto the next screen row instead of
+-- letting it run off-screen. This is display-only — the file on disk is never
+-- modified (no hard line breaks inserted).
+opt.wrap = true
+opt.linebreak = true   -- break at word boundaries, not mid-word
+opt.breakindent = true -- continued rows keep the line's indentation
 
 -- Vertical ruler marking the target line length (where to break a long line).
 opt.colorcolumn = "200"

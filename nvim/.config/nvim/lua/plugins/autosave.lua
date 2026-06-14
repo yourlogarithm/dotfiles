@@ -1,6 +1,7 @@
 return {
   {
     "okuuva/auto-save.nvim",
+    enabled = false, -- autosave disabled; remove this line (or set true) to re-enable
     version = "^1",
     -- Lazy-load on the events that can trigger a save.
     event = { "InsertLeave", "TextChanged" },
