@@ -1,8 +1,26 @@
-# alacritty — fresh start
+# alacritty
 # Managed by ~/Projects/dotfiles (stow package: alacritty)
+
+[general]
+# Theme vendored from https://github.com/alacritty/alacritty-theme
+import = ["~/.config/alacritty/themes/gruvbox_material_medium_dark.toml"]
 
 [window]
 opacity = 1.0
+padding = { x = 8, y = 8 }
+dynamic_padding = true
 
 [font]
-size = 12.0
+size = 13.0
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font Mono", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font Mono", style = "Bold Italic" }
+
+[terminal]
+shell = { program = "fish", args = ["--login"] }
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
