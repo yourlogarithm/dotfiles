@@ -1,0 +1,8 @@
+# alacritty — fresh start
+# Managed by ~/Projects/dotfiles (stow package: alacritty)
+
+[window]
+opacity = 1.0
+
+[font]
+size = 12.0
