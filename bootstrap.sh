@@ -35,8 +35,11 @@ pkg_install() {
 }
 
 # --- prerequisites -----------------------------------------------------------
-log "Installing prerequisites (git, curl, stow, fish, eza, zoxide)"
-for p in git curl stow fish eza zoxide; do pkg_install "$p"; done
+log "Installing prerequisites (git, curl, stow, fish, eza, zoxide, neovim, ripgrep)"
+for p in git curl stow fish eza zoxide neovim ripgrep; do pkg_install "$p"; done
+
+# fd (used by telescope) — named 'fd' on Homebrew, 'fd-find' on Fedora.
+if [[ "$OS" == macos ]]; then pkg_install fd; else pkg_install fd-find; fi
 
 # --- JetBrainsMono Nerd Font -------------------------------------------------
 font_installed() {
@@ -61,9 +64,32 @@ else
   fi
 fi
 
+# --- make fish the default login shell ---------------------------------------
+# alacritty has no shell override; it launches the login shell by absolute path,
+# which sidesteps the macOS GUI-launch PATH problem and keeps the config portable.
+fish_path="$(command -v fish)"
+if ! grep -qxF "$fish_path" /etc/shells 2>/dev/null; then
+  log "Registering $fish_path in /etc/shells (sudo)"
+  echo "$fish_path" | sudo tee -a /etc/shells >/dev/null
+fi
+current_shell="$(dscl . -read /Users/"$USER" UserShell 2>/dev/null | awk '{print $2}')"
+[[ -z "$current_shell" ]] && current_shell="$(getent passwd "$USER" 2>/dev/null | cut -d: -f7)"
+if [[ "$current_shell" != "$fish_path" ]]; then
+  log "Setting login shell to fish (chsh — may prompt for your password)"
+  chsh -s "$fish_path" || warn "chsh failed; run manually: chsh -s $fish_path"
+else
+  log "Login shell already fish"
+fi
+
 # --- symlink dotfiles --------------------------------------------------------
 log "Stowing: ${PACKAGES[*]}"
 stow -d "$DOTFILES_DIR" -t "$HOME" -R "${PACKAGES[@]}"
+
+# Add the Rust toolchain to PATH once, as a fish universal var (persists across
+# sessions with no per-startup cost). Idempotent.
+if [[ -d "$HOME/.cargo/bin" ]]; then
+  fish -c 'fish_add_path ~/.cargo/bin' || true
+fi
 
 # --- oh-my-fish --------------------------------------------------------------
 OMF_PATH="${XDG_DATA_HOME:-$HOME/.local/share}/omf"

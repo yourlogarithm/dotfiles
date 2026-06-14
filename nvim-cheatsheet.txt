@@ -1,0 +1,92 @@
+==========================================================================
+                       NEOVIM CHEATSHEET  (leader = Space)
+==========================================================================
+
+-- CODE NAVIGATION (LSP) --------------------------------------------------
+  gd            go to definition          K          hover docs
+  gr            references                gI         implementation
+  <C-o> / <C-i> jump back / forward       ]d / [d    next / prev diagnostic
+  <leader>cr    rename symbol             <leader>ca code action / quick fix
+  <leader>cd    line diagnostic           <leader>cf format buffer
+
+-- FIND (Telescope) ------------------------------------------------------
+  <leader>ff    find files               <leader>fg  grep in project
+  <leader>fb    open buffers             <leader>fr  recent files
+  <leader>fd    all diagnostics          <leader>fk  search keymaps
+  <leader>fc    commands                 <leader>fh  help tags
+  <leader>fp    projects                 <leader>fP  recent projects
+  (in picker) <C-v> open in vsplit   <C-x> hsplit   <C-t> new tab
+
+-- FILES / EXPLORER / TABS ------------------------------------------------
+  <leader>e     toggle file tree         -           open dir (oil)
+  <S-l> / <S-h> next / prev tab          <C-^>       last-used buffer
+  <leader>bd    close tab                <leader>bo  close other tabs
+  <leader>bp    pin tab                  <leader>b, / b.  move tab L / R
+  <F2>          save                     <F4> / <S-F4>   quit / force quit
+  :wa  :qa  :wqa  save all / quit all / save+quit all
+  (neo-tree focused)  a add   d delete   r rename   c copy   x cut   p paste
+
+-- MOTIONS (move the cursor) ---------------------------------------------
+  w / b / e     next / prev / end of word    0 / ^ / $   line start / first / end
+  gg / G        top / bottom of file         {  /  }     prev / next paragraph
+  %             matching bracket             M           middle of screen
+  f x / t x     jump to / before char x      ; / ,       repeat f/t fwd / back
+  <C-d>/<C-u>   half page down / up          zz/zt/zb    center / top / bottom
+  <leader>hw    hop to word                  <leader>hl  hop to line
+
+-- EDIT --------------------------------------------------------------------
+  u / <C-r>     undo / redo               .           repeat last change
+  dd yy p P     del / yank line, paste after / before
+  ciw           change inner word         ci( ci" ci{ change inside pair
+  diw daw       delete inner / a word      yi( ya{     yank inside / around
+  x  r{c}  ~    del char / replace char / toggle case
+  J             join line below            >> / <<     indent / dedent line
+  gcc           comment line              gc (visual) comment selection
+  sa{motion}{c} surround add   sd{c} delete   sr{old}{new} replace
+
+-- VISUAL MODE -------------------------------------------------------------
+  v / V / <C-v> char / line / block select   gv         reselect last
+  > / <         indent / dedent (then gv to keep selection)
+  =             auto-indent                 y / d / c   yank / delete / change
+  J             move lines down (visual)    K           move lines up (visual)
+
+-- SEARCH & REPLACE --------------------------------------------------------
+  /text  ?text  search forward / back       n / N       next / prev match
+  *  / #         search word under cursor fwd / back
+  <Esc>          clear search highlight
+  :%s/old/new/g          replace in whole file
+  :%s/old/new/gc         replace with confirm     :s/old/new/  current line
+
+-- COMPLETION (insert mode) -----------------------------------------------
+  Tab           accept suggestion        Up/Down     navigate list
+  <C-Space>     trigger menu             <C-n>/<C-p> navigate list
+  <C-w>         delete word back         <C-o>{cmd}  one normal-mode command
+
+-- WINDOWS / SPLITS / TERMINAL --------------------------------------------
+  <C-w>v        split vertical           <C-w>s      split horizontal
+  <C-h/j/k/l>   move between splits      <C-w>=      equalize sizes
+  <C-w>o        close other splits       <C-w>q      close split
+  <C-w> + / -   taller / shorter         <C-w> > / < wider / narrower
+  <leader>t     open terminal            <Esc><Esc>  exit terminal mode
+
+-- GIT (gitsigns) ---------------------------------------------------------
+  ]h / [h       next / prev hunk         <leader>gp  preview hunk
+  <leader>gb    blame line               <leader>gs  stage hunk
+  <leader>gr    reset hunk
+
+-- MARKS / MACROS / FOLDS --------------------------------------------------
+  ma  `a        set mark a / jump to a     ``         jump to last position
+  qa ... q      record macro to a         @a / @@     play macro a / repeat
+  za  zR  zM    toggle / open all / close all folds
+  "ayy  "ap     yank to register a / paste from a      "+y  yank to clipboard
+
+-- CLAUDE / MISC ----------------------------------------------------------
+  <leader>ac    toggle Claude            <leader>af  focus Claude
+  <leader>as    send selection (visual)  <leader>aa / ad  accept / deny diff
+  <leader>mp    markdown preview
+
+-- WHEN STUCK -------------------------------------------------------------
+  <leader>?     show ALL keymaps (tree)  <leader>fk  search keymaps
+  :h <topic>    open help                gg          (in help) top
+  (press any prefix -- g, <leader>, <C-w> -- and pause to see its menu)
+==========================================================================

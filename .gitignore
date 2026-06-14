@@ -4,8 +4,7 @@
 # Editor/runtime state we don't want tracked
 *.swp
 
-# nvim runtime (regenerated; track lazy-lock.json deliberately if you want pinned plugins)
-nvim/.config/nvim/lazy-lock.json
+# nvim: lazy-lock.json IS tracked (LazyVim convention) for reproducible plugin versions.
 
 # fish machine-specific universal variables (intentionally not managed)
 fish/.config/fish/fish_variables

@@ -17,8 +17,10 @@ bold = { family = "JetBrainsMono Nerd Font Mono", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font Mono", style = "Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font Mono", style = "Bold Italic" }
 
-[terminal]
-shell = { program = "fish", args = ["--login"] }
+# No [terminal] shell override: alacritty launches the default login shell,
+# resolved by absolute path from the user database (set fish via chsh — see
+# bootstrap.sh). This avoids hardcoding a non-portable path and the macOS
+# GUI-launch PATH problem (launchd PATH lacks /opt/homebrew/bin).
 
 [[keyboard.bindings]]
 key = "Return"
