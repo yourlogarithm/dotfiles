@@ -17,6 +17,7 @@ return {
       -- Directories scanned for projects (glob, one level deep).
       projects = {
         "~/Projects/*",
+        "~/Work/*",
         "~/.config/*",
       },
       -- Reopen the last project's session when nvim starts with no file args.

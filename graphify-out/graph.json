@@ -49,14 +49,34 @@
   },
   "nodes": [
     {
+      "label": "project.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/plugins/project.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plugins_project",
+      "community": 55,
+      "norm_label": "project.lua"
+    },
+    {
+      "label": "telescope.lua",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lua/plugins/telescope.lua",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plugins_telescope",
+      "community": 57,
+      "norm_label": "telescope.lua"
+    },
+    {
       "label": "settings.json",
       "file_type": "code",
       "source_file": ".claude/settings.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_settings",
       "community": 22,
-      "norm_label": "settings.json"
+      "norm_label": "settings.json",
+      "id": "claude_settings"
     },
     {
       "label": "hooks",
@@ -64,9 +84,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "claude_settings_hooks",
       "community": 22,
-      "norm_label": "hooks"
+      "norm_label": "hooks",
+      "id": "claude_settings_hooks"
     },
     {
       "label": "PreToolUse",
@@ -74,9 +94,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "claude_settings_hooks_pretooluse",
       "community": 22,
-      "norm_label": "pretooluse"
+      "norm_label": "pretooluse",
+      "id": "claude_settings_hooks_pretooluse"
     },
     {
       "label": "CLAUDE.md",
@@ -84,9 +104,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude",
       "community": 10,
-      "norm_label": "claude.md"
+      "norm_label": "claude.md",
+      "id": "claude"
     },
     {
       "label": "CLAUDE.md",
@@ -94,9 +114,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_claude_md",
       "community": 10,
-      "norm_label": "claude.md"
+      "norm_label": "claude.md",
+      "id": "claude_claude_md"
     },
     {
       "label": "The stow model (read this first)",
@@ -104,9 +124,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "claude_the_stow_model_read_this_first",
       "community": 10,
-      "norm_label": "the stow model (read this first)"
+      "norm_label": "the stow model (read this first)",
+      "id": "claude_the_stow_model_read_this_first"
     },
     {
       "label": "Cross-platform is a hard constraint",
@@ -114,9 +134,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "claude_cross_platform_is_a_hard_constraint",
       "community": 10,
-      "norm_label": "cross-platform is a hard constraint"
+      "norm_label": "cross-platform is a hard constraint",
+      "id": "claude_cross_platform_is_a_hard_constraint"
     },
     {
       "label": "bootstrap.sh",
@@ -124,9 +144,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "claude_bootstrap_sh",
       "community": 10,
-      "norm_label": "bootstrap.sh"
+      "norm_label": "bootstrap.sh",
+      "id": "claude_bootstrap_sh"
     },
     {
       "label": "Neovim config (`nvim/` package)",
@@ -134,9 +154,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "claude_neovim_config_nvim_package",
       "community": 10,
-      "norm_label": "neovim config (`nvim/` package)"
+      "norm_label": "neovim config (`nvim/` package)",
+      "id": "claude_neovim_config_nvim_package"
     },
     {
       "label": "oh-my-fish (`omf/` + fish loader)",
@@ -144,9 +164,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L40",
       "_origin": "ast",
-      "id": "claude_oh_my_fish_omf_fish_loader",
       "community": 10,
-      "norm_label": "oh-my-fish (`omf/` + fish loader)"
+      "norm_label": "oh-my-fish (`omf/` + fish loader)",
+      "id": "claude_oh_my_fish_omf_fish_loader"
     },
     {
       "label": "Not tracked / generated",
@@ -154,9 +174,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L44",
       "_origin": "ast",
-      "id": "claude_not_tracked_generated",
       "community": 10,
-      "norm_label": "not tracked / generated"
+      "norm_label": "not tracked / generated",
+      "id": "claude_not_tracked_generated"
     },
     {
       "label": "graphify",
@@ -164,9 +184,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "claude_graphify",
       "community": 10,
-      "norm_label": "graphify"
+      "norm_label": "graphify",
+      "id": "claude_graphify"
     },
     {
       "label": "bootstrap.sh",
@@ -1521,16 +1541,6 @@
       "id": "plugins_mini"
     },
     {
-      "label": "project.lua",
-      "file_type": "code",
-      "source_file": "nvim/.config/nvim/lua/plugins/project.lua",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 55,
-      "norm_label": "project.lua",
-      "id": "plugins_project"
-    },
-    {
       "label": "scrollbar.lua",
       "file_type": "code",
       "source_file": "nvim/.config/nvim/lua/plugins/scrollbar.lua",
@@ -1539,16 +1549,6 @@
       "community": 56,
       "norm_label": "scrollbar.lua",
       "id": "plugins_scrollbar"
-    },
-    {
-      "label": "telescope.lua",
-      "file_type": "code",
-      "source_file": "nvim/.config/nvim/lua/plugins/telescope.lua",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 57,
-      "norm_label": "telescope.lua",
-      "id": "plugins_telescope"
     },
     {
       "label": "treesitter.lua",
@@ -1937,14 +1937,25 @@
   ],
   "links": [
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "nvim/.config/nvim/lua/plugins/telescope.lua",
+      "source_location": "25",
+      "weight": 1.0,
+      "source": "plugins_telescope",
+      "target": "plugins_telescope"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/settings.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_settings",
-      "target": "claude_settings_hooks",
-      "confidence_score": 1.0
+      "target": "claude_settings_hooks"
     },
     {
       "relation": "contains",
@@ -1952,9 +1963,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_settings_hooks",
-      "target": "claude_settings_hooks_pretooluse",
-      "confidence_score": 1.0
+      "target": "claude_settings_hooks_pretooluse"
     },
     {
       "relation": "contains",
@@ -1962,9 +1973,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude",
-      "target": "claude_claude_md",
-      "confidence_score": 1.0
+      "target": "claude_claude_md"
     },
     {
       "relation": "contains",
@@ -1972,9 +1983,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_claude_md",
-      "target": "claude_bootstrap_sh",
-      "confidence_score": 1.0
+      "target": "claude_bootstrap_sh"
     },
     {
       "relation": "contains",
@@ -1982,9 +1993,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_claude_md",
-      "target": "claude_cross_platform_is_a_hard_constraint",
-      "confidence_score": 1.0
+      "target": "claude_cross_platform_is_a_hard_constraint"
     },
     {
       "relation": "contains",
@@ -1992,9 +2003,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_claude_md",
-      "target": "claude_graphify",
-      "confidence_score": 1.0
+      "target": "claude_graphify"
     },
     {
       "relation": "contains",
@@ -2002,9 +2013,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_claude_md",
-      "target": "claude_neovim_config_nvim_package",
-      "confidence_score": 1.0
+      "target": "claude_neovim_config_nvim_package"
     },
     {
       "relation": "contains",
@@ -2012,9 +2023,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_claude_md",
-      "target": "claude_not_tracked_generated",
-      "confidence_score": 1.0
+      "target": "claude_not_tracked_generated"
     },
     {
       "relation": "contains",
@@ -2022,9 +2033,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_claude_md",
-      "target": "claude_oh_my_fish_omf_fish_loader",
-      "confidence_score": 1.0
+      "target": "claude_oh_my_fish_omf_fish_loader"
     },
     {
       "relation": "contains",
@@ -2032,9 +2043,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_claude_md",
-      "target": "claude_the_stow_model_read_this_first",
-      "confidence_score": 1.0
+      "target": "claude_the_stow_model_read_this_first"
     },
     {
       "relation": "defines",
@@ -3203,17 +3214,6 @@
       "target": "plugins_lsp_map"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "nvim/.config/nvim/lua/plugins/telescope.lua",
-      "source_location": "20",
-      "weight": 1.0,
-      "source": "plugins_telescope",
-      "target": "plugins_telescope"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3538,5 +3538,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "a59aaaf97d5cbca2aef43035be78925f25d7d2d7"
+  "built_at_commit": "3334523a73f8e4cfea1c2ba7ac3e88d490284841"
 }

@@ -49,6 +49,126 @@
   },
   "nodes": [
     {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_settings",
+      "community": 22,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "claude_settings_hooks",
+      "community": 22,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "PreToolUse",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "claude_settings_hooks_pretooluse",
+      "community": 22,
+      "norm_label": "pretooluse"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 10,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_claude_md",
+      "community": 10,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "The stow model (read this first)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "claude_the_stow_model_read_this_first",
+      "community": 10,
+      "norm_label": "the stow model (read this first)"
+    },
+    {
+      "label": "Cross-platform is a hard constraint",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "claude_cross_platform_is_a_hard_constraint",
+      "community": 10,
+      "norm_label": "cross-platform is a hard constraint"
+    },
+    {
+      "label": "bootstrap.sh",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "claude_bootstrap_sh",
+      "community": 10,
+      "norm_label": "bootstrap.sh"
+    },
+    {
+      "label": "Neovim config (`nvim/` package)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "claude_neovim_config_nvim_package",
+      "community": 10,
+      "norm_label": "neovim config (`nvim/` package)"
+    },
+    {
+      "label": "oh-my-fish (`omf/` + fish loader)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "claude_oh_my_fish_omf_fish_loader",
+      "community": 10,
+      "norm_label": "oh-my-fish (`omf/` + fish loader)"
+    },
+    {
+      "label": "Not tracked / generated",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "claude_not_tracked_generated",
+      "community": 10,
+      "norm_label": "not tracked / generated"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "claude_graphify",
+      "community": 10,
+      "norm_label": "graphify"
+    },
+    {
       "label": "bootstrap.sh",
       "file_type": "code",
       "source_file": "bootstrap.sh",
@@ -58,9 +178,9 @@
         "kind": "file"
       },
       "_origin": "ast",
-      "id": "bootstrap",
       "community": 2,
-      "norm_label": "bootstrap.sh"
+      "norm_label": "bootstrap.sh",
+      "id": "bootstrap"
     },
     {
       "label": "bootstrap.sh script",
@@ -72,9 +192,9 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "id": "home_vcretu_dotfiles_bootstrap_sh__entry",
       "community": 2,
-      "norm_label": "bootstrap.sh script"
+      "norm_label": "bootstrap.sh script",
+      "id": "home_vcretu_dotfiles_bootstrap_sh__entry"
     },
     {
       "label": "log()",
@@ -86,9 +206,9 @@
         "kind": "bash_function"
       },
       "_origin": "ast",
-      "id": "bootstrap_log",
       "community": 2,
-      "norm_label": "log()"
+      "norm_label": "log()",
+      "id": "bootstrap_log"
     },
     {
       "label": "warn()",
@@ -100,9 +220,9 @@
         "kind": "bash_function"
       },
       "_origin": "ast",
-      "id": "bootstrap_warn",
       "community": 2,
-      "norm_label": "warn()"
+      "norm_label": "warn()",
+      "id": "bootstrap_warn"
     },
     {
       "label": "die()",
@@ -114,9 +234,9 @@
         "kind": "bash_function"
       },
       "_origin": "ast",
-      "id": "bootstrap_die",
       "community": 2,
-      "norm_label": "die()"
+      "norm_label": "die()",
+      "id": "bootstrap_die"
     },
     {
       "label": "pkg_install()",
@@ -128,9 +248,9 @@
         "kind": "bash_function"
       },
       "_origin": "ast",
-      "id": "bootstrap_pkg_install",
       "community": 2,
-      "norm_label": "pkg_install()"
+      "norm_label": "pkg_install()",
+      "id": "bootstrap_pkg_install"
     },
     {
       "label": "nvim_minor()",
@@ -142,9 +262,9 @@
         "kind": "bash_function"
       },
       "_origin": "ast",
-      "id": "bootstrap_nvim_minor",
       "community": 2,
-      "norm_label": "nvim_minor()"
+      "norm_label": "nvim_minor()",
+      "id": "bootstrap_nvim_minor"
     },
     {
       "label": "font_installed()",
@@ -156,9 +276,9 @@
         "kind": "bash_function"
       },
       "_origin": "ast",
-      "id": "bootstrap_font_installed",
       "community": 2,
-      "norm_label": "font_installed()"
+      "norm_label": "font_installed()",
+      "id": "bootstrap_font_installed"
     },
     {
       "label": "init.lua",
@@ -166,9 +286,9 @@
       "source_file": "nvim/.config/nvim/init.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "nvim_init",
       "community": 41,
-      "norm_label": "init.lua"
+      "norm_label": "init.lua",
+      "id": "nvim_init"
     },
     {
       "label": "lazy-lock.json",
@@ -176,9 +296,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "nvim_lazy_lock",
       "community": 1,
-      "norm_label": "lazy-lock.json"
+      "norm_label": "lazy-lock.json",
+      "id": "nvim_lazy_lock"
     },
     {
       "label": "auto-save.nvim",
@@ -186,9 +306,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_auto_save_nvim",
       "community": 1,
-      "norm_label": "auto-save.nvim"
+      "norm_label": "auto-save.nvim",
+      "id": "nvim_lazy_lock_auto_save_nvim"
     },
     {
       "label": "branch",
@@ -196,9 +316,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_auto_save_nvim_branch",
       "community": 1,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_auto_save_nvim_branch"
     },
     {
       "label": "commit",
@@ -206,9 +326,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_auto_save_nvim_commit",
       "community": 1,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_auto_save_nvim_commit"
     },
     {
       "label": "blink.cmp",
@@ -216,9 +336,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_blink_cmp",
       "community": 5,
-      "norm_label": "blink.cmp"
+      "norm_label": "blink.cmp",
+      "id": "nvim_lazy_lock_blink_cmp"
     },
     {
       "label": "branch",
@@ -226,9 +346,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_blink_cmp_branch",
       "community": 5,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_blink_cmp_branch"
     },
     {
       "label": "commit",
@@ -236,9 +356,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_blink_cmp_commit",
       "community": 5,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_blink_cmp_commit"
     },
     {
       "label": "bufferline.nvim",
@@ -246,9 +366,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_bufferline_nvim",
       "community": 6,
-      "norm_label": "bufferline.nvim"
+      "norm_label": "bufferline.nvim",
+      "id": "nvim_lazy_lock_bufferline_nvim"
     },
     {
       "label": "branch",
@@ -256,9 +376,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_bufferline_nvim_branch",
       "community": 6,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_bufferline_nvim_branch"
     },
     {
       "label": "commit",
@@ -266,9 +386,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_bufferline_nvim_commit",
       "community": 6,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_bufferline_nvim_commit"
     },
     {
       "label": "claudecode.nvim",
@@ -276,9 +396,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_claudecode_nvim",
       "community": 7,
-      "norm_label": "claudecode.nvim"
+      "norm_label": "claudecode.nvim",
+      "id": "nvim_lazy_lock_claudecode_nvim"
     },
     {
       "label": "branch",
@@ -286,9 +406,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_claudecode_nvim_branch",
       "community": 7,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_claudecode_nvim_branch"
     },
     {
       "label": "commit",
@@ -296,9 +416,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_claudecode_nvim_commit",
       "community": 7,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_claudecode_nvim_commit"
     },
     {
       "label": "conform.nvim",
@@ -306,9 +426,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_conform_nvim",
       "community": 8,
-      "norm_label": "conform.nvim"
+      "norm_label": "conform.nvim",
+      "id": "nvim_lazy_lock_conform_nvim"
     },
     {
       "label": "branch",
@@ -316,9 +436,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_conform_nvim_branch",
       "community": 8,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_conform_nvim_branch"
     },
     {
       "label": "commit",
@@ -326,9 +446,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_conform_nvim_commit",
       "community": 8,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_conform_nvim_commit"
     },
     {
       "label": "flatten.nvim",
@@ -336,9 +456,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_flatten_nvim",
       "community": 9,
-      "norm_label": "flatten.nvim"
+      "norm_label": "flatten.nvim",
+      "id": "nvim_lazy_lock_flatten_nvim"
     },
     {
       "label": "branch",
@@ -346,9 +466,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_flatten_nvim_branch",
       "community": 9,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_flatten_nvim_branch"
     },
     {
       "label": "commit",
@@ -356,9 +476,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_flatten_nvim_commit",
       "community": 9,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_flatten_nvim_commit"
     },
     {
       "label": "friendly-snippets",
@@ -366,9 +486,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_friendly_snippets",
-      "community": 10,
-      "norm_label": "friendly-snippets"
+      "community": 1,
+      "norm_label": "friendly-snippets",
+      "id": "nvim_lazy_lock_friendly_snippets"
     },
     {
       "label": "branch",
@@ -376,9 +496,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_friendly_snippets_branch",
-      "community": 10,
-      "norm_label": "branch"
+      "community": 1,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_friendly_snippets_branch"
     },
     {
       "label": "commit",
@@ -386,9 +506,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_friendly_snippets_commit",
-      "community": 10,
-      "norm_label": "commit"
+      "community": 1,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_friendly_snippets_commit"
     },
     {
       "label": "gitsigns.nvim",
@@ -396,9 +516,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_gitsigns_nvim",
       "community": 11,
-      "norm_label": "gitsigns.nvim"
+      "norm_label": "gitsigns.nvim",
+      "id": "nvim_lazy_lock_gitsigns_nvim"
     },
     {
       "label": "branch",
@@ -406,9 +526,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_gitsigns_nvim_branch",
       "community": 11,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_gitsigns_nvim_branch"
     },
     {
       "label": "commit",
@@ -416,9 +536,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_gitsigns_nvim_commit",
       "community": 11,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_gitsigns_nvim_commit"
     },
     {
       "label": "gruvbox.nvim",
@@ -426,9 +546,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_gruvbox_nvim",
-      "community": 1,
-      "norm_label": "gruvbox.nvim"
+      "community": 23,
+      "norm_label": "gruvbox.nvim",
+      "id": "nvim_lazy_lock_gruvbox_nvim"
     },
     {
       "label": "branch",
@@ -436,9 +556,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_gruvbox_nvim_branch",
-      "community": 1,
-      "norm_label": "branch"
+      "community": 23,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_gruvbox_nvim_branch"
     },
     {
       "label": "commit",
@@ -446,9 +566,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_gruvbox_nvim_commit",
-      "community": 1,
-      "norm_label": "commit"
+      "community": 23,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_gruvbox_nvim_commit"
     },
     {
       "label": "hop.nvim",
@@ -456,9 +576,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_hop_nvim",
       "community": 12,
-      "norm_label": "hop.nvim"
+      "norm_label": "hop.nvim",
+      "id": "nvim_lazy_lock_hop_nvim"
     },
     {
       "label": "branch",
@@ -466,9 +586,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_hop_nvim_branch",
       "community": 12,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_hop_nvim_branch"
     },
     {
       "label": "commit",
@@ -476,9 +596,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_hop_nvim_commit",
       "community": 12,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_hop_nvim_commit"
     },
     {
       "label": "indent-blankline.nvim",
@@ -486,9 +606,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_indent_blankline_nvim",
-      "community": 1,
-      "norm_label": "indent-blankline.nvim"
+      "community": 25,
+      "norm_label": "indent-blankline.nvim",
+      "id": "nvim_lazy_lock_indent_blankline_nvim"
     },
     {
       "label": "branch",
@@ -496,9 +616,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_indent_blankline_nvim_branch",
-      "community": 1,
-      "norm_label": "branch"
+      "community": 25,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_indent_blankline_nvim_branch"
     },
     {
       "label": "commit",
@@ -506,9 +626,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_indent_blankline_nvim_commit",
-      "community": 1,
-      "norm_label": "commit"
+      "community": 25,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_indent_blankline_nvim_commit"
     },
     {
       "label": "lazy.nvim",
@@ -516,9 +636,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_lazy_nvim",
       "community": 13,
-      "norm_label": "lazy.nvim"
+      "norm_label": "lazy.nvim",
+      "id": "nvim_lazy_lock_lazy_nvim"
     },
     {
       "label": "branch",
@@ -526,9 +646,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_lazy_nvim_branch",
       "community": 13,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_lazy_nvim_branch"
     },
     {
       "label": "commit",
@@ -536,9 +656,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_lazy_nvim_commit",
       "community": 13,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_lazy_nvim_commit"
     },
     {
       "label": "lualine.nvim",
@@ -546,9 +666,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_lualine_nvim",
       "community": 14,
-      "norm_label": "lualine.nvim"
+      "norm_label": "lualine.nvim",
+      "id": "nvim_lazy_lock_lualine_nvim"
     },
     {
       "label": "branch",
@@ -556,9 +676,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_lualine_nvim_branch",
       "community": 14,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_lualine_nvim_branch"
     },
     {
       "label": "commit",
@@ -566,9 +686,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_lualine_nvim_commit",
       "community": 14,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_lualine_nvim_commit"
     },
     {
       "label": "markdown-preview.nvim",
@@ -576,9 +696,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_markdown_preview_nvim",
       "community": 15,
-      "norm_label": "markdown-preview.nvim"
+      "norm_label": "markdown-preview.nvim",
+      "id": "nvim_lazy_lock_markdown_preview_nvim"
     },
     {
       "label": "branch",
@@ -586,9 +706,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_markdown_preview_nvim_branch",
       "community": 15,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_markdown_preview_nvim_branch"
     },
     {
       "label": "commit",
@@ -596,9 +716,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_markdown_preview_nvim_commit",
       "community": 15,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_markdown_preview_nvim_commit"
     },
     {
       "label": "mason-lspconfig.nvim",
@@ -606,9 +726,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_lspconfig_nvim",
       "community": 16,
-      "norm_label": "mason-lspconfig.nvim"
+      "norm_label": "mason-lspconfig.nvim",
+      "id": "nvim_lazy_lock_mason_lspconfig_nvim"
     },
     {
       "label": "branch",
@@ -616,9 +736,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_lspconfig_nvim_branch",
       "community": 16,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_mason_lspconfig_nvim_branch"
     },
     {
       "label": "commit",
@@ -626,9 +746,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_lspconfig_nvim_commit",
       "community": 16,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_mason_lspconfig_nvim_commit"
     },
     {
       "label": "mason-tool-installer.nvim",
@@ -636,9 +756,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_tool_installer_nvim",
       "community": 18,
-      "norm_label": "mason-tool-installer.nvim"
+      "norm_label": "mason-tool-installer.nvim",
+      "id": "nvim_lazy_lock_mason_tool_installer_nvim"
     },
     {
       "label": "branch",
@@ -646,9 +766,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_tool_installer_nvim_branch",
       "community": 18,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_mason_tool_installer_nvim_branch"
     },
     {
       "label": "commit",
@@ -656,9 +776,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_tool_installer_nvim_commit",
       "community": 18,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_mason_tool_installer_nvim_commit"
     },
     {
       "label": "mason.nvim",
@@ -666,9 +786,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_nvim",
       "community": 17,
-      "norm_label": "mason.nvim"
+      "norm_label": "mason.nvim",
+      "id": "nvim_lazy_lock_mason_nvim"
     },
     {
       "label": "branch",
@@ -676,9 +796,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_nvim_branch",
       "community": 17,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_mason_nvim_branch"
     },
     {
       "label": "commit",
@@ -686,9 +806,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mason_nvim_commit",
       "community": 17,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_mason_nvim_commit"
     },
     {
       "label": "mini.nvim",
@@ -696,9 +816,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mini_nvim",
       "community": 19,
-      "norm_label": "mini.nvim"
+      "norm_label": "mini.nvim",
+      "id": "nvim_lazy_lock_mini_nvim"
     },
     {
       "label": "branch",
@@ -706,9 +826,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mini_nvim_branch",
       "community": 19,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_mini_nvim_branch"
     },
     {
       "label": "commit",
@@ -716,9 +836,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_mini_nvim_commit",
       "community": 19,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_mini_nvim_commit"
     },
     {
       "label": "neo-tree.nvim",
@@ -726,9 +846,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neo_tree_nvim",
       "community": 20,
-      "norm_label": "neo-tree.nvim"
+      "norm_label": "neo-tree.nvim",
+      "id": "nvim_lazy_lock_neo_tree_nvim"
     },
     {
       "label": "branch",
@@ -736,9 +856,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neo_tree_nvim_branch",
       "community": 20,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_neo_tree_nvim_branch"
     },
     {
       "label": "commit",
@@ -746,9 +866,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neo_tree_nvim_commit",
       "community": 20,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_neo_tree_nvim_commit"
     },
     {
       "label": "neovim-project",
@@ -756,9 +876,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neovim_project",
       "community": 21,
-      "norm_label": "neovim-project"
+      "norm_label": "neovim-project",
+      "id": "nvim_lazy_lock_neovim_project"
     },
     {
       "label": "branch",
@@ -766,9 +886,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neovim_project_branch",
       "community": 21,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_neovim_project_branch"
     },
     {
       "label": "commit",
@@ -776,9 +896,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neovim_project_commit",
       "community": 21,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_neovim_project_commit"
     },
     {
       "label": "neovim-session-manager",
@@ -786,9 +906,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neovim_session_manager",
-      "community": 22,
-      "norm_label": "neovim-session-manager"
+      "community": 1,
+      "norm_label": "neovim-session-manager",
+      "id": "nvim_lazy_lock_neovim_session_manager"
     },
     {
       "label": "branch",
@@ -796,9 +916,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neovim_session_manager_branch",
-      "community": 22,
-      "norm_label": "branch"
+      "community": 1,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_neovim_session_manager_branch"
     },
     {
       "label": "commit",
@@ -806,9 +926,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_neovim_session_manager_commit",
-      "community": 22,
-      "norm_label": "commit"
+      "community": 1,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_neovim_session_manager_commit"
     },
     {
       "label": "nui.nvim",
@@ -816,9 +936,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nui_nvim",
-      "community": 23,
-      "norm_label": "nui.nvim"
+      "community": 1,
+      "norm_label": "nui.nvim",
+      "id": "nvim_lazy_lock_nui_nvim"
     },
     {
       "label": "branch",
@@ -826,9 +946,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nui_nvim_branch",
-      "community": 23,
-      "norm_label": "branch"
+      "community": 1,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_nui_nvim_branch"
     },
     {
       "label": "commit",
@@ -836,9 +956,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nui_nvim_commit",
-      "community": 23,
-      "norm_label": "commit"
+      "community": 1,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_nui_nvim_commit"
     },
     {
       "label": "nvim-lint",
@@ -846,9 +966,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_lint",
       "community": 24,
-      "norm_label": "nvim-lint"
+      "norm_label": "nvim-lint",
+      "id": "nvim_lazy_lock_nvim_lint"
     },
     {
       "label": "branch",
@@ -856,9 +976,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_lint_branch",
       "community": 24,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_nvim_lint_branch"
     },
     {
       "label": "commit",
@@ -866,9 +986,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_lint_commit",
       "community": 24,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_nvim_lint_commit"
     },
     {
       "label": "nvim-lspconfig",
@@ -876,9 +996,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_lspconfig",
-      "community": 25,
-      "norm_label": "nvim-lspconfig"
+      "community": 1,
+      "norm_label": "nvim-lspconfig",
+      "id": "nvim_lazy_lock_nvim_lspconfig"
     },
     {
       "label": "branch",
@@ -886,9 +1006,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_lspconfig_branch",
-      "community": 25,
-      "norm_label": "branch"
+      "community": 1,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_nvim_lspconfig_branch"
     },
     {
       "label": "commit",
@@ -896,9 +1016,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_lspconfig_commit",
-      "community": 25,
-      "norm_label": "commit"
+      "community": 1,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_nvim_lspconfig_commit"
     },
     {
       "label": "nvim-scrollbar",
@@ -906,9 +1026,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_scrollbar",
       "community": 26,
-      "norm_label": "nvim-scrollbar"
+      "norm_label": "nvim-scrollbar",
+      "id": "nvim_lazy_lock_nvim_scrollbar"
     },
     {
       "label": "branch",
@@ -916,9 +1036,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_scrollbar_branch",
       "community": 26,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_nvim_scrollbar_branch"
     },
     {
       "label": "commit",
@@ -926,9 +1046,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_scrollbar_commit",
       "community": 26,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_nvim_scrollbar_commit"
     },
     {
       "label": "nvim-treesitter",
@@ -936,9 +1056,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_treesitter",
       "community": 27,
-      "norm_label": "nvim-treesitter"
+      "norm_label": "nvim-treesitter",
+      "id": "nvim_lazy_lock_nvim_treesitter"
     },
     {
       "label": "branch",
@@ -946,9 +1066,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_treesitter_branch",
       "community": 27,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_nvim_treesitter_branch"
     },
     {
       "label": "commit",
@@ -956,9 +1076,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_treesitter_commit",
       "community": 27,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_nvim_treesitter_commit"
     },
     {
       "label": "nvim-web-devicons",
@@ -966,9 +1086,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_web_devicons",
       "community": 28,
-      "norm_label": "nvim-web-devicons"
+      "norm_label": "nvim-web-devicons",
+      "id": "nvim_lazy_lock_nvim_web_devicons"
     },
     {
       "label": "branch",
@@ -976,9 +1096,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_web_devicons_branch",
       "community": 28,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_nvim_web_devicons_branch"
     },
     {
       "label": "commit",
@@ -986,9 +1106,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_nvim_web_devicons_commit",
       "community": 28,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_nvim_web_devicons_commit"
     },
     {
       "label": "oil.nvim",
@@ -996,9 +1116,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_oil_nvim",
       "community": 29,
-      "norm_label": "oil.nvim"
+      "norm_label": "oil.nvim",
+      "id": "nvim_lazy_lock_oil_nvim"
     },
     {
       "label": "branch",
@@ -1006,9 +1126,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_oil_nvim_branch",
       "community": 29,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_oil_nvim_branch"
     },
     {
       "label": "commit",
@@ -1016,9 +1136,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_oil_nvim_commit",
       "community": 29,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_oil_nvim_commit"
     },
     {
       "label": "plenary.nvim",
@@ -1026,9 +1146,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_plenary_nvim",
       "community": 30,
-      "norm_label": "plenary.nvim"
+      "norm_label": "plenary.nvim",
+      "id": "nvim_lazy_lock_plenary_nvim"
     },
     {
       "label": "branch",
@@ -1036,9 +1156,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_plenary_nvim_branch",
       "community": 30,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_plenary_nvim_branch"
     },
     {
       "label": "commit",
@@ -1046,9 +1166,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_plenary_nvim_commit",
       "community": 30,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_plenary_nvim_commit"
     },
     {
       "label": "snacks.nvim",
@@ -1056,9 +1176,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_snacks_nvim",
       "community": 31,
-      "norm_label": "snacks.nvim"
+      "norm_label": "snacks.nvim",
+      "id": "nvim_lazy_lock_snacks_nvim"
     },
     {
       "label": "branch",
@@ -1066,9 +1186,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_snacks_nvim_branch",
       "community": 31,
-      "norm_label": "branch"
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_snacks_nvim_branch"
     },
     {
       "label": "commit",
@@ -1076,9 +1196,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_snacks_nvim_commit",
       "community": 31,
-      "norm_label": "commit"
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_snacks_nvim_commit"
     },
     {
       "label": "telescope-fzf-native.nvim",
@@ -1086,9 +1206,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_telescope_fzf_native_nvim",
-      "community": 32,
-      "norm_label": "telescope-fzf-native.nvim"
+      "community": 1,
+      "norm_label": "telescope-fzf-native.nvim",
+      "id": "nvim_lazy_lock_telescope_fzf_native_nvim"
     },
     {
       "label": "branch",
@@ -1096,9 +1216,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_telescope_fzf_native_nvim_branch",
-      "community": 32,
-      "norm_label": "branch"
+      "community": 1,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_telescope_fzf_native_nvim_branch"
     },
     {
       "label": "commit",
@@ -1106,9 +1226,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_telescope_fzf_native_nvim_commit",
-      "community": 32,
-      "norm_label": "commit"
+      "community": 1,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_telescope_fzf_native_nvim_commit"
     },
     {
       "label": "telescope.nvim",
@@ -1116,9 +1236,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_telescope_nvim",
-      "community": 1,
-      "norm_label": "telescope.nvim"
+      "community": 32,
+      "norm_label": "telescope.nvim",
+      "id": "nvim_lazy_lock_telescope_nvim"
     },
     {
       "label": "branch",
@@ -1126,9 +1246,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_telescope_nvim_branch",
-      "community": 1,
-      "norm_label": "branch"
+      "community": 32,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_telescope_nvim_branch"
     },
     {
       "label": "commit",
@@ -1136,9 +1256,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_telescope_nvim_commit",
-      "community": 1,
-      "norm_label": "commit"
+      "community": 32,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_telescope_nvim_commit"
     },
     {
       "label": "which-key.nvim",
@@ -1146,9 +1266,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_which_key_nvim",
-      "community": 1,
-      "norm_label": "which-key.nvim"
+      "community": 60,
+      "norm_label": "which-key.nvim",
+      "id": "nvim_lazy_lock_which_key_nvim"
     },
     {
       "label": "branch",
@@ -1156,9 +1276,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_which_key_nvim_branch",
-      "community": 1,
-      "norm_label": "branch"
+      "community": 60,
+      "norm_label": "branch",
+      "id": "nvim_lazy_lock_which_key_nvim_branch"
     },
     {
       "label": "commit",
@@ -1166,9 +1286,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "nvim_lazy_lock_which_key_nvim_commit",
-      "community": 1,
-      "norm_label": "commit"
+      "community": 60,
+      "norm_label": "commit",
+      "id": "nvim_lazy_lock_which_key_nvim_commit"
     },
     {
       "label": "autocmds.lua",
@@ -1176,9 +1296,9 @@
       "source_file": "nvim/.config/nvim/lua/config/autocmds.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "config_autocmds",
       "community": 4,
-      "norm_label": "autocmds.lua"
+      "norm_label": "autocmds.lua",
+      "id": "config_autocmds"
     },
     {
       "label": "win_term_buf()",
@@ -1186,9 +1306,9 @@
       "source_file": "nvim/.config/nvim/lua/config/autocmds.lua",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "config_autocmds_win_term_buf",
       "community": 4,
-      "norm_label": "win_term_buf()"
+      "norm_label": "win_term_buf()",
+      "id": "config_autocmds_win_term_buf"
     },
     {
       "label": "open_ide_layout()",
@@ -1196,9 +1316,9 @@
       "source_file": "nvim/.config/nvim/lua/config/autocmds.lua",
       "source_location": "L75",
       "_origin": "ast",
-      "id": "config_autocmds_open_ide_layout",
       "community": 4,
-      "norm_label": "open_ide_layout()"
+      "norm_label": "open_ide_layout()",
+      "id": "config_autocmds_open_ide_layout"
     },
     {
       "label": "keymaps.lua",
@@ -1206,9 +1326,9 @@
       "source_file": "nvim/.config/nvim/lua/config/keymaps.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "config_keymaps",
       "community": 35,
-      "norm_label": "keymaps.lua"
+      "norm_label": "keymaps.lua",
+      "id": "config_keymaps"
     },
     {
       "label": "lazy.lua",
@@ -1216,9 +1336,9 @@
       "source_file": "nvim/.config/nvim/lua/config/lazy.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "config_lazy",
       "community": 36,
-      "norm_label": "lazy.lua"
+      "norm_label": "lazy.lua",
+      "id": "config_lazy"
     },
     {
       "label": "options.lua",
@@ -1226,9 +1346,9 @@
       "source_file": "nvim/.config/nvim/lua/config/options.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "config_options",
       "community": 37,
-      "norm_label": "options.lua"
+      "norm_label": "options.lua",
+      "id": "config_options"
     },
     {
       "label": "autosave.lua",
@@ -1236,9 +1356,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/autosave.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_autosave",
       "community": 42,
-      "norm_label": "autosave.lua"
+      "norm_label": "autosave.lua",
+      "id": "plugins_autosave"
     },
     {
       "label": "bufferline.lua",
@@ -1246,9 +1366,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/bufferline.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_bufferline",
       "community": 43,
-      "norm_label": "bufferline.lua"
+      "norm_label": "bufferline.lua",
+      "id": "plugins_bufferline"
     },
     {
       "label": "claudecode.lua",
@@ -1256,9 +1376,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/claudecode.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_claudecode",
       "community": 44,
-      "norm_label": "claudecode.lua"
+      "norm_label": "claudecode.lua",
+      "id": "plugins_claudecode"
     },
     {
       "label": "colorscheme.lua",
@@ -1266,9 +1386,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/colorscheme.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_colorscheme",
       "community": 45,
-      "norm_label": "colorscheme.lua"
+      "norm_label": "colorscheme.lua",
+      "id": "plugins_colorscheme"
     },
     {
       "label": "completion.lua",
@@ -1276,9 +1396,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/completion.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_completion",
       "community": 46,
-      "norm_label": "completion.lua"
+      "norm_label": "completion.lua",
+      "id": "plugins_completion"
     },
     {
       "label": "explorer.lua",
@@ -1286,9 +1406,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/explorer.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_explorer",
       "community": 47,
-      "norm_label": "explorer.lua"
+      "norm_label": "explorer.lua",
+      "id": "plugins_explorer"
     },
     {
       "label": "flatten.lua",
@@ -1296,9 +1416,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/flatten.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_flatten",
       "community": 48,
-      "norm_label": "flatten.lua"
+      "norm_label": "flatten.lua",
+      "id": "plugins_flatten"
     },
     {
       "label": "formatting.lua",
@@ -1306,9 +1426,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/formatting.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_formatting",
       "community": 49,
-      "norm_label": "formatting.lua"
+      "norm_label": "formatting.lua",
+      "id": "plugins_formatting"
     },
     {
       "label": "gitsigns.lua",
@@ -1316,9 +1436,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/gitsigns.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_gitsigns",
       "community": 33,
-      "norm_label": "gitsigns.lua"
+      "norm_label": "gitsigns.lua",
+      "id": "plugins_gitsigns"
     },
     {
       "label": "map()",
@@ -1326,9 +1446,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/gitsigns.lua",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "plugins_gitsigns_map",
       "community": 33,
-      "norm_label": "map()"
+      "norm_label": "map()",
+      "id": "plugins_gitsigns_map"
     },
     {
       "label": "hop.lua",
@@ -1336,9 +1456,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/hop.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_hop",
       "community": 50,
-      "norm_label": "hop.lua"
+      "norm_label": "hop.lua",
+      "id": "plugins_hop"
     },
     {
       "label": "indent.lua",
@@ -1346,9 +1466,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/indent.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_indent",
       "community": 51,
-      "norm_label": "indent.lua"
+      "norm_label": "indent.lua",
+      "id": "plugins_indent"
     },
     {
       "label": "lsp.lua",
@@ -1356,9 +1476,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/lsp.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_lsp",
       "community": 34,
-      "norm_label": "lsp.lua"
+      "norm_label": "lsp.lua",
+      "id": "plugins_lsp"
     },
     {
       "label": "map()",
@@ -1366,9 +1486,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/lsp.lua",
       "source_location": "L55",
       "_origin": "ast",
-      "id": "plugins_lsp_map",
       "community": 34,
-      "norm_label": "map()"
+      "norm_label": "map()",
+      "id": "plugins_lsp_map"
     },
     {
       "label": "lualine.lua",
@@ -1376,9 +1496,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/lualine.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_lualine",
       "community": 52,
-      "norm_label": "lualine.lua"
+      "norm_label": "lualine.lua",
+      "id": "plugins_lualine"
     },
     {
       "label": "markdown.lua",
@@ -1386,9 +1506,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/markdown.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_markdown",
       "community": 53,
-      "norm_label": "markdown.lua"
+      "norm_label": "markdown.lua",
+      "id": "plugins_markdown"
     },
     {
       "label": "mini.lua",
@@ -1396,9 +1516,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/mini.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_mini",
       "community": 54,
-      "norm_label": "mini.lua"
+      "norm_label": "mini.lua",
+      "id": "plugins_mini"
     },
     {
       "label": "project.lua",
@@ -1406,9 +1526,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/project.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_project",
       "community": 55,
-      "norm_label": "project.lua"
+      "norm_label": "project.lua",
+      "id": "plugins_project"
     },
     {
       "label": "scrollbar.lua",
@@ -1416,9 +1536,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/scrollbar.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_scrollbar",
       "community": 56,
-      "norm_label": "scrollbar.lua"
+      "norm_label": "scrollbar.lua",
+      "id": "plugins_scrollbar"
     },
     {
       "label": "telescope.lua",
@@ -1426,9 +1546,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/telescope.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_telescope",
       "community": 57,
-      "norm_label": "telescope.lua"
+      "norm_label": "telescope.lua",
+      "id": "plugins_telescope"
     },
     {
       "label": "treesitter.lua",
@@ -1436,9 +1556,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/treesitter.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_treesitter",
       "community": 58,
-      "norm_label": "treesitter.lua"
+      "norm_label": "treesitter.lua",
+      "id": "plugins_treesitter"
     },
     {
       "label": "which-key.lua",
@@ -1446,9 +1566,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/which-key.lua",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "plugins_which_key",
       "community": 59,
-      "norm_label": "which-key.lua"
+      "norm_label": "which-key.lua",
+      "id": "plugins_which_key"
     },
     {
       "label": "dotfiles repository",
@@ -1459,9 +1579,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_dotfiles",
       "community": 0,
-      "norm_label": "dotfiles repository"
+      "norm_label": "dotfiles repository",
+      "id": "readme_dotfiles"
     },
     {
       "label": "GNU Stow",
@@ -1472,9 +1592,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_gnu_stow",
       "community": 0,
-      "norm_label": "gnu stow"
+      "norm_label": "gnu stow",
+      "id": "readme_gnu_stow"
     },
     {
       "label": "Stow Package",
@@ -1485,9 +1605,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_stow_package",
       "community": 0,
-      "norm_label": "stow package"
+      "norm_label": "stow package",
+      "id": "readme_stow_package"
     },
     {
       "label": "bootstrap.sh",
@@ -1498,9 +1618,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_bootstrap_sh",
       "community": 0,
-      "norm_label": "bootstrap.sh"
+      "norm_label": "bootstrap.sh",
+      "id": "readme_bootstrap_sh"
     },
     {
       "label": "nvim package",
@@ -1511,9 +1631,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_nvim_package",
       "community": 0,
-      "norm_label": "nvim package"
+      "norm_label": "nvim package",
+      "id": "readme_nvim_package"
     },
     {
       "label": "fish package",
@@ -1524,9 +1644,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_fish_package",
       "community": 0,
-      "norm_label": "fish package"
+      "norm_label": "fish package",
+      "id": "readme_fish_package"
     },
     {
       "label": "alacritty package",
@@ -1537,9 +1657,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_alacritty_package",
       "community": 0,
-      "norm_label": "alacritty package"
+      "norm_label": "alacritty package",
+      "id": "readme_alacritty_package"
     },
     {
       "label": "omf package",
@@ -1550,9 +1670,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_omf_package",
       "community": 0,
-      "norm_label": "omf package"
+      "norm_label": "omf package",
+      "id": "readme_omf_package"
     },
     {
       "label": "oh-my-fish",
@@ -1563,9 +1683,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_oh_my_fish",
       "community": 0,
-      "norm_label": "oh-my-fish"
+      "norm_label": "oh-my-fish",
+      "id": "readme_oh_my_fish"
     },
     {
       "label": "omf declarative bundle",
@@ -1576,9 +1696,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_omf_bundle",
       "community": 0,
-      "norm_label": "omf declarative bundle"
+      "norm_label": "omf declarative bundle",
+      "id": "readme_omf_bundle"
     },
     {
       "label": "omf bootstrap loader",
@@ -1589,9 +1709,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_omf_loader",
       "community": 0,
-      "norm_label": "omf bootstrap loader"
+      "norm_label": "omf bootstrap loader",
+      "id": "readme_omf_loader"
     },
     {
       "label": "JetBrainsMono Nerd Font",
@@ -1602,9 +1722,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_jetbrainsmono_nerd_font",
       "community": 0,
-      "norm_label": "jetbrainsmono nerd font"
+      "norm_label": "jetbrainsmono nerd font",
+      "id": "readme_jetbrainsmono_nerd_font"
     },
     {
       "label": "Homebrew (macOS)",
@@ -1615,9 +1735,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_homebrew",
       "community": 0,
-      "norm_label": "homebrew (macos)"
+      "norm_label": "homebrew (macos)",
+      "id": "readme_homebrew"
     },
     {
       "label": "dnf (Fedora)",
@@ -1628,9 +1748,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_dnf",
       "community": 0,
-      "norm_label": "dnf (fedora)"
+      "norm_label": "dnf (fedora)",
+      "id": "readme_dnf"
     },
     {
       "label": "Portable system-agnostic paths",
@@ -1641,9 +1761,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_portable_paths",
       "community": 0,
-      "norm_label": "portable system-agnostic paths"
+      "norm_label": "portable system-agnostic paths",
+      "id": "readme_portable_paths"
     },
     {
       "label": "fish_variables (untracked machine state)",
@@ -1654,9 +1774,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_fish_variables",
       "community": 0,
-      "norm_label": "fish_variables (untracked machine state)"
+      "norm_label": "fish_variables (untracked machine state)",
+      "id": "readme_fish_variables"
     },
     {
       "label": "Neovim editor",
@@ -1667,9 +1787,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_neovim",
       "community": 0,
-      "norm_label": "neovim editor"
+      "norm_label": "neovim editor",
+      "id": "nvim_cheatsheet_neovim"
     },
     {
       "label": "Leader key (Space)",
@@ -1680,9 +1800,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_leader_space",
       "community": 3,
-      "norm_label": "leader key (space)"
+      "norm_label": "leader key (space)",
+      "id": "nvim_cheatsheet_leader_space"
     },
     {
       "label": "LSP code navigation",
@@ -1693,9 +1813,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_lsp",
       "community": 3,
-      "norm_label": "lsp code navigation"
+      "norm_label": "lsp code navigation",
+      "id": "nvim_cheatsheet_lsp"
     },
     {
       "label": "Telescope (find/picker)",
@@ -1706,9 +1826,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_telescope",
       "community": 3,
-      "norm_label": "telescope (find/picker)"
+      "norm_label": "telescope (find/picker)",
+      "id": "nvim_cheatsheet_telescope"
     },
     {
       "label": "neo-tree file explorer",
@@ -1719,9 +1839,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_neo_tree",
       "community": 3,
-      "norm_label": "neo-tree file explorer"
+      "norm_label": "neo-tree file explorer",
+      "id": "nvim_cheatsheet_neo_tree"
     },
     {
       "label": "oil directory editor",
@@ -1732,9 +1852,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_oil",
       "community": 3,
-      "norm_label": "oil directory editor"
+      "norm_label": "oil directory editor",
+      "id": "nvim_cheatsheet_oil"
     },
     {
       "label": "hop motion plugin",
@@ -1745,9 +1865,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_hop",
       "community": 39,
-      "norm_label": "hop motion plugin"
+      "norm_label": "hop motion plugin",
+      "id": "nvim_cheatsheet_hop"
     },
     {
       "label": "surround add/delete/replace",
@@ -1758,9 +1878,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_surround",
       "community": 40,
-      "norm_label": "surround add/delete/replace"
+      "norm_label": "surround add/delete/replace",
+      "id": "nvim_cheatsheet_surround"
     },
     {
       "label": "Completion menu",
@@ -1771,9 +1891,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_completion",
       "community": 38,
-      "norm_label": "completion menu"
+      "norm_label": "completion menu",
+      "id": "nvim_cheatsheet_completion"
     },
     {
       "label": "gitsigns",
@@ -1784,9 +1904,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_gitsigns",
       "community": 0,
-      "norm_label": "gitsigns"
+      "norm_label": "gitsigns",
+      "id": "nvim_cheatsheet_gitsigns"
     },
     {
       "label": "Claude integration",
@@ -1797,9 +1917,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_claude",
       "community": 0,
-      "norm_label": "claude integration"
+      "norm_label": "claude integration",
+      "id": "nvim_cheatsheet_claude"
     },
     {
       "label": "which-key keymap menu",
@@ -1810,21 +1930,121 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "nvim_cheatsheet_which_key",
       "community": 3,
-      "norm_label": "which-key keymap menu"
+      "norm_label": "which-key keymap menu",
+      "id": "nvim_cheatsheet_which_key"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_settings",
+      "target": "claude_settings_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_pretooluse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_claude_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_bootstrap_sh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_cross_platform_is_a_hard_constraint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_neovim_config_nvim_package",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_not_tracked_generated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_oh_my_fish_omf_fish_loader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_the_stow_model_read_this_first",
+      "confidence_score": 1.0
+    },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "source_file": "bootstrap.sh",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap",
-      "target": "bootstrap_die",
-      "confidence_score": 1.0
+      "target": "bootstrap_die"
     },
     {
       "relation": "defines",
@@ -1832,9 +2052,9 @@
       "source_file": "bootstrap.sh",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap",
-      "target": "bootstrap_font_installed",
-      "confidence_score": 1.0
+      "target": "bootstrap_font_installed"
     },
     {
       "relation": "defines",
@@ -1842,9 +2062,9 @@
       "source_file": "bootstrap.sh",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap",
-      "target": "bootstrap_log",
-      "confidence_score": 1.0
+      "target": "bootstrap_log"
     },
     {
       "relation": "defines",
@@ -1852,9 +2072,9 @@
       "source_file": "bootstrap.sh",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap",
-      "target": "bootstrap_nvim_minor",
-      "confidence_score": 1.0
+      "target": "bootstrap_nvim_minor"
     },
     {
       "relation": "defines",
@@ -1862,9 +2082,9 @@
       "source_file": "bootstrap.sh",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap",
-      "target": "bootstrap_pkg_install",
-      "confidence_score": 1.0
+      "target": "bootstrap_pkg_install"
     },
     {
       "relation": "defines",
@@ -1872,9 +2092,9 @@
       "source_file": "bootstrap.sh",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap",
-      "target": "bootstrap_warn",
-      "confidence_score": 1.0
+      "target": "bootstrap_warn"
     },
     {
       "relation": "contains",
@@ -1882,9 +2102,9 @@
       "source_file": "bootstrap.sh",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "bootstrap",
-      "target": "home_vcretu_dotfiles_bootstrap_sh__entry",
-      "confidence_score": 1.0
+      "target": "home_vcretu_dotfiles_bootstrap_sh__entry"
     },
     {
       "relation": "calls",
@@ -1893,9 +2113,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
-      "target": "bootstrap_die",
-      "confidence_score": 1.0
+      "target": "bootstrap_die"
     },
     {
       "relation": "calls",
@@ -1904,9 +2124,9 @@
       "source_location": "L84",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
-      "target": "bootstrap_font_installed",
-      "confidence_score": 1.0
+      "target": "bootstrap_font_installed"
     },
     {
       "relation": "calls",
@@ -1915,9 +2135,9 @@
       "source_location": "L32",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
-      "target": "bootstrap_log",
-      "confidence_score": 1.0
+      "target": "bootstrap_log"
     },
     {
       "relation": "calls",
@@ -1926,9 +2146,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
-      "target": "bootstrap_pkg_install",
-      "confidence_score": 1.0
+      "target": "bootstrap_pkg_install"
     },
     {
       "relation": "calls",
@@ -1937,9 +2157,9 @@
       "source_location": "L116",
       "weight": 1.0,
       "context": "call",
+      "confidence_score": 1.0,
       "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
-      "target": "bootstrap_warn",
-      "confidence_score": 1.0
+      "target": "bootstrap_warn"
     },
     {
       "relation": "contains",
@@ -1947,9 +2167,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_auto_save_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_auto_save_nvim"
     },
     {
       "relation": "contains",
@@ -1957,9 +2177,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_blink_cmp",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_blink_cmp"
     },
     {
       "relation": "contains",
@@ -1967,9 +2187,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_bufferline_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_bufferline_nvim"
     },
     {
       "relation": "contains",
@@ -1977,9 +2197,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_claudecode_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_claudecode_nvim"
     },
     {
       "relation": "contains",
@@ -1987,9 +2207,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_conform_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_conform_nvim"
     },
     {
       "relation": "contains",
@@ -1997,9 +2217,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_flatten_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_flatten_nvim"
     },
     {
       "relation": "contains",
@@ -2007,9 +2227,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_friendly_snippets",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_friendly_snippets"
     },
     {
       "relation": "contains",
@@ -2017,9 +2237,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_gitsigns_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_gitsigns_nvim"
     },
     {
       "relation": "contains",
@@ -2027,9 +2247,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_gruvbox_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_gruvbox_nvim"
     },
     {
       "relation": "contains",
@@ -2037,9 +2257,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_hop_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_hop_nvim"
     },
     {
       "relation": "contains",
@@ -2047,9 +2267,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_indent_blankline_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_indent_blankline_nvim"
     },
     {
       "relation": "contains",
@@ -2057,9 +2277,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_lazy_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_lazy_nvim"
     },
     {
       "relation": "contains",
@@ -2067,9 +2287,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_lualine_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_lualine_nvim"
     },
     {
       "relation": "contains",
@@ -2077,9 +2297,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_markdown_preview_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_markdown_preview_nvim"
     },
     {
       "relation": "contains",
@@ -2087,9 +2307,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_mason_lspconfig_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_lspconfig_nvim"
     },
     {
       "relation": "contains",
@@ -2097,9 +2317,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_mason_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_nvim"
     },
     {
       "relation": "contains",
@@ -2107,9 +2327,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_mason_tool_installer_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_tool_installer_nvim"
     },
     {
       "relation": "contains",
@@ -2117,9 +2337,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_mini_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mini_nvim"
     },
     {
       "relation": "contains",
@@ -2127,9 +2347,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_neo_tree_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neo_tree_nvim"
     },
     {
       "relation": "contains",
@@ -2137,9 +2357,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_neovim_project",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neovim_project"
     },
     {
       "relation": "contains",
@@ -2147,9 +2367,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_neovim_session_manager",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neovim_session_manager"
     },
     {
       "relation": "contains",
@@ -2157,9 +2377,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_nui_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nui_nvim"
     },
     {
       "relation": "contains",
@@ -2167,9 +2387,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_nvim_lint",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_lint"
     },
     {
       "relation": "contains",
@@ -2177,9 +2397,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_nvim_lspconfig",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_lspconfig"
     },
     {
       "relation": "contains",
@@ -2187,9 +2407,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_nvim_scrollbar",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_scrollbar"
     },
     {
       "relation": "contains",
@@ -2197,9 +2417,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_nvim_treesitter",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_treesitter"
     },
     {
       "relation": "contains",
@@ -2207,9 +2427,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_nvim_web_devicons",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_web_devicons"
     },
     {
       "relation": "contains",
@@ -2217,9 +2437,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_oil_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_oil_nvim"
     },
     {
       "relation": "contains",
@@ -2227,9 +2447,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_plenary_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_plenary_nvim"
     },
     {
       "relation": "contains",
@@ -2237,9 +2457,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_snacks_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_snacks_nvim"
     },
     {
       "relation": "contains",
@@ -2247,9 +2467,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_telescope_fzf_native_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_telescope_fzf_native_nvim"
     },
     {
       "relation": "contains",
@@ -2257,9 +2477,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_telescope_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_telescope_nvim"
     },
     {
       "relation": "contains",
@@ -2267,9 +2487,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock",
-      "target": "nvim_lazy_lock_which_key_nvim",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_which_key_nvim"
     },
     {
       "relation": "contains",
@@ -2277,9 +2497,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_auto_save_nvim",
-      "target": "nvim_lazy_lock_auto_save_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_auto_save_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2287,9 +2507,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_auto_save_nvim",
-      "target": "nvim_lazy_lock_auto_save_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_auto_save_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2297,9 +2517,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_blink_cmp",
-      "target": "nvim_lazy_lock_blink_cmp_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_blink_cmp_branch"
     },
     {
       "relation": "contains",
@@ -2307,9 +2527,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_blink_cmp",
-      "target": "nvim_lazy_lock_blink_cmp_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_blink_cmp_commit"
     },
     {
       "relation": "contains",
@@ -2317,9 +2537,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_bufferline_nvim",
-      "target": "nvim_lazy_lock_bufferline_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_bufferline_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2327,9 +2547,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_bufferline_nvim",
-      "target": "nvim_lazy_lock_bufferline_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_bufferline_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2337,9 +2557,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_claudecode_nvim",
-      "target": "nvim_lazy_lock_claudecode_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_claudecode_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2347,9 +2567,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_claudecode_nvim",
-      "target": "nvim_lazy_lock_claudecode_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_claudecode_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2357,9 +2577,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_conform_nvim",
-      "target": "nvim_lazy_lock_conform_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_conform_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2367,9 +2587,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_conform_nvim",
-      "target": "nvim_lazy_lock_conform_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_conform_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2377,9 +2597,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_flatten_nvim",
-      "target": "nvim_lazy_lock_flatten_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_flatten_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2387,9 +2607,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_flatten_nvim",
-      "target": "nvim_lazy_lock_flatten_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_flatten_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2397,9 +2617,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_friendly_snippets",
-      "target": "nvim_lazy_lock_friendly_snippets_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_friendly_snippets_branch"
     },
     {
       "relation": "contains",
@@ -2407,9 +2627,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_friendly_snippets",
-      "target": "nvim_lazy_lock_friendly_snippets_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_friendly_snippets_commit"
     },
     {
       "relation": "contains",
@@ -2417,9 +2637,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_gitsigns_nvim",
-      "target": "nvim_lazy_lock_gitsigns_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_gitsigns_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2427,9 +2647,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_gitsigns_nvim",
-      "target": "nvim_lazy_lock_gitsigns_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_gitsigns_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2437,9 +2657,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_gruvbox_nvim",
-      "target": "nvim_lazy_lock_gruvbox_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_gruvbox_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2447,9 +2667,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_gruvbox_nvim",
-      "target": "nvim_lazy_lock_gruvbox_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_gruvbox_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2457,9 +2677,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_hop_nvim",
-      "target": "nvim_lazy_lock_hop_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_hop_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2467,9 +2687,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_hop_nvim",
-      "target": "nvim_lazy_lock_hop_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_hop_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2477,9 +2697,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_indent_blankline_nvim",
-      "target": "nvim_lazy_lock_indent_blankline_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_indent_blankline_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2487,9 +2707,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_indent_blankline_nvim",
-      "target": "nvim_lazy_lock_indent_blankline_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_indent_blankline_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2497,9 +2717,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_lazy_nvim",
-      "target": "nvim_lazy_lock_lazy_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_lazy_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2507,9 +2727,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_lazy_nvim",
-      "target": "nvim_lazy_lock_lazy_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_lazy_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2517,9 +2737,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_lualine_nvim",
-      "target": "nvim_lazy_lock_lualine_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_lualine_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2527,9 +2747,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_lualine_nvim",
-      "target": "nvim_lazy_lock_lualine_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_lualine_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2537,9 +2757,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_markdown_preview_nvim",
-      "target": "nvim_lazy_lock_markdown_preview_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_markdown_preview_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2547,9 +2767,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_markdown_preview_nvim",
-      "target": "nvim_lazy_lock_markdown_preview_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_markdown_preview_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2557,9 +2777,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_mason_lspconfig_nvim",
-      "target": "nvim_lazy_lock_mason_lspconfig_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_lspconfig_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2567,9 +2787,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_mason_lspconfig_nvim",
-      "target": "nvim_lazy_lock_mason_lspconfig_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_lspconfig_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2577,9 +2797,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_mason_tool_installer_nvim",
-      "target": "nvim_lazy_lock_mason_tool_installer_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_tool_installer_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2587,9 +2807,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_mason_tool_installer_nvim",
-      "target": "nvim_lazy_lock_mason_tool_installer_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_tool_installer_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2597,9 +2817,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_mason_nvim",
-      "target": "nvim_lazy_lock_mason_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2607,9 +2827,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_mason_nvim",
-      "target": "nvim_lazy_lock_mason_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mason_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2617,9 +2837,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_mini_nvim",
-      "target": "nvim_lazy_lock_mini_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mini_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2627,9 +2847,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_mini_nvim",
-      "target": "nvim_lazy_lock_mini_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_mini_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2637,9 +2857,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_neo_tree_nvim",
-      "target": "nvim_lazy_lock_neo_tree_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neo_tree_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2647,9 +2867,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_neo_tree_nvim",
-      "target": "nvim_lazy_lock_neo_tree_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neo_tree_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2657,9 +2877,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_neovim_project",
-      "target": "nvim_lazy_lock_neovim_project_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neovim_project_branch"
     },
     {
       "relation": "contains",
@@ -2667,9 +2887,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_neovim_project",
-      "target": "nvim_lazy_lock_neovim_project_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neovim_project_commit"
     },
     {
       "relation": "contains",
@@ -2677,9 +2897,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_neovim_session_manager",
-      "target": "nvim_lazy_lock_neovim_session_manager_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neovim_session_manager_branch"
     },
     {
       "relation": "contains",
@@ -2687,9 +2907,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_neovim_session_manager",
-      "target": "nvim_lazy_lock_neovim_session_manager_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_neovim_session_manager_commit"
     },
     {
       "relation": "contains",
@@ -2697,9 +2917,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nui_nvim",
-      "target": "nvim_lazy_lock_nui_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nui_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2707,9 +2927,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nui_nvim",
-      "target": "nvim_lazy_lock_nui_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nui_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2717,9 +2937,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_lint",
-      "target": "nvim_lazy_lock_nvim_lint_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_lint_branch"
     },
     {
       "relation": "contains",
@@ -2727,9 +2947,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_lint",
-      "target": "nvim_lazy_lock_nvim_lint_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_lint_commit"
     },
     {
       "relation": "contains",
@@ -2737,9 +2957,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_lspconfig",
-      "target": "nvim_lazy_lock_nvim_lspconfig_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_lspconfig_branch"
     },
     {
       "relation": "contains",
@@ -2747,9 +2967,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_lspconfig",
-      "target": "nvim_lazy_lock_nvim_lspconfig_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_lspconfig_commit"
     },
     {
       "relation": "contains",
@@ -2757,9 +2977,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_scrollbar",
-      "target": "nvim_lazy_lock_nvim_scrollbar_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_scrollbar_branch"
     },
     {
       "relation": "contains",
@@ -2767,9 +2987,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_scrollbar",
-      "target": "nvim_lazy_lock_nvim_scrollbar_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_scrollbar_commit"
     },
     {
       "relation": "contains",
@@ -2777,9 +2997,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_treesitter",
-      "target": "nvim_lazy_lock_nvim_treesitter_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_treesitter_branch"
     },
     {
       "relation": "contains",
@@ -2787,9 +3007,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_treesitter",
-      "target": "nvim_lazy_lock_nvim_treesitter_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_treesitter_commit"
     },
     {
       "relation": "contains",
@@ -2797,9 +3017,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_web_devicons",
-      "target": "nvim_lazy_lock_nvim_web_devicons_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_web_devicons_branch"
     },
     {
       "relation": "contains",
@@ -2807,9 +3027,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_nvim_web_devicons",
-      "target": "nvim_lazy_lock_nvim_web_devicons_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_nvim_web_devicons_commit"
     },
     {
       "relation": "contains",
@@ -2817,9 +3037,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_oil_nvim",
-      "target": "nvim_lazy_lock_oil_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_oil_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2827,9 +3047,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_oil_nvim",
-      "target": "nvim_lazy_lock_oil_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_oil_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2837,9 +3057,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_plenary_nvim",
-      "target": "nvim_lazy_lock_plenary_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_plenary_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2847,9 +3067,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_plenary_nvim",
-      "target": "nvim_lazy_lock_plenary_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_plenary_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2857,9 +3077,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_snacks_nvim",
-      "target": "nvim_lazy_lock_snacks_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_snacks_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2867,9 +3087,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_snacks_nvim",
-      "target": "nvim_lazy_lock_snacks_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_snacks_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2877,9 +3097,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_telescope_fzf_native_nvim",
-      "target": "nvim_lazy_lock_telescope_fzf_native_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_telescope_fzf_native_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2887,9 +3107,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_telescope_fzf_native_nvim",
-      "target": "nvim_lazy_lock_telescope_fzf_native_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_telescope_fzf_native_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2897,9 +3117,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_telescope_nvim",
-      "target": "nvim_lazy_lock_telescope_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_telescope_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2907,9 +3127,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_telescope_nvim",
-      "target": "nvim_lazy_lock_telescope_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_telescope_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2917,9 +3137,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_which_key_nvim",
-      "target": "nvim_lazy_lock_which_key_nvim_branch",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_which_key_nvim_branch"
     },
     {
       "relation": "contains",
@@ -2927,9 +3147,9 @@
       "source_file": "nvim/.config/nvim/lazy-lock.json",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "nvim_lazy_lock_which_key_nvim",
-      "target": "nvim_lazy_lock_which_key_nvim_commit",
-      "confidence_score": 1.0
+      "target": "nvim_lazy_lock_which_key_nvim_commit"
     },
     {
       "relation": "contains",
@@ -2937,9 +3157,9 @@
       "source_file": "nvim/.config/nvim/lua/config/autocmds.lua",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_autocmds",
-      "target": "config_autocmds_open_ide_layout",
-      "confidence_score": 1.0
+      "target": "config_autocmds_open_ide_layout"
     },
     {
       "relation": "contains",
@@ -2947,9 +3167,9 @@
       "source_file": "nvim/.config/nvim/lua/config/autocmds.lua",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_autocmds",
-      "target": "config_autocmds_win_term_buf",
-      "confidence_score": 1.0
+      "target": "config_autocmds_win_term_buf"
     },
     {
       "relation": "imports",
@@ -2968,9 +3188,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/gitsigns.lua",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plugins_gitsigns",
-      "target": "plugins_gitsigns_map",
-      "confidence_score": 1.0
+      "target": "plugins_gitsigns_map"
     },
     {
       "relation": "contains",
@@ -2978,9 +3198,9 @@
       "source_file": "nvim/.config/nvim/lua/plugins/lsp.lua",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plugins_lsp",
-      "target": "plugins_lsp_map",
-      "confidence_score": 1.0
+      "target": "plugins_lsp_map"
     },
     {
       "relation": "imports",

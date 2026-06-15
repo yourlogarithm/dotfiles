@@ -5,6 +5,11 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+      -- Ensure treesitter (and its parser dir on runtimepath) is loaded before
+      -- any picker opens, so previews of files like *.toml can be highlighted.
+      -- Telescope previews use scratch buffers, which don't fire the
+      -- BufReadPost/BufNewFile events that otherwise lazy-load treesitter.
+      "nvim-treesitter/nvim-treesitter",
     },
     keys = {
       { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
