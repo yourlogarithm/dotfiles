@@ -1,0 +1,2238 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "bootstrap.sh",
+      "file_type": "code",
+      "source_file": "bootstrap.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "bootstrap",
+      "community": 1,
+      "norm_label": "bootstrap.sh"
+    },
+    {
+      "label": "bootstrap.sh script",
+      "file_type": "code",
+      "source_file": "bootstrap.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "home_vcretu_dotfiles_bootstrap_sh__entry",
+      "community": 1,
+      "norm_label": "bootstrap.sh script"
+    },
+    {
+      "label": "log()",
+      "file_type": "code",
+      "source_file": "bootstrap.sh",
+      "source_location": "L12",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "bootstrap_log",
+      "community": 1,
+      "norm_label": "log()"
+    },
+    {
+      "label": "warn()",
+      "file_type": "code",
+      "source_file": "bootstrap.sh",
+      "source_location": "L13",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "bootstrap_warn",
+      "community": 1,
+      "norm_label": "warn()"
+    },
+    {
+      "label": "die()",
+      "file_type": "code",
+      "source_file": "bootstrap.sh",
+      "source_location": "L14",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "bootstrap_die",
+      "community": 1,
+      "norm_label": "die()"
+    },
+    {
+      "label": "pkg_install()",
+      "file_type": "code",
+      "source_file": "bootstrap.sh",
+      "source_location": "L35",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "bootstrap_pkg_install",
+      "community": 1,
+      "norm_label": "pkg_install()"
+    },
+    {
+      "label": "nvim_minor()",
+      "file_type": "code",
+      "source_file": "bootstrap.sh",
+      "source_location": "L57",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "bootstrap_nvim_minor",
+      "community": 1,
+      "norm_label": "nvim_minor()"
+    },
+    {
+      "label": "font_installed()",
+      "file_type": "code",
+      "source_file": "bootstrap.sh",
+      "source_location": "L79",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "bootstrap_font_installed",
+      "community": 1,
+      "norm_label": "font_installed()"
+    },
+    {
+      "label": "lazy-lock.json",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock",
+      "community": 0,
+      "norm_label": "lazy-lock.json"
+    },
+    {
+      "label": "auto-save.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_auto_save_nvim",
+      "community": 0,
+      "norm_label": "auto-save.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_auto_save_nvim_branch",
+      "community": 0,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_auto_save_nvim_commit",
+      "community": 0,
+      "norm_label": "commit"
+    },
+    {
+      "label": "blink.cmp",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_blink_cmp",
+      "community": 2,
+      "norm_label": "blink.cmp"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_blink_cmp_branch",
+      "community": 2,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_blink_cmp_commit",
+      "community": 2,
+      "norm_label": "commit"
+    },
+    {
+      "label": "bufferline.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_bufferline_nvim",
+      "community": 3,
+      "norm_label": "bufferline.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_bufferline_nvim_branch",
+      "community": 3,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_bufferline_nvim_commit",
+      "community": 3,
+      "norm_label": "commit"
+    },
+    {
+      "label": "claudecode.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_claudecode_nvim",
+      "community": 4,
+      "norm_label": "claudecode.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_claudecode_nvim_branch",
+      "community": 4,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_claudecode_nvim_commit",
+      "community": 4,
+      "norm_label": "commit"
+    },
+    {
+      "label": "conform.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_conform_nvim",
+      "community": 5,
+      "norm_label": "conform.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_conform_nvim_branch",
+      "community": 5,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_conform_nvim_commit",
+      "community": 5,
+      "norm_label": "commit"
+    },
+    {
+      "label": "flatten.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_flatten_nvim",
+      "community": 6,
+      "norm_label": "flatten.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_flatten_nvim_branch",
+      "community": 6,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_flatten_nvim_commit",
+      "community": 6,
+      "norm_label": "commit"
+    },
+    {
+      "label": "friendly-snippets",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_friendly_snippets",
+      "community": 7,
+      "norm_label": "friendly-snippets"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_friendly_snippets_branch",
+      "community": 7,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_friendly_snippets_commit",
+      "community": 7,
+      "norm_label": "commit"
+    },
+    {
+      "label": "gitsigns.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_gitsigns_nvim",
+      "community": 8,
+      "norm_label": "gitsigns.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_gitsigns_nvim_branch",
+      "community": 8,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_gitsigns_nvim_commit",
+      "community": 8,
+      "norm_label": "commit"
+    },
+    {
+      "label": "gruvbox.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_gruvbox_nvim",
+      "community": 9,
+      "norm_label": "gruvbox.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_gruvbox_nvim_branch",
+      "community": 9,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_gruvbox_nvim_commit",
+      "community": 9,
+      "norm_label": "commit"
+    },
+    {
+      "label": "hop.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_hop_nvim",
+      "community": 10,
+      "norm_label": "hop.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_hop_nvim_branch",
+      "community": 10,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_hop_nvim_commit",
+      "community": 10,
+      "norm_label": "commit"
+    },
+    {
+      "label": "indent-blankline.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_indent_blankline_nvim",
+      "community": 11,
+      "norm_label": "indent-blankline.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_indent_blankline_nvim_branch",
+      "community": 11,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_indent_blankline_nvim_commit",
+      "community": 11,
+      "norm_label": "commit"
+    },
+    {
+      "label": "lazy.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_lazy_nvim",
+      "community": 12,
+      "norm_label": "lazy.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_lazy_nvim_branch",
+      "community": 12,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_lazy_nvim_commit",
+      "community": 12,
+      "norm_label": "commit"
+    },
+    {
+      "label": "lualine.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_lualine_nvim",
+      "community": 13,
+      "norm_label": "lualine.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_lualine_nvim_branch",
+      "community": 13,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_lualine_nvim_commit",
+      "community": 13,
+      "norm_label": "commit"
+    },
+    {
+      "label": "markdown-preview.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_markdown_preview_nvim",
+      "community": 14,
+      "norm_label": "markdown-preview.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_markdown_preview_nvim_branch",
+      "community": 14,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_markdown_preview_nvim_commit",
+      "community": 14,
+      "norm_label": "commit"
+    },
+    {
+      "label": "mason-lspconfig.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_lspconfig_nvim",
+      "community": 15,
+      "norm_label": "mason-lspconfig.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_lspconfig_nvim_branch",
+      "community": 15,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_lspconfig_nvim_commit",
+      "community": 15,
+      "norm_label": "commit"
+    },
+    {
+      "label": "mason-tool-installer.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_tool_installer_nvim",
+      "community": 17,
+      "norm_label": "mason-tool-installer.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_tool_installer_nvim_branch",
+      "community": 17,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_tool_installer_nvim_commit",
+      "community": 17,
+      "norm_label": "commit"
+    },
+    {
+      "label": "mason.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_nvim",
+      "community": 16,
+      "norm_label": "mason.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_nvim_branch",
+      "community": 16,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mason_nvim_commit",
+      "community": 16,
+      "norm_label": "commit"
+    },
+    {
+      "label": "mini.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mini_nvim",
+      "community": 18,
+      "norm_label": "mini.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mini_nvim_branch",
+      "community": 18,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_mini_nvim_commit",
+      "community": 18,
+      "norm_label": "commit"
+    },
+    {
+      "label": "neo-tree.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neo_tree_nvim",
+      "community": 19,
+      "norm_label": "neo-tree.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neo_tree_nvim_branch",
+      "community": 19,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neo_tree_nvim_commit",
+      "community": 19,
+      "norm_label": "commit"
+    },
+    {
+      "label": "neovim-project",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neovim_project",
+      "community": 20,
+      "norm_label": "neovim-project"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neovim_project_branch",
+      "community": 20,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neovim_project_commit",
+      "community": 20,
+      "norm_label": "commit"
+    },
+    {
+      "label": "neovim-session-manager",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neovim_session_manager",
+      "community": 21,
+      "norm_label": "neovim-session-manager"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neovim_session_manager_branch",
+      "community": 21,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_neovim_session_manager_commit",
+      "community": 21,
+      "norm_label": "commit"
+    },
+    {
+      "label": "nui.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nui_nvim",
+      "community": 22,
+      "norm_label": "nui.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nui_nvim_branch",
+      "community": 22,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nui_nvim_commit",
+      "community": 22,
+      "norm_label": "commit"
+    },
+    {
+      "label": "nvim-lint",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_lint",
+      "community": 0,
+      "norm_label": "nvim-lint"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_lint_branch",
+      "community": 0,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_lint_commit",
+      "community": 0,
+      "norm_label": "commit"
+    },
+    {
+      "label": "nvim-lspconfig",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_lspconfig",
+      "community": 23,
+      "norm_label": "nvim-lspconfig"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_lspconfig_branch",
+      "community": 23,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_lspconfig_commit",
+      "community": 23,
+      "norm_label": "commit"
+    },
+    {
+      "label": "nvim-scrollbar",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_scrollbar",
+      "community": 24,
+      "norm_label": "nvim-scrollbar"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_scrollbar_branch",
+      "community": 24,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_scrollbar_commit",
+      "community": 24,
+      "norm_label": "commit"
+    },
+    {
+      "label": "nvim-treesitter",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_treesitter",
+      "community": 25,
+      "norm_label": "nvim-treesitter"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_treesitter_branch",
+      "community": 25,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_treesitter_commit",
+      "community": 25,
+      "norm_label": "commit"
+    },
+    {
+      "label": "nvim-web-devicons",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_web_devicons",
+      "community": 26,
+      "norm_label": "nvim-web-devicons"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_web_devicons_branch",
+      "community": 26,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_nvim_web_devicons_commit",
+      "community": 26,
+      "norm_label": "commit"
+    },
+    {
+      "label": "oil.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_oil_nvim",
+      "community": 27,
+      "norm_label": "oil.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_oil_nvim_branch",
+      "community": 27,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_oil_nvim_commit",
+      "community": 27,
+      "norm_label": "commit"
+    },
+    {
+      "label": "plenary.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_plenary_nvim",
+      "community": 0,
+      "norm_label": "plenary.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_plenary_nvim_branch",
+      "community": 0,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_plenary_nvim_commit",
+      "community": 0,
+      "norm_label": "commit"
+    },
+    {
+      "label": "snacks.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_snacks_nvim",
+      "community": 28,
+      "norm_label": "snacks.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_snacks_nvim_branch",
+      "community": 28,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_snacks_nvim_commit",
+      "community": 28,
+      "norm_label": "commit"
+    },
+    {
+      "label": "telescope-fzf-native.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_telescope_fzf_native_nvim",
+      "community": 29,
+      "norm_label": "telescope-fzf-native.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_telescope_fzf_native_nvim_branch",
+      "community": 29,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_telescope_fzf_native_nvim_commit",
+      "community": 29,
+      "norm_label": "commit"
+    },
+    {
+      "label": "telescope.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_telescope_nvim",
+      "community": 30,
+      "norm_label": "telescope.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_telescope_nvim_branch",
+      "community": 30,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_telescope_nvim_commit",
+      "community": 30,
+      "norm_label": "commit"
+    },
+    {
+      "label": "which-key.nvim",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_which_key_nvim",
+      "community": 31,
+      "norm_label": "which-key.nvim"
+    },
+    {
+      "label": "branch",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_which_key_nvim_branch",
+      "community": 31,
+      "norm_label": "branch"
+    },
+    {
+      "label": "commit",
+      "file_type": "code",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "nvim_lazy_lock_which_key_nvim_commit",
+      "community": 31,
+      "norm_label": "commit"
+    }
+  ],
+  "links": [
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "bootstrap",
+      "target": "bootstrap_die",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "bootstrap",
+      "target": "bootstrap_font_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "bootstrap",
+      "target": "bootstrap_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "bootstrap",
+      "target": "bootstrap_nvim_minor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "bootstrap",
+      "target": "bootstrap_pkg_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "bootstrap",
+      "target": "bootstrap_warn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "bootstrap",
+      "target": "home_vcretu_dotfiles_bootstrap_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
+      "target": "bootstrap_die",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L84",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
+      "target": "bootstrap_font_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
+      "target": "bootstrap_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
+      "target": "bootstrap_pkg_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "bootstrap.sh",
+      "source_location": "L116",
+      "weight": 1.0,
+      "context": "call",
+      "source": "home_vcretu_dotfiles_bootstrap_sh__entry",
+      "target": "bootstrap_warn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_auto_save_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_blink_cmp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_bufferline_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_claudecode_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_conform_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_flatten_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_friendly_snippets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_gitsigns_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_gruvbox_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_hop_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_indent_blankline_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_lazy_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_lualine_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_markdown_preview_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_mason_lspconfig_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_mason_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_mason_tool_installer_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_mini_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_neo_tree_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_neovim_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_neovim_session_manager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_nui_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_nvim_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_nvim_lspconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_nvim_scrollbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_nvim_treesitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_nvim_web_devicons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_oil_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_plenary_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_snacks_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_telescope_fzf_native_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_telescope_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock",
+      "target": "nvim_lazy_lock_which_key_nvim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_auto_save_nvim",
+      "target": "nvim_lazy_lock_auto_save_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_auto_save_nvim",
+      "target": "nvim_lazy_lock_auto_save_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_blink_cmp",
+      "target": "nvim_lazy_lock_blink_cmp_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_blink_cmp",
+      "target": "nvim_lazy_lock_blink_cmp_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_bufferline_nvim",
+      "target": "nvim_lazy_lock_bufferline_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_bufferline_nvim",
+      "target": "nvim_lazy_lock_bufferline_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_claudecode_nvim",
+      "target": "nvim_lazy_lock_claudecode_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_claudecode_nvim",
+      "target": "nvim_lazy_lock_claudecode_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_conform_nvim",
+      "target": "nvim_lazy_lock_conform_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_conform_nvim",
+      "target": "nvim_lazy_lock_conform_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_flatten_nvim",
+      "target": "nvim_lazy_lock_flatten_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_flatten_nvim",
+      "target": "nvim_lazy_lock_flatten_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_friendly_snippets",
+      "target": "nvim_lazy_lock_friendly_snippets_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_friendly_snippets",
+      "target": "nvim_lazy_lock_friendly_snippets_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_gitsigns_nvim",
+      "target": "nvim_lazy_lock_gitsigns_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_gitsigns_nvim",
+      "target": "nvim_lazy_lock_gitsigns_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_gruvbox_nvim",
+      "target": "nvim_lazy_lock_gruvbox_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_gruvbox_nvim",
+      "target": "nvim_lazy_lock_gruvbox_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_hop_nvim",
+      "target": "nvim_lazy_lock_hop_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_hop_nvim",
+      "target": "nvim_lazy_lock_hop_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_indent_blankline_nvim",
+      "target": "nvim_lazy_lock_indent_blankline_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_indent_blankline_nvim",
+      "target": "nvim_lazy_lock_indent_blankline_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_lazy_nvim",
+      "target": "nvim_lazy_lock_lazy_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_lazy_nvim",
+      "target": "nvim_lazy_lock_lazy_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_lualine_nvim",
+      "target": "nvim_lazy_lock_lualine_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_lualine_nvim",
+      "target": "nvim_lazy_lock_lualine_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_markdown_preview_nvim",
+      "target": "nvim_lazy_lock_markdown_preview_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_markdown_preview_nvim",
+      "target": "nvim_lazy_lock_markdown_preview_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_mason_lspconfig_nvim",
+      "target": "nvim_lazy_lock_mason_lspconfig_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_mason_lspconfig_nvim",
+      "target": "nvim_lazy_lock_mason_lspconfig_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_mason_tool_installer_nvim",
+      "target": "nvim_lazy_lock_mason_tool_installer_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_mason_tool_installer_nvim",
+      "target": "nvim_lazy_lock_mason_tool_installer_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_mason_nvim",
+      "target": "nvim_lazy_lock_mason_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_mason_nvim",
+      "target": "nvim_lazy_lock_mason_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_mini_nvim",
+      "target": "nvim_lazy_lock_mini_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_mini_nvim",
+      "target": "nvim_lazy_lock_mini_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_neo_tree_nvim",
+      "target": "nvim_lazy_lock_neo_tree_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_neo_tree_nvim",
+      "target": "nvim_lazy_lock_neo_tree_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_neovim_project",
+      "target": "nvim_lazy_lock_neovim_project_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_neovim_project",
+      "target": "nvim_lazy_lock_neovim_project_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_neovim_session_manager",
+      "target": "nvim_lazy_lock_neovim_session_manager_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_neovim_session_manager",
+      "target": "nvim_lazy_lock_neovim_session_manager_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nui_nvim",
+      "target": "nvim_lazy_lock_nui_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nui_nvim",
+      "target": "nvim_lazy_lock_nui_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_lint",
+      "target": "nvim_lazy_lock_nvim_lint_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_lint",
+      "target": "nvim_lazy_lock_nvim_lint_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_lspconfig",
+      "target": "nvim_lazy_lock_nvim_lspconfig_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_lspconfig",
+      "target": "nvim_lazy_lock_nvim_lspconfig_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_scrollbar",
+      "target": "nvim_lazy_lock_nvim_scrollbar_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_scrollbar",
+      "target": "nvim_lazy_lock_nvim_scrollbar_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_treesitter",
+      "target": "nvim_lazy_lock_nvim_treesitter_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_treesitter",
+      "target": "nvim_lazy_lock_nvim_treesitter_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_web_devicons",
+      "target": "nvim_lazy_lock_nvim_web_devicons_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_nvim_web_devicons",
+      "target": "nvim_lazy_lock_nvim_web_devicons_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_oil_nvim",
+      "target": "nvim_lazy_lock_oil_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_oil_nvim",
+      "target": "nvim_lazy_lock_oil_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_plenary_nvim",
+      "target": "nvim_lazy_lock_plenary_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_plenary_nvim",
+      "target": "nvim_lazy_lock_plenary_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_snacks_nvim",
+      "target": "nvim_lazy_lock_snacks_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_snacks_nvim",
+      "target": "nvim_lazy_lock_snacks_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_telescope_fzf_native_nvim",
+      "target": "nvim_lazy_lock_telescope_fzf_native_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_telescope_fzf_native_nvim",
+      "target": "nvim_lazy_lock_telescope_fzf_native_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_telescope_nvim",
+      "target": "nvim_lazy_lock_telescope_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_telescope_nvim",
+      "target": "nvim_lazy_lock_telescope_nvim_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_which_key_nvim",
+      "target": "nvim_lazy_lock_which_key_nvim_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "nvim/.config/nvim/lazy-lock.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "nvim_lazy_lock_which_key_nvim",
+      "target": "nvim_lazy_lock_which_key_nvim_commit",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "be72fdb791eef4da602ce1a24302199f8b574bbf"
+}

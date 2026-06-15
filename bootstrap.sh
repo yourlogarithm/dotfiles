@@ -13,6 +13,11 @@ log()  { printf '\033[1;32m==>\033[0m %s\n' "$*"; }
 warn() { printf '\033[1;33m!!\033[0m %s\n'  "$*" >&2; }
 die()  { printf '\033[1;31mxx\033[0m %s\n'  "$*" >&2; exit 1; }
 
+# On any unexpected failure, report where and why instead of exiting silently.
+# Run with DEBUG=1 ./bootstrap.sh to trace every command as it executes.
+trap 'rc=$?; printf "\033[1;31mxx\033[0m line %s: \x60%s\x60 exited %s\n" "$LINENO" "$BASH_COMMAND" "$rc" >&2' ERR
+[[ "${DEBUG:-0}" == 1 ]] && set -x
+
 # --- detect OS / package manager ---------------------------------------------
 if [[ "$(uname -s)" == "Darwin" ]]; then
   OS=macos
@@ -35,11 +40,40 @@ pkg_install() {
 }
 
 # --- prerequisites -----------------------------------------------------------
-log "Installing prerequisites (git, curl, stow, fish, eza, zoxide, neovim, ripgrep)"
-for p in git curl stow fish eza zoxide neovim ripgrep; do pkg_install "$p"; done
+log "Installing prerequisites (git, curl, stow, fish, eza, zoxide, ripgrep)"
+for p in git curl stow fish eza zoxide ripgrep; do pkg_install "$p"; done
 
 # fd (used by telescope) — named 'fd' on Homebrew, 'fd-find' on Fedora.
 if [[ "$OS" == macos ]]; then pkg_install fd; else pkg_install fd-find; fi
+
+# --- neovim ------------------------------------------------------------------
+# The nvim config uses the 0.11+ LSP API (vim.lsp.config / vim.lsp.enable), so
+# we require Neovim >= 0.11. Homebrew ships current stable; Fedora's dnf lags
+# (0.10.4 on F41), so on Fedora we install the official prebuilt tarball into
+# /opt/nvim and symlink it onto PATH ahead of any dnf copy.
+NVIM_MIN_MINOR=11           # minimum acceptable 0.MINOR
+NVIM_RELEASE="v0.12.3"      # tarball version installed on Fedora
+
+nvim_minor() { nvim --version 2>/dev/null | sed -n 's/^NVIM v0\.\([0-9]*\)\..*/\1/p'; }
+
+if [[ "$OS" == macos ]]; then
+  pkg_install neovim
+else
+  minor="$(nvim_minor)"
+  if [[ -n "$minor" && "$minor" -ge "$NVIM_MIN_MINOR" ]]; then
+    log "Neovim already >= 0.$NVIM_MIN_MINOR ($(nvim --version | head -1))"
+  else
+    log "Installing Neovim $NVIM_RELEASE to /opt/nvim (dnf's is too old)"
+    rpm -q neovim >/dev/null 2>&1 && sudo dnf remove -y neovim
+    arch="$(uname -m)"; [[ "$arch" == aarch64 ]] && arch=arm64
+    tarball="nvim-linux-${arch}.tar.gz"
+    curl -fsSL -o /tmp/$tarball \
+      "https://github.com/neovim/neovim/releases/download/${NVIM_RELEASE}/${tarball}"
+    sudo rm -rf /opt/nvim && sudo mkdir -p /opt/nvim
+    sudo tar -xzf /tmp/$tarball -C /opt/nvim --strip-components=1
+    sudo ln -sf /opt/nvim/bin/nvim /usr/local/bin/nvim
+  fi
+fi
 
 # --- JetBrainsMono Nerd Font -------------------------------------------------
 font_installed() {
@@ -72,8 +106,11 @@ if ! grep -qxF "$fish_path" /etc/shells 2>/dev/null; then
   log "Registering $fish_path in /etc/shells (sudo)"
   echo "$fish_path" | sudo tee -a /etc/shells >/dev/null
 fi
-current_shell="$(dscl . -read /Users/"$USER" UserShell 2>/dev/null | awk '{print $2}')"
-[[ -z "$current_shell" ]] && current_shell="$(getent passwd "$USER" 2>/dev/null | cut -d: -f7)"
+if [[ "$OS" == macos ]]; then
+  current_shell="$(dscl . -read /Users/"$USER" UserShell 2>/dev/null | awk '{print $2}')"
+else
+  current_shell="$(getent passwd "$USER" 2>/dev/null | cut -d: -f7)"
+fi
 if [[ "$current_shell" != "$fish_path" ]]; then
   log "Setting login shell to fish (chsh — may prompt for your password)"
   chsh -s "$fish_path" || warn "chsh failed; run manually: chsh -s $fish_path"

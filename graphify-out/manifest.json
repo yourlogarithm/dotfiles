@@ -1,0 +1,147 @@
+{
+  "bootstrap.sh": {
+    "mtime": 1781510239.5602758,
+    "ast_hash": "111d5b30263265b77b5692735ed4201a",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/init.lua": {
+    "mtime": 1781506559.9021633,
+    "ast_hash": "6389c57f0fdf86bb8c78e56ccc67ce2f",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lazy-lock.json": {
+    "mtime": 1781508750.1006846,
+    "ast_hash": "4d97cf01d1c9a68bea2c2c83f924e702",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/config/autocmds.lua": {
+    "mtime": 1781506559.9026673,
+    "ast_hash": "01179f8c6407b7b75c06b18f91eb345e",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/config/keymaps.lua": {
+    "mtime": 1781506559.9028885,
+    "ast_hash": "ea243324ec4cee16838db1fbd6a523a1",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/config/lazy.lua": {
+    "mtime": 1781506559.9030674,
+    "ast_hash": "b32b5a01c43f629bb1be2aa34f0e62c4",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/config/options.lua": {
+    "mtime": 1781506559.9033124,
+    "ast_hash": "a38a1c0d4e641139d8fdef5130b2a15f",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/autosave.lua": {
+    "mtime": 1781506559.9036262,
+    "ast_hash": "a7cc0fa0a7b91cf40ca68b0ed6cd4137",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/bufferline.lua": {
+    "mtime": 1781506559.9038696,
+    "ast_hash": "e5d2f1da2ea22954e6b8e1727c3c0e44",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/claudecode.lua": {
+    "mtime": 1781506559.9040627,
+    "ast_hash": "82982d5416a3b61be2cf49374820e7e3",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/colorscheme.lua": {
+    "mtime": 1781506559.9042165,
+    "ast_hash": "f1a882ac9556c8072cda10c91c85eef4",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/completion.lua": {
+    "mtime": 1781506559.9044282,
+    "ast_hash": "27c7f5663039c6ece86150e406624812",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/explorer.lua": {
+    "mtime": 1781506559.904619,
+    "ast_hash": "7f26f22153dca483748da520aa496a31",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/flatten.lua": {
+    "mtime": 1781506559.9048102,
+    "ast_hash": "ebe0f2d384bed5ef513a4015748b46cc",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/formatting.lua": {
+    "mtime": 1781506559.9049704,
+    "ast_hash": "c22ea54dcc2571257b8cbcc6279edd6e",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/gitsigns.lua": {
+    "mtime": 1781506559.9051008,
+    "ast_hash": "aeb0fdd4feffeffeeafb1f19eae2a4bd",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/hop.lua": {
+    "mtime": 1781506559.9052737,
+    "ast_hash": "81c2eba60f3c908ce10716074324a1ed",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/indent.lua": {
+    "mtime": 1781506559.9056337,
+    "ast_hash": "da23591d8bb80fe1a63fa963f8896759",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/lsp.lua": {
+    "mtime": 1781506559.905978,
+    "ast_hash": "0d55dad543074bfeb89747b5d73dfc63",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/lualine.lua": {
+    "mtime": 1781506559.9062746,
+    "ast_hash": "764f321ef40dd8d7b7c926df04a87412",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/markdown.lua": {
+    "mtime": 1781506559.9065616,
+    "ast_hash": "c298d03a176bd22d32688317af06ce84",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/mini.lua": {
+    "mtime": 1781506559.9067478,
+    "ast_hash": "f8e4d6ca1733bc669baff357646f3bc4",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/project.lua": {
+    "mtime": 1781506559.9068875,
+    "ast_hash": "d2fe4d9956f11729ec8bb00a862f99eb",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/scrollbar.lua": {
+    "mtime": 1781506559.907029,
+    "ast_hash": "d38b626cd4b7ac6c6f4d38952003daf9",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/telescope.lua": {
+    "mtime": 1781506559.9072728,
+    "ast_hash": "82766e5818611a78ec721d5402378f3e",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/treesitter.lua": {
+    "mtime": 1781506559.9074035,
+    "ast_hash": "1810275f5f6fad0b59bed9992c772f36",
+    "semantic_hash": ""
+  },
+  "nvim/.config/nvim/lua/plugins/which-key.lua": {
+    "mtime": 1781506559.9075267,
+    "ast_hash": "cfc48b1a05c5a30698d8d70f9fc4f45f",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1781506559.9004343,
+    "ast_hash": "06b21ca27c1f2b5b45fca90a3fac1705",
+    "semantic_hash": ""
+  },
+  "nvim-cheatsheet.txt": {
+    "mtime": 1781506559.9018908,
+    "ast_hash": "3c87825b9984e31e3cb77f56895ddb66",
+    "semantic_hash": ""
+  }
+}
