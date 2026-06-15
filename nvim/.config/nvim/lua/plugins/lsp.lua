@@ -35,14 +35,13 @@ return {
         settings = { Lua = { diagnostics = { globals = { "vim" } } } },
       })
 
-      -- rust_analyzer: rely on `cargo check` (rustc) for diagnostics and turn
-      -- off rust-analyzer's native ones, which otherwise duplicate every rustc
-      -- error (e.g. "mismatched types" shown twice). cargo check is the
-      -- authoritative source (borrow checker, full error codes).
+      -- rust_analyzer: keep native diagnostics on (NOTE: `diagnostics.enable`
+      -- is the master switch — disabling it suppresses ALL diagnostics,
+      -- including the `cargo check` ones, which is why errors weren't showing)
+      -- and run `cargo check` on save for borrow-checker / full error codes.
       vim.lsp.config("rust_analyzer", {
         settings = {
           ["rust-analyzer"] = {
-            diagnostics = { enable = false },
             checkOnSave = true,
           },
         },

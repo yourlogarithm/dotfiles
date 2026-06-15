@@ -110,9 +110,9 @@
     "semantic_hash": "f8e4d6ca1733bc669baff357646f3bc4"
   },
   "nvim/.config/nvim/lua/plugins/project.lua": {
-    "mtime": 1781506559.9068875,
-    "ast_hash": "d2fe4d9956f11729ec8bb00a862f99eb",
-    "semantic_hash": "d2fe4d9956f11729ec8bb00a862f99eb"
+    "mtime": 1781511550.5460281,
+    "ast_hash": "707d35389d626f2aa10c7e9d87a20cb9",
+    "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/plugins/scrollbar.lua": {
     "mtime": 1781506559.907029,
@@ -120,9 +120,9 @@
     "semantic_hash": "d38b626cd4b7ac6c6f4d38952003daf9"
   },
   "nvim/.config/nvim/lua/plugins/telescope.lua": {
-    "mtime": 1781506559.9072728,
-    "ast_hash": "82766e5818611a78ec721d5402378f3e",
-    "semantic_hash": "82766e5818611a78ec721d5402378f3e"
+    "mtime": 1781511648.9652672,
+    "ast_hash": "0fe282d8aa698ce7972e31c530f08011",
+    "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/plugins/treesitter.lua": {
     "mtime": 1781506559.9074035,

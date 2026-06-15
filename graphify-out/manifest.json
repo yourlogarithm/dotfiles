@@ -1,8 +1,8 @@
 {
   "bootstrap.sh": {
-    "mtime": 1781510239.5602758,
-    "ast_hash": "111d5b30263265b77b5692735ed4201a",
-    "semantic_hash": "111d5b30263265b77b5692735ed4201a"
+    "mtime": 1781515970.621781,
+    "ast_hash": "5e665c6cb46dbcb7517aad560f11861c",
+    "semantic_hash": ""
   },
   "nvim/.config/nvim/init.lua": {
     "mtime": 1781506559.9021633,
@@ -10,9 +10,9 @@
     "semantic_hash": "6389c57f0fdf86bb8c78e56ccc67ce2f"
   },
   "nvim/.config/nvim/lazy-lock.json": {
-    "mtime": 1781508750.1006846,
-    "ast_hash": "4d97cf01d1c9a68bea2c2c83f924e702",
-    "semantic_hash": "4d97cf01d1c9a68bea2c2c83f924e702"
+    "mtime": 1781515909.4071064,
+    "ast_hash": "1a15a89ae861d3c9995ebfc28105bbc3",
+    "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/config/autocmds.lua": {
     "mtime": 1781506559.9026673,
@@ -80,7 +80,7 @@
     "semantic_hash": "aeb0fdd4feffeffeeafb1f19eae2a4bd"
   },
   "nvim/.config/nvim/lua/plugins/hop.lua": {
-    "mtime": 1781506559.9052737,
+    "mtime": 1781512118.8686001,
     "ast_hash": "81c2eba60f3c908ce10716074324a1ed",
     "semantic_hash": "81c2eba60f3c908ce10716074324a1ed"
   },
@@ -90,9 +90,9 @@
     "semantic_hash": "da23591d8bb80fe1a63fa963f8896759"
   },
   "nvim/.config/nvim/lua/plugins/lsp.lua": {
-    "mtime": 1781506559.905978,
-    "ast_hash": "0d55dad543074bfeb89747b5d73dfc63",
-    "semantic_hash": "0d55dad543074bfeb89747b5d73dfc63"
+    "mtime": 1781514574.9430099,
+    "ast_hash": "22eb443d70252aaf2afd2e4614b50d2f",
+    "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/plugins/lualine.lua": {
     "mtime": 1781506559.9062746,
@@ -125,9 +125,9 @@
     "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/plugins/treesitter.lua": {
-    "mtime": 1781506559.9074035,
-    "ast_hash": "1810275f5f6fad0b59bed9992c772f36",
-    "semantic_hash": "1810275f5f6fad0b59bed9992c772f36"
+    "mtime": 1781515886.8158455,
+    "ast_hash": "e5be5f3cc708a74235e3a227c777307e",
+    "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/plugins/which-key.lua": {
     "mtime": 1781506559.9075267,

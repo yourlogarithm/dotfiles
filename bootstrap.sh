@@ -46,6 +46,15 @@ for p in git curl stow fish eza zoxide ripgrep; do pkg_install "$p"; done
 # fd (used by telescope) — named 'fd' on Homebrew, 'fd-find' on Fedora.
 if [[ "$OS" == macos ]]; then pkg_install fd; else pkg_install fd-find; fi
 
+# C compiler — Treesitter compiles parsers from source. macOS gets `cc` from the
+# Xcode Command Line Tools (a Homebrew prerequisite), so only Fedora needs gcc.
+[[ "$OS" == fedora ]] && pkg_install gcc
+
+# tree-sitter CLI — nvim-treesitter's `main` branch builds parsers with it (the
+# old `master` branch needed only a C compiler). Named 'tree-sitter' on Homebrew,
+# 'tree-sitter-cli' on Fedora.
+if [[ "$OS" == macos ]]; then pkg_install tree-sitter; else pkg_install tree-sitter-cli; fi
+
 # --- neovim ------------------------------------------------------------------
 # The nvim config uses the 0.11+ LSP API (vim.lsp.config / vim.lsp.enable), so
 # we require Neovim >= 0.11. Homebrew ships current stable; Fedora's dnf lags
@@ -127,6 +136,33 @@ stow -d "$DOTFILES_DIR" -t "$HOME" -R "${PACKAGES[@]}"
 if [[ -d "$HOME/.cargo/bin" ]]; then
   fish -c 'fish_add_path ~/.cargo/bin' || true
 fi
+
+# rust-analyzer: if a rustup toolchain is present, ensure its rust-analyzer
+# component is installed. Otherwise the ~/.cargo/bin/rust-analyzer proxy — which
+# sits first on PATH — is a dead stub that exits with "Unknown binary", so nvim
+# launches it instead of a working LSP. No-op when rustup isn't installed (then
+# Mason's rust-analyzer is used and no proxy exists to shadow it).
+if command -v rustup >/dev/null 2>&1; then
+  log "Ensuring rustup rust-analyzer component"
+  rustup component add rust-analyzer >/dev/null 2>&1 \
+    || warn "rustup component add rust-analyzer failed (continuing)"
+fi
+
+# --- neovim plugins + treesitter parsers -------------------------------------
+# Install/sync lazy.nvim plugins headlessly so the first interactive launch is
+# ready, then compile the Treesitter parsers. Without the parsers a buffer's
+# FileType handler errors, which on Neovim 0.12 aborts other FileType autocmds
+# (the LSP-attach one included, so rust-analyzer never attaches).
+log "Syncing Neovim plugins (lazy.nvim)"
+nvim --headless "+Lazy! sync" +qa >/dev/null 2>&1 \
+  || warn "Lazy sync reported an issue (continuing)"
+# nvim-treesitter's `main` branch installs parsers asynchronously; the plugin
+# config stashes the install handle in `_G.__ts_install`, so block on it here
+# (main has no synchronous :TSUpdateSync command). Idempotent: returns at once
+# when every parser is already present.
+log "Compiling Treesitter parsers"
+nvim --headless -c "lua if _G.__ts_install then _G.__ts_install:wait(600000) end" +qa >/dev/null 2>&1 \
+  || warn "Treesitter parser install reported an issue (continuing)"
 
 # --- oh-my-fish --------------------------------------------------------------
 OMF_PATH="${XDG_DATA_HOME:-$HOME/.local/share}/omf"
