@@ -1,18 +1,12 @@
-# Graph Report - dotfiles  (2026-06-15)
+# Graph Report - .  (2026-06-15)
 
 ## Corpus Check
-- 30 files · ~5,731 words
-- Verdict: corpus is large enough that graph structure adds value.
+- Corpus is ~4,857 words - fits in a single context window. You may not need a graph.
 
 ## Summary
-- 177 nodes · 155 edges · 61 communities (57 shown, 4 thin omitted)
+- 165 nodes · 145 edges · 60 communities (57 shown, 3 thin omitted)
 - Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.81)
-- Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `a59aaaf9`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
+- Token cost: 0 input · 21,724 output
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Dotfiles Provisioning|Dotfiles Provisioning]]
@@ -50,7 +44,6 @@
 - [[_COMMUNITY_Completion menu|Completion menu]]
 - [[_COMMUNITY_hop motion plugin|hop motion plugin]]
 - [[_COMMUNITY_surround adddeletereplace|surround add/delete/replace]]
-- [[_COMMUNITY_Community 60|Community 60]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `bootstrap.sh` - 7 edges
@@ -76,15 +69,15 @@
 - **Fresh-machine bootstrap provisioning flow** — readme_bootstrap_sh, readme_gnu_stow, readme_oh_my_fish, readme_jetbrainsmono_nerd_font, readme_omf_bundle [EXTRACTED 0.85]
 - **oh-my-fish declarative propagation** — readme_oh_my_fish, readme_omf_loader, readme_omf_bundle [EXTRACTED 0.85]
 
-## Communities (61 total, 4 thin omitted)
+## Communities (60 total, 3 thin omitted)
 
 ### Community 0 - "Dotfiles Provisioning"
 Cohesion: 0.13
 Nodes (19): Claude integration, gitsigns, Neovim editor, alacritty package, bootstrap.sh, dnf (Fedora), dotfiles repository, fish package (+11 more)
 
 ### Community 1 - "Plugin Lockfile"
-Cohesion: 0.11
-Nodes (18): auto-save.nvim, branch, commit, friendly-snippets, branch, commit, neovim-session-manager, branch (+10 more)
+Cohesion: 0.12
+Nodes (15): auto-save.nvim, branch, commit, gruvbox.nvim, branch, commit, indent-blankline.nvim, branch (+7 more)
 
 ### Community 2 - "Bootstrap Shell Functions"
 Cohesion: 0.43
@@ -115,8 +108,8 @@ Cohesion: 0.67
 Nodes (3): flatten.nvim, branch, commit
 
 ### Community 10 - "friendly-snippets (lock entry)"
-Cohesion: 0.22
-Nodes (7): bootstrap.sh, Cross-platform is a hard constraint, graphify, Neovim config (`nvim/` package), Not tracked / generated, oh-my-fish (`omf/` + fish loader), The stow model (read this first)
+Cohesion: 0.67
+Nodes (3): friendly-snippets, branch, commit
 
 ### Community 11 - "gitsigns (lock entry)"
 Cohesion: 0.67
@@ -162,9 +155,13 @@ Nodes (3): neo-tree.nvim, branch, commit
 Cohesion: 0.67
 Nodes (3): neovim-project, branch, commit
 
+### Community 22 - "neovim-session-manager (lock entry)"
+Cohesion: 0.67
+Nodes (3): neovim-session-manager, branch, commit
+
 ### Community 23 - "nui (lock entry)"
 Cohesion: 0.67
-Nodes (3): gruvbox.nvim, branch, commit
+Nodes (3): nui.nvim, branch, commit
 
 ### Community 24 - "nvim-lint (lock entry)"
 Cohesion: 0.67
@@ -172,7 +169,7 @@ Nodes (3): nvim-lint, branch, commit
 
 ### Community 25 - "nvim-lspconfig (lock entry)"
 Cohesion: 0.67
-Nodes (3): indent-blankline.nvim, branch, commit
+Nodes (3): nvim-lspconfig, branch, commit
 
 ### Community 26 - "nvim-scrollbar (lock entry)"
 Cohesion: 0.67
@@ -200,27 +197,23 @@ Nodes (3): snacks.nvim, branch, commit
 
 ### Community 32 - "telescope-fzf-native (lock entry)"
 Cohesion: 0.67
-Nodes (3): telescope.nvim, branch, commit
-
-### Community 60 - "Community 60"
-Cohesion: 0.67
-Nodes (3): which-key.nvim, branch, commit
+Nodes (3): telescope-fzf-native.nvim, branch, commit
 
 ## Knowledge Gaps
-- **85 isolated node(s):** `PreToolUse`, `The stow model (read this first)`, `Cross-platform is a hard constraint`, `bootstrap.sh`, `Neovim config (`nvim/` package)` (+80 more)
+- **77 isolated node(s):** `branch`, `commit`, `branch`, `commit`, `branch` (+72 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `blink.cmp` connect `blink.cmp (lock entry)` to `Plugin Lockfile`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Why does `bufferline.nvim` connect `bufferline (lock entry)` to `Plugin Lockfile`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **What connects `PreToolUse`, `The stow model (read this first)`, `Cross-platform is a hard constraint` to the rest of the system?**
-  _86 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **What connects `branch`, `commit`, `branch` to the rest of the system?**
+  _78 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Dotfiles Provisioning` be split into smaller, more focused modules?**
   _Cohesion score 0.13450292397660818 - nodes in this community are weakly interconnected._
 - **Should `Plugin Lockfile` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.125 - nodes in this community are weakly interconnected._
