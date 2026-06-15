@@ -6,10 +6,14 @@ return {
     dependencies = { "rafamadriz/friendly-snippets" },
     opts = {
       keymap = {
-        -- Navigate with arrows (from the `enter` preset); accept with Tab.
-        -- Enter and <C-y> also accept.
-        preset = "enter",
-        ["<Tab>"] = { "accept", "fallback" },
+        -- The `default` preset gives exactly the behaviour we want, no overrides:
+        --   <C-y>          accept the completion (the ONLY accept key)
+        --   <CR>           literal newline -- never accepts
+        --   <Up>/<Down>    navigate the menu  (<C-n>/<C-p> too)
+        --   <Tab>/<S-Tab>  jump forward/backward through snippet placeholders,
+        --                  falling back to a literal Tab outside a snippet
+        --   <C-Space>      trigger the menu   <C-e> dismiss
+        preset = "default",
       },
       appearance = { nerd_font_variant = "mono" },
       sources = {

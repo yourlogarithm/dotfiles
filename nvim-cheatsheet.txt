@@ -58,9 +58,11 @@
   :%s/old/new/gc         replace with confirm     :s/old/new/  current line
 
 -- COMPLETION (insert mode) -----------------------------------------------
-  Tab           accept suggestion        Up/Down     navigate list
+  <C-y>         accept suggestion        Up/Down     navigate list
   <C-Space>     trigger menu             <C-n>/<C-p> navigate list
-  <C-w>         delete word back         <C-o>{cmd}  one normal-mode command
+  Tab / <S-Tab> next / prev snippet arg  <CR>        newline (never accepts)
+  <C-e>         dismiss menu             <C-w>       delete word back
+  <C-o>{cmd}    one normal-mode command in insert mode
 
 -- WINDOWS / SPLITS / TERMINAL --------------------------------------------
   <C-w>v        split vertical           <C-w>s      split horizontal

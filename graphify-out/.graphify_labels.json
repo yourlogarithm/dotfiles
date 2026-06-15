@@ -10,6 +10,7 @@
   "8": "conform (lock entry)",
   "9": "flatten (lock entry)",
   "10": "friendly-snippets (lock entry)",
+  "11": "Community 11",
   "12": "hop (lock entry)",
   "13": "lazy (lock entry)",
   "14": "lualine (lock entry)",
@@ -36,9 +37,6 @@
   "35": "keymaps.lua",
   "36": "lazy.lua",
   "37": "options.lua",
-  "38": "Completion menu",
-  "39": "hop motion plugin",
-  "40": "surround add/delete/replace",
   "41": "init.lua",
   "42": "autosave.lua",
   "43": "bufferline.lua",
@@ -57,6 +55,5 @@
   "56": "scrollbar.lua",
   "57": "telescope.lua",
   "58": "treesitter.lua",
-  "59": "which-key.lua",
-  "60": "Community 60"
+  "59": "which-key.lua"
 }

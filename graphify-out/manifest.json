@@ -55,9 +55,9 @@
     "semantic_hash": "f1a882ac9556c8072cda10c91c85eef4"
   },
   "nvim/.config/nvim/lua/plugins/completion.lua": {
-    "mtime": 1781506559.9044282,
-    "ast_hash": "27c7f5663039c6ece86150e406624812",
-    "semantic_hash": "27c7f5663039c6ece86150e406624812"
+    "mtime": 1781517899.2746923,
+    "ast_hash": "4ca644cbb2456728c0a66cad7479edcf",
+    "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/plugins/explorer.lua": {
     "mtime": 1781506559.904619,
@@ -140,9 +140,9 @@
     "semantic_hash": "06b21ca27c1f2b5b45fca90a3fac1705"
   },
   "nvim-cheatsheet.txt": {
-    "mtime": 1781506559.9018908,
-    "ast_hash": "3c87825b9984e31e3cb77f56895ddb66",
-    "semantic_hash": "3c87825b9984e31e3cb77f56895ddb66"
+    "mtime": 1781517905.9707716,
+    "ast_hash": "289263a2bd724c0ae08021c657295570",
+    "semantic_hash": ""
   },
   ".claude/settings.json": {
     "mtime": 1781511260.845184,

@@ -1,16 +1,16 @@
 # Graph Report - dotfiles  (2026-06-15)
 
 ## Corpus Check
-- 30 files · ~6,186 words
+- 30 files · ~6,240 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 182 nodes · 160 edges · 60 communities (56 shown, 4 thin omitted)
-- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.81)
+- 170 nodes · 152 edges · 57 communities (56 shown, 1 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3b8e45ff`
+- Built from commit: `a7d536c4`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -25,6 +25,7 @@
 - [[_COMMUNITY_conform (lock entry)|conform (lock entry)]]
 - [[_COMMUNITY_flatten (lock entry)|flatten (lock entry)]]
 - [[_COMMUNITY_friendly-snippets (lock entry)|friendly-snippets (lock entry)]]
+- [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_hop (lock entry)|hop (lock entry)]]
 - [[_COMMUNITY_lazy (lock entry)|lazy (lock entry)]]
 - [[_COMMUNITY_lualine (lock entry)|lualine (lock entry)]]
@@ -46,10 +47,6 @@
 - [[_COMMUNITY_plenary (lock entry)|plenary (lock entry)]]
 - [[_COMMUNITY_snacks (lock entry)|snacks (lock entry)]]
 - [[_COMMUNITY_telescope-fzf-native (lock entry)|telescope-fzf-native (lock entry)]]
-- [[_COMMUNITY_Completion menu|Completion menu]]
-- [[_COMMUNITY_hop motion plugin|hop motion plugin]]
-- [[_COMMUNITY_surround adddeletereplace|surround add/delete/replace]]
-- [[_COMMUNITY_Community 60|Community 60]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `dotfiles` - 8 edges
@@ -64,8 +61,7 @@
 10. `flatten.nvim` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Neovim editor` --conceptually_related_to--> `nvim package`  [INFERRED]
-  nvim-cheatsheet.txt → README.md
+- None detected - all connections are within the same source files.
 
 ## Import Cycles
 - None detected.
@@ -75,27 +71,27 @@
 - **Fresh-machine bootstrap provisioning flow** — readme_bootstrap_sh, readme_gnu_stow, readme_oh_my_fish, readme_jetbrainsmono_nerd_font, readme_omf_bundle [EXTRACTED 0.85]
 - **oh-my-fish declarative propagation** — readme_oh_my_fish, readme_omf_loader, readme_omf_bundle [EXTRACTED 0.85]
 
-## Communities (60 total, 4 thin omitted)
+## Communities (57 total, 1 thin omitted)
 
 ### Community 0 - "Dotfiles Provisioning"
-Cohesion: 0.10
-Nodes (23): Claude integration, gitsigns, Neovim editor, alacritty package, bootstrap.sh, dnf (Fedora), dotfiles, fish package (+15 more)
+Cohesion: 0.12
+Nodes (20): alacritty package, bootstrap.sh, dnf (Fedora), dotfiles, fish package, fish_variables (untracked machine state), Fresh machine, GNU Stow (+12 more)
 
 ### Community 1 - "Plugin Lockfile"
-Cohesion: 0.09
-Nodes (21): auto-save.nvim, branch, commit, friendly-snippets, branch, commit, gitsigns.nvim, branch (+13 more)
+Cohesion: 0.11
+Nodes (18): auto-save.nvim, branch, commit, blink.cmp, branch, commit, hop.nvim, branch (+10 more)
 
 ### Community 2 - "Bootstrap Shell Functions"
 Cohesion: 0.43
 Nodes (6): die(), font_installed(), log(), pkg_install(), warn(), bootstrap.sh script
 
 ### Community 3 - "Neovim IDE Navigation"
-Cohesion: 0.33
-Nodes (6): Leader key (Space), LSP code navigation, neo-tree file explorer, oil directory editor, Telescope (find/picker), which-key keymap menu
+Cohesion: 0.67
+Nodes (3): friendly-snippets, branch, commit
 
 ### Community 5 - "blink.cmp (lock entry)"
 Cohesion: 0.67
-Nodes (3): blink.cmp, branch, commit
+Nodes (3): gitsigns.nvim, branch, commit
 
 ### Community 6 - "bufferline (lock entry)"
 Cohesion: 0.67
@@ -117,9 +113,13 @@ Nodes (3): flatten.nvim, branch, commit
 Cohesion: 0.22
 Nodes (7): bootstrap.sh, Cross-platform is a hard constraint, graphify, Neovim config (`nvim/` package), Not tracked / generated, oh-my-fish (`omf/` + fish loader), The stow model (read this first)
 
+### Community 11 - "Community 11"
+Cohesion: 0.67
+Nodes (3): nui.nvim, branch, commit
+
 ### Community 12 - "hop (lock entry)"
 Cohesion: 0.67
-Nodes (3): hop.nvim, branch, commit
+Nodes (3): nvim-lspconfig, branch, commit
 
 ### Community 13 - "lazy (lock entry)"
 Cohesion: 0.67
@@ -171,7 +171,7 @@ Nodes (3): indent-blankline.nvim, branch, commit
 
 ### Community 26 - "nvim-scrollbar (lock entry)"
 Cohesion: 0.67
-Nodes (3): nvim-scrollbar, branch, commit
+Nodes (3): telescope-fzf-native.nvim, branch, commit
 
 ### Community 27 - "nvim-treesitter (lock entry)"
 Cohesion: 0.67
@@ -197,25 +197,19 @@ Nodes (3): snacks.nvim, branch, commit
 Cohesion: 0.67
 Nodes (3): telescope.nvim, branch, commit
 
-### Community 60 - "Community 60"
-Cohesion: 0.67
-Nodes (3): which-key.nvim, branch, commit
-
 ## Knowledge Gaps
-- **89 isolated node(s):** `PreToolUse`, `branch`, `commit`, `branch`, `commit` (+84 more)
+- **82 isolated node(s):** `PreToolUse`, `branch`, `commit`, `branch`, `commit` (+77 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `blink.cmp` connect `blink.cmp (lock entry)` to `Plugin Lockfile`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **Why does `bufferline.nvim` connect `bufferline (lock entry)` to `Plugin Lockfile`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `PreToolUse`, `branch`, `commit` to the rest of the system?**
-  _90 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _83 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Dotfiles Provisioning` be split into smaller, more focused modules?**
-  _Cohesion score 0.10144927536231885 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11904761904761904 - nodes in this community are weakly interconnected._
 - **Should `Plugin Lockfile` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
