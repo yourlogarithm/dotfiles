@@ -17,7 +17,7 @@ return {
       -- already present). The handle is stashed in a global so bootstrap.sh can
       -- :wait() on it during headless provisioning (main has no TSUpdateSync).
       _G.__ts_install = ts.install({
-        "bash", "c", "c_sharp", "go", "java", "json", "lua", "markdown",
+        "bash", "c", "c_sharp", "fish", "go", "java", "json", "lua", "markdown",
         "markdown_inline", "python", "rust", "toml", "vim", "vimdoc", "yaml",
       })
 

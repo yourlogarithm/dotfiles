@@ -125,8 +125,8 @@
     "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/plugins/treesitter.lua": {
-    "mtime": 1781515886.8158455,
-    "ast_hash": "e5be5f3cc708a74235e3a227c777307e",
+    "mtime": 1781608832.7548294,
+    "ast_hash": "fbc61ec4d69b274a3fc003f6003fc5ae",
     "semantic_hash": ""
   },
   "nvim/.config/nvim/lua/plugins/which-key.lua": {
@@ -152,6 +152,11 @@
   "CLAUDE.md": {
     "mtime": 1781511260.8445697,
     "ast_hash": "1c4dff755fdf805d6626976ec8da1b5b",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1781608843.4794595,
+    "ast_hash": "d17fc12f683d081e52d2c9b7177c41b2",
     "semantic_hash": ""
   }
 }

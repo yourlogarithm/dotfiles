@@ -1,16 +1,16 @@
-# Graph Report - dotfiles  (2026-06-15)
+# Graph Report - dotfiles  (2026-06-16)
 
 ## Corpus Check
-- 30 files · ~6,240 words
+- 31 files · ~6,252 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 170 nodes · 152 edges · 57 communities (56 shown, 1 thin omitted)
+- 173 nodes · 154 edges · 58 communities (56 shown, 2 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a7d536c4`
+- Built from commit: `a4a84cb6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -47,6 +47,7 @@
 - [[_COMMUNITY_plenary (lock entry)|plenary (lock entry)]]
 - [[_COMMUNITY_snacks (lock entry)|snacks (lock entry)]]
 - [[_COMMUNITY_telescope-fzf-native (lock entry)|telescope-fzf-native (lock entry)]]
+- [[_COMMUNITY_Community 38|Community 38]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `dotfiles` - 8 edges
@@ -71,7 +72,7 @@
 - **Fresh-machine bootstrap provisioning flow** — readme_bootstrap_sh, readme_gnu_stow, readme_oh_my_fish, readme_jetbrainsmono_nerd_font, readme_omf_bundle [EXTRACTED 0.85]
 - **oh-my-fish declarative propagation** — readme_oh_my_fish, readme_omf_loader, readme_omf_bundle [EXTRACTED 0.85]
 
-## Communities (57 total, 1 thin omitted)
+## Communities (58 total, 2 thin omitted)
 
 ### Community 0 - "Dotfiles Provisioning"
 Cohesion: 0.12
@@ -79,7 +80,7 @@ Nodes (20): alacritty package, bootstrap.sh, dnf (Fedora), dotfiles, fish packag
 
 ### Community 1 - "Plugin Lockfile"
 Cohesion: 0.11
-Nodes (18): auto-save.nvim, branch, commit, blink.cmp, branch, commit, hop.nvim, branch (+10 more)
+Nodes (18): auto-save.nvim, branch, commit, gruvbox.nvim, branch, commit, neovim-project, branch (+10 more)
 
 ### Community 2 - "Bootstrap Shell Functions"
 Cohesion: 0.43
@@ -117,10 +118,6 @@ Nodes (7): bootstrap.sh, Cross-platform is a hard constraint, graphify, Neovim c
 Cohesion: 0.67
 Nodes (3): nui.nvim, branch, commit
 
-### Community 12 - "hop (lock entry)"
-Cohesion: 0.67
-Nodes (3): nvim-lspconfig, branch, commit
-
 ### Community 13 - "lazy (lock entry)"
 Cohesion: 0.67
 Nodes (3): lazy.nvim, branch, commit
@@ -155,11 +152,11 @@ Nodes (3): neo-tree.nvim, branch, commit
 
 ### Community 21 - "neovim-project (lock entry)"
 Cohesion: 0.67
-Nodes (3): neovim-project, branch, commit
+Nodes (3): blink.cmp, branch, commit
 
 ### Community 23 - "nui (lock entry)"
 Cohesion: 0.67
-Nodes (3): gruvbox.nvim, branch, commit
+Nodes (3): hop.nvim, branch, commit
 
 ### Community 24 - "nvim-lint (lock entry)"
 Cohesion: 0.67
@@ -197,18 +194,24 @@ Nodes (3): snacks.nvim, branch, commit
 Cohesion: 0.67
 Nodes (3): telescope.nvim, branch, commit
 
+### Community 38 - "Community 38"
+Cohesion: 0.67
+Nodes (3): neovim-session-manager, branch, commit
+
 ## Knowledge Gaps
-- **82 isolated node(s):** `PreToolUse`, `branch`, `commit`, `branch`, `commit` (+77 more)
+- **83 isolated node(s):** `PreToolUse`, `allow`, `branch`, `commit`, `branch` (+78 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `blink.cmp` connect `neovim-project (lock entry)` to `Plugin Lockfile`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `bufferline.nvim` connect `bufferline (lock entry)` to `Plugin Lockfile`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **What connects `PreToolUse`, `branch`, `commit` to the rest of the system?**
-  _83 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **What connects `PreToolUse`, `allow`, `branch` to the rest of the system?**
+  _84 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Dotfiles Provisioning` be split into smaller, more focused modules?**
   _Cohesion score 0.11904761904761904 - nodes in this community are weakly interconnected._
 - **Should `Plugin Lockfile` be split into smaller, more focused modules?**
