@@ -76,5 +76,16 @@ function __dotenv_hook --on-variable PWD --description "Detect and (un)load .env
     end
 end
 
+function dotenv-reload --description "Reload the .env in the current directory"
+    if test -n "$__dotenv_loaded_dir"
+        __dotenv_unload
+    end
+    if test -f "$PWD/.env"
+        __dotenv_load "$PWD/.env"
+    else
+        echo "dotenv: no .env in $PWD"
+    end
+end
+
 # Run once at shell startup so a shell opened inside a .env dir is covered.
 status is-interactive; and __dotenv_hook
