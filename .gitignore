@@ -11,3 +11,5 @@ fish/.config/fish/fish_variables
 
 # alacritty editor-generated backups
 alacritty/.config/alacritty/*.bak
+
+graphify-out/
