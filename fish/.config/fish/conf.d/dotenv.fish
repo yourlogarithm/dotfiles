@@ -62,28 +62,41 @@ function __dotenv_load --description "Export KEY=value lines from a .env file"
     end
 end
 
+function __dotenv_find --description "Walk up from a directory to the nearest .env, echo its dir"
+    set -l dir $argv[1]
+    while test -n "$dir"
+        if test -f "$dir/.env"
+            echo $dir
+            return 0
+        end
+        test "$dir" = /; and break
+        set dir (dirname $dir)
+    end
+    return 1
+end
+
 function __dotenv_hook --on-variable PWD --description "Detect and (un)load .env on cd"
     status is-interactive; or return
 
-    # Leaving the directory whose .env we loaded — unload it.
-    if test -n "$__dotenv_loaded_dir"; and test "$PWD" != "$__dotenv_loaded_dir"
-        __dotenv_unload
-    end
+    # Nearest .env at or above the new directory — so a workspace-root .env
+    # stays active in every subfolder, and a nested .env takes over its subtree.
+    set -l target (__dotenv_find "$PWD")
 
-    # Entering a directory with a .env we haven't loaded yet — load it.
-    if test -f "$PWD/.env"; and test "$PWD" != "$__dotenv_loaded_dir"
-        __dotenv_load "$PWD/.env"
-    end
+    # Already in the active .env's subtree — nothing to do.
+    test "$target" = "$__dotenv_loaded_dir"; and return
+
+    # Switched subtree (or left it entirely): drop the old vars, load the new.
+    test -n "$__dotenv_loaded_dir"; and __dotenv_unload
+    test -n "$target"; and __dotenv_load "$target/.env"
 end
 
-function dotenv-reload --description "Reload the .env in the current directory"
-    if test -n "$__dotenv_loaded_dir"
-        __dotenv_unload
-    end
-    if test -f "$PWD/.env"
-        __dotenv_load "$PWD/.env"
+function dotenv-reload --description "Reload the nearest .env for the current directory"
+    set -l target (__dotenv_find "$PWD")
+    test -n "$__dotenv_loaded_dir"; and __dotenv_unload
+    if test -n "$target"
+        __dotenv_load "$target/.env"
     else
-        echo "dotenv: no .env in $PWD"
+        echo "dotenv: no .env at or above $PWD"
     end
 end
 
