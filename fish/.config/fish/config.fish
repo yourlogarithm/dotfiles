@@ -17,9 +17,4 @@ if status is-interactive
     if type -q zoxide
         zoxide init fish | source
     end
-
-    # Resolve `code` to VSCodium.
-    if type -q codium
-        alias code='codium'
-    end
 end
