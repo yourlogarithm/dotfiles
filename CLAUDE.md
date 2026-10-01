@@ -44,7 +44,8 @@ Only the **declarative state** is tracked: the loader `fish/.config/fish/conf.d/
 ## Not tracked / generated
 
 - `fish/.config/fish/fish_variables` — machine-specific universal vars, intentionally gitignored.
-- `herdr/.config/herdr/*` except `config.toml` — herdr runtime state (sockets, logs, sessions, installed plugins), gitignored. Reinstall herdr plugins per machine.
+- `~/.config/herdr/config.toml` — generated at fish startup by `fish/.config/fish/conf.d/herdr.fish` from `config.base.toml` + the per-OS `config.$(uname).toml` overlay (herdr has no conditional config). Edit those, never `config.toml`.
+- `herdr/.config/herdr/*` except `config.*.toml` — herdr runtime state (sockets, logs, sessions, installed plugins), gitignored. Reinstall herdr plugins per machine.
 - `graphify-out/` — generated knowledge-graph artifacts (from the `/graphify` skill). A post-commit hook auto-rebuilds and stages this directory, so it gets swept into commits; it is not hand-maintained source.
 
 ## graphify

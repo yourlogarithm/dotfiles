@@ -8,9 +8,6 @@ auto_switch = false
 status_indicators = "symbols"
 prompt_new_tab_name = false
 
-[ui.toast]
-delivery = "system"
-
 [[keys.command]]
 key = "prefix+e"
 type = "plugin_action"

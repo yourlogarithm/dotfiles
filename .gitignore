@@ -14,7 +14,8 @@ alacritty/.config/alacritty/*.bak
 
 graphify-out/
 
-# herdr: track only config.toml; the rest is runtime state (sockets, logs,
-# sessions) or machine-specific (plugins.json holds absolute plugin paths)
+# herdr: track only config.*.toml (config.toml is generated from them by
+# fish conf.d/herdr.fish); the rest is runtime state (sockets, logs, sessions)
+# or machine-specific (plugins.json holds absolute plugin paths)
 herdr/.config/herdr/*
-!herdr/.config/herdr/config.toml
+!herdr/.config/herdr/config.*.toml
