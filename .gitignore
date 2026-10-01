@@ -13,3 +13,8 @@ fish/.config/fish/fish_variables
 alacritty/.config/alacritty/*.bak
 
 graphify-out/
+
+# herdr: track only config.toml; the rest is runtime state (sockets, logs,
+# sessions) or machine-specific (plugins.json holds absolute plugin paths)
+herdr/.config/herdr/*
+!herdr/.config/herdr/config.toml

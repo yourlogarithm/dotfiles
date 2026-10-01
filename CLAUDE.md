@@ -11,7 +11,7 @@ Each top-level directory is a **stow package** whose internal tree mirrors its d
 Re-stow is only required after **adding or removing** files in a package:
 
 ```sh
-stow -t ~ nvim fish alacritty omf   # link everything (first time)
+stow -t ~ nvim fish alacritty omf herdr   # link everything (first time)
 stow -t ~ -R nvim                   # restow (re-link after adding/removing files)
 stow -t ~ -D nvim                   # unlink a package
 stow -t ~ -n -v nvim                # dry-run, verbose — preview without changing anything
@@ -44,6 +44,7 @@ Only the **declarative state** is tracked: the loader `fish/.config/fish/conf.d/
 ## Not tracked / generated
 
 - `fish/.config/fish/fish_variables` — machine-specific universal vars, intentionally gitignored.
+- `herdr/.config/herdr/*` except `config.toml` — herdr runtime state (sockets, logs, sessions, installed plugins), gitignored. Reinstall herdr plugins per machine.
 - `graphify-out/` — generated knowledge-graph artifacts (from the `/graphify` skill). A post-commit hook auto-rebuilds and stages this directory, so it gets swept into commits; it is not hand-maintained source.
 
 ## graphify

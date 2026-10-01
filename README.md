@@ -38,7 +38,7 @@ It is idempotent — safe to re-run.
 
 ```sh
 cd ~/Projects/dotfiles
-stow -t ~ nvim fish alacritty omf   # link everything
+stow -t ~ nvim fish alacritty omf herdr   # link everything
 stow -t ~ -R nvim                   # restow a package (re-link after changes)
 stow -t ~ -D nvim                   # unlink a package
 stow -t ~ -n -v nvim                # dry-run, verbose
