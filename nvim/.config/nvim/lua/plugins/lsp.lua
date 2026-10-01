@@ -20,6 +20,14 @@ return {
         "jdtls",
       }
 
+      -- basedpyright sends `workspace/diagnostic/refresh`; without a handler
+      -- nvim replies MethodNotFound, which basedpyright treats as a fatal
+      -- unhandled rejection and crashes the node process. A no-op success
+      -- reply keeps it alive (nvim re-pulls diagnostics on its own).
+      vim.lsp.handlers["workspace/diagnostic/refresh"] = function()
+        return vim.NIL
+      end
+
       require("mason-lspconfig").setup({
         ensure_installed = servers,
         automatic_enable = true, -- enables installed servers via vim.lsp.enable (nvim 0.11)
