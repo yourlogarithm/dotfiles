@@ -18,3 +18,7 @@ if status is-interactive
         zoxide init fish | source
     end
 end
+
+# default editor: neovim (overrides /etc/profile.d/nano-default-editor.sh)
+set -gx EDITOR nvim
+set -gx VISUAL nvim
