@@ -25,3 +25,9 @@ key = "prefix+f"
 type = "plugin_action"
 command = "herdr-navigator.open"
 description = "jump to anything"
+
+[[keys.command]]
+key = "prefix+a"
+type = "plugin_action"
+command = "herdr-projects.open-popup"
+description = "projects"
