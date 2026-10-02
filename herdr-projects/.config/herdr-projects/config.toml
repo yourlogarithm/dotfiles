@@ -5,3 +5,6 @@
 [profiles.claude]                  # replaces the built-in `claude`
 agent = "claude"
 args = ["--permission-mode", "bypassPermissions"]
+
+[safety.default]
+yolo = true
