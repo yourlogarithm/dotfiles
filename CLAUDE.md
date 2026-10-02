@@ -15,7 +15,8 @@ Each top-level directory is a **stow package** whose internal tree mirrors its d
 Re-stow is only required after **adding or removing** files in a package:
 
 ```sh
-stow -t ~ nvim fish alacritty omf herdr   # link everything (first time)
+stow -t ~ nvim fish alacritty omf      # link everything (first time)
+stow -t ~ --no-folding herdr herdr-projects   # these two never fold (see below)
 stow -t ~ -R nvim                   # restow (re-link after adding/removing files)
 stow -t ~ -D nvim                   # unlink a package
 stow -t ~ -n -v nvim                # dry-run, verbose — preview without changing anything
@@ -50,6 +51,7 @@ Only the **declarative state** is tracked: the loader `fish/.config/fish/conf.d/
 - `fish/.config/fish/fish_variables` — machine-specific universal vars, intentionally gitignored.
 - `~/.config/herdr/config.toml` — generated at fish startup by `fish/.config/fish/conf.d/herdr.fish` from `config.base.toml` + the per-OS `config.$(uname).toml` overlay (herdr has no conditional config). Edit those, never `config.toml`.
 - `herdr/.config/herdr/*` except `config.*.toml` and `plugins/config/herdr-navigator/config.toml` — herdr runtime state (sockets, logs, sessions, installed plugins), gitignored. Reinstall herdr plugins per machine. Because tracked config shares dirs with that state, herdr is always stowed with `--no-folding` (`stow -t ~ --no-folding -R herdr`); a folded symlink would make herdr write its state into the repo.
+- `herdr-projects/.config/herdr-projects/*` except `config.toml` — herdr-projects machine state (`owned.json`), gitignored; stowed with `--no-folding` like herdr. herdr-projects saves `config.toml` via tmp+rename, so edits from its popup settings replace the symlink with a plain file — edit the repo copy instead (and restow if the link got replaced).
 - `graphify-out/` — generated knowledge-graph artifacts (from the `/graphify` skill). A post-commit hook auto-rebuilds and stages this directory, so it gets swept into commits; it is not hand-maintained source.
 
 ## graphify

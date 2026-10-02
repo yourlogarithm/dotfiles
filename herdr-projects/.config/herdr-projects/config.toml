@@ -1,0 +1,7 @@
+# herdr-projects settings (stowed from dotfiles). herdr-projects saves this file
+# with a tmp+rename, so changes made from its popup replace the symlink: edit
+# the copy in ~/dotfiles/herdr-projects instead.
+
+[profiles.claude]                  # replaces the built-in `claude`
+agent = "claude"
+args = ["--permission-mode", "bypassPermissions"]

@@ -7,7 +7,7 @@
 set -euo pipefail
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PACKAGES=(nvim fish alacritty omf herdr)
+PACKAGES=(nvim fish alacritty omf herdr herdr-projects)
 
 log()  { printf '\033[1;32m==>\033[0m %s\n' "$*"; }
 warn() { printf '\033[1;33m!!\033[0m %s\n'  "$*" >&2; }
@@ -129,12 +129,12 @@ fi
 
 # --- symlink dotfiles --------------------------------------------------------
 log "Stowing: ${PACKAGES[*]}"
-# herdr is stowed file-by-file (--no-folding): herdr and its plugins write
-# runtime state (sockets, logs, plugins.json with absolute paths, installed
-# plugins) into the same dirs as the tracked config, which must stay out of
-# the repo.
+# herdr and herdr-projects are stowed file-by-file (--no-folding): they and
+# herdr's plugins write runtime state (sockets, logs, plugins.json with
+# absolute paths, installed plugins, owned.json) into the same dirs as the
+# tracked config, which must stay out of the repo.
 for pkg in "${PACKAGES[@]}"; do
-  if [[ "$pkg" == herdr ]]; then
+  if [[ "$pkg" == herdr || "$pkg" == herdr-projects ]]; then
     stow -d "$DOTFILES_DIR" -t "$HOME" --no-folding -R "$pkg"
   else
     stow -d "$DOTFILES_DIR" -t "$HOME" -R "$pkg"
