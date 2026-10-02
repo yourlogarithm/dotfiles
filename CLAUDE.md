@@ -4,6 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Personal dotfiles for **macOS and Fedora**, managed with [GNU Stow](https://www.gnu.org/software/stow/). There is no build, test, or lint suite — this repo is configuration, applied to `$HOME` via symlinks.
 
+## Always commit and push
+
+After every change to this repo, commit it and `git push` to `master` right away — no need to ask first. Keep the subject in the existing `<package>: <what>` style.
+
 ## The stow model (read this first)
 
 Each top-level directory is a **stow package** whose internal tree mirrors its destination under `$HOME`. So `nvim/.config/nvim/init.lua` is symlinked to `~/.config/nvim/init.lua`. To edit a config, edit the file *inside the package* — the symlink means changes take effect live; no re-stow needed for edits to already-linked files.
