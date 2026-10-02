@@ -6,16 +6,10 @@
 
 # nvim: lazy-lock.json IS tracked (LazyVim convention) for reproducible plugin versions.
 
-# fish machine-specific universal variables (intentionally not managed)
-fish/.config/fish/fish_variables
-
-# alacritty editor-generated backups
-alacritty/.config/alacritty/*.bak
-
 graphify-out/
 
 # herdr: track only config.*.toml (config.toml is generated from them by
-# fish conf.d/herdr.fish); the rest is runtime state (sockets, logs, sessions)
+# zsh/.zshrc at shell startup); the rest is runtime state (sockets, logs, sessions)
 # or machine-specific (plugins.json holds absolute plugin paths)
 herdr/.config/herdr/*
 !herdr/.config/herdr/config.*.toml

@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # bootstrap.sh — bring a fresh macOS or Fedora machine to a working state.
 #
-# Installs prerequisites (stow, fish, the Nerd Font), symlinks every stow
-# package into $HOME, installs oh-my-fish, and restores its bundle.
+# Installs prerequisites (stow, zsh, kitty, the Nerd Font), symlinks every stow
+# package into $HOME, installs oh-my-zsh and its external plugins.
 # Idempotent: safe to re-run.
 set -euo pipefail
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PACKAGES=(nvim fish alacritty omf herdr herdr-projects)
+PACKAGES=(nvim zsh kitty herdr herdr-projects)
 
 log()  { printf '\033[1;32m==>\033[0m %s\n' "$*"; }
 warn() { printf '\033[1;33m!!\033[0m %s\n'  "$*" >&2; }
@@ -40,8 +40,18 @@ pkg_install() {
 }
 
 # --- prerequisites -----------------------------------------------------------
-log "Installing prerequisites (git, curl, stow, fish, eza, zoxide, ripgrep)"
-for p in git curl stow fish eza zoxide ripgrep; do pkg_install "$p"; done
+log "Installing prerequisites (git, curl, stow, eza, zoxide, ripgrep)"
+for p in git curl stow eza zoxide ripgrep; do pkg_install "$p"; done
+
+# zsh — macOS ships 5.9 at /bin/zsh; Fedora needs the package.
+[[ "$OS" == fedora ]] && pkg_install zsh
+
+# kitty — a cask on Homebrew, a plain package on Fedora.
+if [[ "$OS" == macos ]]; then
+  brew list --cask kitty >/dev/null 2>&1 || brew install --cask kitty
+else
+  pkg_install kitty
+fi
 
 # fd (used by telescope) — named 'fd' on Homebrew, 'fd-find' on Fedora.
 if [[ "$OS" == macos ]]; then pkg_install fd; else pkg_install fd-find; fi
@@ -107,27 +117,38 @@ else
   fi
 fi
 
-# --- make fish the default login shell ---------------------------------------
-# alacritty has no shell override; it launches the login shell by absolute path,
+# --- make zsh the default login shell ----------------------------------------
+# kitty has no shell override; it launches the login shell by absolute path,
 # which sidesteps the macOS GUI-launch PATH problem and keeps the config portable.
-fish_path="$(command -v fish)"
-if ! grep -qxF "$fish_path" /etc/shells 2>/dev/null; then
-  log "Registering $fish_path in /etc/shells (sudo)"
-  echo "$fish_path" | sudo tee -a /etc/shells >/dev/null
+zsh_path="$(command -v zsh)"
+if ! grep -qxF "$zsh_path" /etc/shells 2>/dev/null; then
+  log "Registering $zsh_path in /etc/shells (sudo)"
+  echo "$zsh_path" | sudo tee -a /etc/shells >/dev/null
 fi
 if [[ "$OS" == macos ]]; then
   current_shell="$(dscl . -read /Users/"$USER" UserShell 2>/dev/null | awk '{print $2}')"
 else
   current_shell="$(getent passwd "$USER" 2>/dev/null | cut -d: -f7)"
 fi
-if [[ "$current_shell" != "$fish_path" ]]; then
-  log "Setting login shell to fish (chsh — may prompt for your password)"
-  chsh -s "$fish_path" || warn "chsh failed; run manually: chsh -s $fish_path"
+if [[ "$current_shell" != "$zsh_path" ]]; then
+  log "Setting login shell to zsh (chsh — may prompt for your password)"
+  chsh -s "$zsh_path" || warn "chsh failed; run manually: chsh -s $zsh_path"
 else
-  log "Login shell already fish"
+  log "Login shell already zsh"
 fi
 
 # --- symlink dotfiles --------------------------------------------------------
+# A pre-existing hand-written ~/.zshrc would block the stow link; keep its
+# contents as ~/.zshrc.local, which the tracked .zshrc sources at the end.
+if [[ -f "$HOME/.zshrc" && ! -L "$HOME/.zshrc" ]]; then
+  if [[ -e "$HOME/.zshrc.local" ]]; then
+    warn "~/.zshrc exists and ~/.zshrc.local too — merge by hand, skipping"
+  else
+    log "Moving existing ~/.zshrc to ~/.zshrc.local"
+    mv "$HOME/.zshrc" "$HOME/.zshrc.local"
+  fi
+fi
+
 log "Stowing: ${PACKAGES[*]}"
 # herdr and herdr-projects are stowed file-by-file (--no-folding): they and
 # herdr's plugins write runtime state (sockets, logs, plugins.json with
@@ -140,12 +161,6 @@ for pkg in "${PACKAGES[@]}"; do
     stow -d "$DOTFILES_DIR" -t "$HOME" -R "$pkg"
   fi
 done
-
-# Add the Rust toolchain to PATH once, as a fish universal var (persists across
-# sessions with no per-startup cost). Idempotent.
-if [[ -d "$HOME/.cargo/bin" ]]; then
-  fish -c 'fish_add_path ~/.cargo/bin' || true
-fi
 
 # rust-analyzer: if a rustup toolchain is present, ensure its rust-analyzer
 # component is installed. Otherwise the ~/.cargo/bin/rust-analyzer proxy — which
@@ -174,21 +189,28 @@ log "Compiling Treesitter parsers"
 nvim --headless -c "lua if _G.__ts_install then _G.__ts_install:wait(600000) end" +qa >/dev/null 2>&1 \
   || warn "Treesitter parser install reported an issue (continuing)"
 
-# --- oh-my-fish --------------------------------------------------------------
-OMF_PATH="${XDG_DATA_HOME:-$HOME/.local/share}/omf"
-if [[ -d "$OMF_PATH" ]]; then
-  log "oh-my-fish already installed"
+# --- oh-my-zsh ---------------------------------------------------------------
+OMZ_DIR="$HOME/.oh-my-zsh"
+if [[ -d "$OMZ_DIR" ]]; then
+  log "oh-my-zsh already installed"
 else
-  log "Installing oh-my-fish"
-  # The fish process that runs the installer sources the (already-stowed)
-  # conf.d/omf.fish, which tries to load OMF before it exists — one benign
-  # "no such file" message may appear; the install then proceeds normally.
-  curl -fsSL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install -o /tmp/omf-install
-  fish /tmp/omf-install --noninteractive --yes
+  log "Installing oh-my-zsh"
+  # KEEP_ZSHRC: the stowed ~/.zshrc is the config; don't let the installer
+  # replace it with its template. CHSH/RUNZSH: handled above / not wanted.
+  curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -o /tmp/omz-install
+  RUNZSH=no CHSH=no KEEP_ZSHRC=yes sh /tmp/omz-install --unattended
 fi
 
-# --- restore plugins/themes from bundle --------------------------------------
-log "Restoring oh-my-fish bundle"
-fish -c "omf install" || warn "omf install reported an issue (continuing)"
+# External plugins listed in .zshrc's plugins=(...) that oh-my-zsh doesn't ship.
+# custom/ is gitignored by oh-my-zsh, so `omz update` leaves them alone.
+for p in zsh-autosuggestions zsh-syntax-highlighting; do
+  dest="$OMZ_DIR/custom/plugins/$p"
+  if [[ -d "$dest" ]]; then
+    log "$p already installed"
+  else
+    log "Installing $p"
+    git clone --depth 1 "https://github.com/zsh-users/$p" "$dest"
+  fi
+done
 
-log "Done. Open a new alacritty window — fish + gruvbox + Nerd Font."
+log "Done. Open a new kitty window — zsh + gruvbox + Nerd Font."

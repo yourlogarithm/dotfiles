@@ -13,9 +13,11 @@ location under `$HOME`:
 dotfiles/
 ├── bootstrap.sh                  # one-shot setup for a fresh machine
 ├── nvim/.config/nvim/            -> ~/.config/nvim/
-├── fish/.config/fish/            -> ~/.config/fish/
-├── alacritty/.config/alacritty/  -> ~/.config/alacritty/
-└── omf/.config/omf/              -> ~/.config/omf/   (oh-my-fish bundle/theme)
+├── zsh/.zshrc                    -> ~/.zshrc           (oh-my-zsh plugins + config)
+├── zsh/.config/zsh/              -> ~/.config/zsh/     (beloglazov prompt theme)
+├── kitty/.config/kitty/          -> ~/.config/kitty/
+├── herdr/.config/herdr/          -> ~/.config/herdr/   (--no-folding)
+└── herdr-projects/.config/...    -> ~/.config/herdr-projects/ (--no-folding)
 ```
 
 ## Fresh machine
@@ -26,11 +28,11 @@ git clone <repo-url> ~/Projects/dotfiles
 ```
 
 `bootstrap.sh` detects the OS (Homebrew on macOS, dnf on Fedora) and:
-1. installs prerequisites — `git`, `curl`, `stow`, `fish`;
+1. installs prerequisites — `git`, `curl`, `stow`, `zsh` (Fedora), `kitty`;
 2. installs the **JetBrainsMono Nerd Font**;
-3. stows every package into `$HOME`;
-4. installs **oh-my-fish** if missing, then runs `omf install` to restore the
-   plugins/themes listed in `omf/.config/omf/bundle`.
+3. makes zsh the login shell, stows every package into `$HOME`;
+4. installs **oh-my-zsh** if missing, then clones the external plugins
+   (`zsh-autosuggestions`, `zsh-syntax-highlighting`) into its `custom/plugins`.
 
 It is idempotent — safe to re-run.
 
@@ -38,7 +40,8 @@ It is idempotent — safe to re-run.
 
 ```sh
 cd ~/Projects/dotfiles
-stow -t ~ nvim fish alacritty omf herdr   # link everything
+stow -t ~ nvim zsh kitty                  # link everything
+stow -t ~ --no-folding herdr herdr-projects
 stow -t ~ -R nvim                   # restow a package (re-link after changes)
 stow -t ~ -D nvim                   # unlink a package
 stow -t ~ -n -v nvim                # dry-run, verbose
@@ -49,14 +52,12 @@ of the dotfiles dir, i.e. `~/Projects`).
 
 ## Notes
 
-- **oh-my-fish**: the repo tracks only the *bootstrap loader*
-  (`fish/.config/fish/conf.d/omf.fish`) and the *declarative bundle*
-  (`omf/.config/omf/bundle`). The framework itself lives in
-  `~/.local/share/omf` (machine state) and is installed by `bootstrap.sh`.
-  Add plugins with `omf install <name>` — they're recorded in `bundle`
-  automatically, so commit `bundle` to propagate them to other machines.
-- `fish_variables` (machine-specific universal vars) is intentionally **not**
-  tracked — see `.gitignore`.
-- Paths are kept portable (e.g. alacritty's `shell.program = "fish"` resolves
-  via `PATH`, not `/opt/homebrew/bin/fish`).
+- **oh-my-zsh**: the repo tracks only `zsh/.zshrc` (the `plugins=(...)` list
+  is the declarative state) and the prompt theme. The framework lives in
+  `~/.oh-my-zsh` (machine state, installed by `bootstrap.sh`). Built-in plugins:
+  add the name to `plugins=(...)`. External ones: also add a clone line to the
+  loop in `bootstrap.sh`.
+- `~/.zshrc.local` (machine-specific, not tracked) is sourced last if present.
+- Paths are kept portable — kitty launches the login shell, no hardcoded
+  `/opt/homebrew/...`.
 - A backup of the pre-stow configs lives at `~/dotfiles-backup-20260614/`.
