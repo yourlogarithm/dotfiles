@@ -19,3 +19,11 @@ graphify-out/
 # or machine-specific (plugins.json holds absolute plugin paths)
 herdr/.config/herdr/*
 !herdr/.config/herdr/config.*.toml
+# ...and herdr-navigator's settings (its other files there are runtime state)
+!herdr/.config/herdr/plugins/
+herdr/.config/herdr/plugins/*
+!herdr/.config/herdr/plugins/config/
+herdr/.config/herdr/plugins/config/*
+!herdr/.config/herdr/plugins/config/herdr-navigator/
+herdr/.config/herdr/plugins/config/herdr-navigator/*
+!herdr/.config/herdr/plugins/config/herdr-navigator/config.toml

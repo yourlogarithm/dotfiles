@@ -129,11 +129,17 @@ fi
 
 # --- symlink dotfiles --------------------------------------------------------
 log "Stowing: ${PACKAGES[*]}"
-# Pre-create ~/.config/herdr so stow links its files instead of folding the
-# whole dir into one symlink: herdr writes runtime state (sockets, logs,
-# plugins.json with absolute paths) there, which must stay out of the repo.
-mkdir -p "$HOME/.config/herdr"
-stow -d "$DOTFILES_DIR" -t "$HOME" -R "${PACKAGES[@]}"
+# herdr is stowed file-by-file (--no-folding): herdr and its plugins write
+# runtime state (sockets, logs, plugins.json with absolute paths, installed
+# plugins) into the same dirs as the tracked config, which must stay out of
+# the repo.
+for pkg in "${PACKAGES[@]}"; do
+  if [[ "$pkg" == herdr ]]; then
+    stow -d "$DOTFILES_DIR" -t "$HOME" --no-folding -R "$pkg"
+  else
+    stow -d "$DOTFILES_DIR" -t "$HOME" -R "$pkg"
+  fi
+done
 
 # Add the Rust toolchain to PATH once, as a fish universal var (persists across
 # sessions with no per-startup cost). Idempotent.
