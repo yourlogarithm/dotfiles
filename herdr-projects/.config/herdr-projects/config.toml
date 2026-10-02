@@ -2,9 +2,21 @@
 # with a tmp+rename, so changes made from its popup replace the symlink: edit
 # the copy in ~/dotfiles/herdr-projects instead.
 
-[profiles.claude]                  # replaces the built-in `claude`
+[profiles.fable]
 agent = "claude"
-args = ["--permission-mode", "bypassPermissions"]
+model = "claude-fable-5-1"
+description = "Coordinator tier"
+
+[profiles.opus]
+agent = "claude"
+model = "claude-opus-5-5"
+description = "Thread tier"
+
+[defaults]                        # what `new` writes into a new PROJECT.md
+coordinator_profile = "fable"
+thread_profile = "opus"
 
 [safety.default]
 yolo = true
+coordinator_profiles = ["fable"]
+thread_profiles = ["opus", "fable"]
