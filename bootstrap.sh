@@ -130,8 +130,8 @@ fi
 # --- symlink dotfiles --------------------------------------------------------
 log "Stowing: ${PACKAGES[*]}"
 # Pre-create ~/.config/herdr so stow links its files instead of folding the
-# whole dir into one symlink: herdr writes runtime state there, and tsk refuses
-# a symlinked config dir.
+# whole dir into one symlink: herdr writes runtime state (sockets, logs,
+# plugins.json with absolute paths) there, which must stay out of the repo.
 mkdir -p "$HOME/.config/herdr"
 stow -d "$DOTFILES_DIR" -t "$HOME" -R "${PACKAGES[@]}"
 
