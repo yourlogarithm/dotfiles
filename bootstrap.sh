@@ -72,6 +72,10 @@ if [[ "$OS" == macos ]]; then pkg_install fd; else pkg_install fd-find; fi
 # 'tree-sitter-cli' on Fedora.
 if [[ "$OS" == macos ]]; then pkg_install tree-sitter; else pkg_install tree-sitter-cli; fi
 
+# Go — herdr-auto-title is built from source at plugin install. Named 'go' on
+# Homebrew, 'golang' on Fedora.
+if [[ "$OS" == macos ]]; then pkg_install go; else pkg_install golang; fi
+
 # --- neovim ------------------------------------------------------------------
 # The nvim config uses the 0.11+ LSP API (vim.lsp.config / vim.lsp.enable), so
 # we require Neovim >= 0.11. Homebrew ships current stable; Fedora's dnf lags
@@ -221,6 +225,7 @@ if command -v herdr >/dev/null 2>&1; then
 dot.terminal-notifier dot/herdr-terminal-notifier - macos
 herdr-navigator thanhdat77/herdr-navigator v0.3.3
 ray.file-explorer speardragon/herdr-yazi
+herdr.auto-title kryptamine/herdr-auto-title
 EOF
 else
   warn "herdr not found — skipping herdr plugins"
