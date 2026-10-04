@@ -48,7 +48,7 @@ One-shot, **idempotent** provisioning for a fresh machine: detects OS → instal
 
 ## kitty (`kitty/` package)
 
-`kitty.conf` + a vendored `themes/gruvbox_dark.conf` (same hex palette alacritty used). No `shell` setting on purpose: kitty runs the login shell set by chsh.
+`kitty.conf` + a vendored `themes/gruvbox_dark.conf` (same hex palette alacritty used). Icon is [whiskers](https://github.com/igrmk/whiskers): kitty auto-applies `kitty.app.icns` (macOS) / `kitty.app.png` (+ `kitty.app-128.png` on X11) from its config dir; on Fedora bootstrap also writes a `~/.local/share/applications/kitty.desktop` override pointing `Icon=` at it (GNOME uses the desktop file). No `shell` setting on purpose: kitty runs the login shell set by chsh.
 
 ## Not tracked / generated
 

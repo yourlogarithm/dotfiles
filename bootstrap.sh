@@ -51,6 +51,13 @@ if [[ "$OS" == macos ]]; then
   brew list --cask kitty >/dev/null 2>&1 || brew install --cask kitty
 else
   pkg_install kitty
+  # Custom icon: kitty itself applies ~/.config/kitty/kitty.app.{icns,png} on
+  # macOS and as the X11/Wayland window icon, but GNOME takes the dock/overview
+  # icon from the .desktop file — so shadow it with a user copy pointing there.
+  apps="$HOME/.local/share/applications"
+  mkdir -p "$apps"
+  sed "s|^Icon=.*|Icon=$HOME/.config/kitty/kitty.app.png|" \
+    /usr/share/applications/kitty.desktop > "$apps/kitty.desktop"
 fi
 
 # fd (used by telescope) — named 'fd' on Homebrew, 'fd-find' on Fedora.
