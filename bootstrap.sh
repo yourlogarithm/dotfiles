@@ -196,6 +196,36 @@ log "Compiling Treesitter parsers"
 nvim --headless -c "lua if _G.__ts_install then _G.__ts_install:wait(600000) end" +qa >/dev/null 2>&1 \
   || warn "Treesitter parser install reported an issue (continuing)"
 
+# --- herdr plugins -----------------------------------------------------------
+# herdr itself is installed by hand; skip when it's absent. herdr-yazi needs
+# yazi on PATH — its build step brews it on macOS, but on Fedora it's COPR-only.
+if command -v herdr >/dev/null 2>&1; then
+  if [[ "$OS" == fedora ]] && ! command -v yazi >/dev/null 2>&1; then
+    log "Installing yazi (COPR lihaohong/yazi)"
+    sudo dnf copr enable -y lihaohong/yazi && sudo dnf install -y yazi \
+      || warn "yazi install failed (continuing)"
+  fi
+  installed="$(herdr plugin list 2>/dev/null)"
+  # id  source  [ref, - for default branch]  [macos-only]
+  while read -r id src ref mac; do
+    [[ "$mac" == macos && "$OS" != macos ]] && continue
+    [[ "$ref" == - ]] && ref=
+    if grep -q -- "- $id " <<<"$installed"; then
+      log "herdr plugin $id already installed"
+    else
+      log "Installing herdr plugin $id"
+      herdr plugin install --yes ${ref:+--ref "$ref"} "$src" </dev/null \
+        || warn "herdr plugin install $src failed (continuing)"
+    fi
+  done <<'EOF'
+dot.terminal-notifier dot/herdr-terminal-notifier - macos
+herdr-navigator thanhdat77/herdr-navigator v0.3.3
+ray.file-explorer speardragon/herdr-yazi
+EOF
+else
+  warn "herdr not found — skipping herdr plugins"
+fi
+
 # --- oh-my-zsh ---------------------------------------------------------------
 OMZ_DIR="$HOME/.oh-my-zsh"
 if [[ -d "$OMZ_DIR" ]]; then

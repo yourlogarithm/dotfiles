@@ -30,7 +30,7 @@ Every change must work on **both macOS (Homebrew) and Fedora (dnf)**. Keep paths
 
 ## bootstrap.sh
 
-One-shot, **idempotent** provisioning for a fresh machine: detects OS → installs prerequisites (incl. kitty, zsh on Fedora) → JetBrainsMono Nerd Font → chsh to zsh → stows all packages → installs oh-my-zsh and clones its external plugins. Run it to apply, re-run safely anytime.
+One-shot, **idempotent** provisioning for a fresh machine: detects OS → installs prerequisites (incl. kitty, zsh on Fedora) → JetBrainsMono Nerd Font → chsh to zsh → stows all packages → installs herdr plugins (if herdr is present) → installs oh-my-zsh and clones its external plugins. Run it to apply, re-run safely anytime.
 
 - Runs under `set -euo pipefail` with an `ERR` trap that reports the failing line/command/exit code. Run `DEBUG=1 ./bootstrap.sh` to trace every command.
 - **Neovim install differs by OS**: macOS uses brew (current stable); Fedora installs the official prebuilt tarball into `/opt/nvim` symlinked to `/usr/local/bin/nvim`, because dnf lags (ships 0.10.4). The version is pinned via `NVIM_RELEASE` and gated by `NVIM_MIN_MINOR` near the top of the neovim section — bump `NVIM_RELEASE` to upgrade.
@@ -54,7 +54,7 @@ One-shot, **idempotent** provisioning for a fresh machine: detects OS → instal
 
 - `~/.zshrc.local` — machine-specific shell bits (nvm, deno, extra PATH entries); bootstrap moves a pre-existing hand-written `~/.zshrc` there.
 - `~/.config/herdr/config.toml` — generated at zsh startup by `zsh/.zshrc` from `config.base.toml` + the per-OS `config.$(uname).toml` overlay (herdr has no conditional config). Edit those, never `config.toml`.
-- `herdr/.config/herdr/*` except `config.*.toml` and `plugins/config/herdr-navigator/config.toml` — herdr runtime state (sockets, logs, sessions, installed plugins), gitignored. Reinstall herdr plugins per machine. Because tracked config shares dirs with that state, herdr is always stowed with `--no-folding` (`stow -t ~ --no-folding -R herdr`); a folded symlink would make herdr write its state into the repo.
+- `herdr/.config/herdr/*` except `config.*.toml` and `plugins/config/herdr-navigator/config.toml` — herdr runtime state (sockets, logs, sessions, installed plugins), gitignored. herdr plugins are installed per machine by the plugin list in `bootstrap.sh` (add new ones there). Because tracked config shares dirs with that state, herdr is always stowed with `--no-folding` (`stow -t ~ --no-folding -R herdr`); a folded symlink would make herdr write its state into the repo.
 - `graphify-out/` — generated knowledge-graph artifacts (from the `/graphify` skill). A post-commit hook auto-rebuilds and stages this directory, so it gets swept into commits; it is not hand-maintained source.
 
 ## graphify
