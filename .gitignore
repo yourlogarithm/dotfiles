@@ -21,7 +21,3 @@ herdr/.config/herdr/plugins/config/*
 !herdr/.config/herdr/plugins/config/herdr-navigator/
 herdr/.config/herdr/plugins/config/herdr-navigator/*
 !herdr/.config/herdr/plugins/config/herdr-navigator/config.toml
-
-# herdr-projects: track only config.toml (owned.json etc. is machine state)
-herdr-projects/.config/herdr-projects/*
-!herdr-projects/.config/herdr-projects/config.toml

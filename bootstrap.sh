@@ -7,7 +7,7 @@
 set -euo pipefail
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PACKAGES=(nvim zsh kitty herdr herdr-projects)
+PACKAGES=(nvim zsh kitty herdr)
 
 log()  { printf '\033[1;32m==>\033[0m %s\n' "$*"; }
 warn() { printf '\033[1;33m!!\033[0m %s\n'  "$*" >&2; }
@@ -157,12 +157,12 @@ if [[ -f "$HOME/.zshrc" && ! -L "$HOME/.zshrc" ]]; then
 fi
 
 log "Stowing: ${PACKAGES[*]}"
-# herdr and herdr-projects are stowed file-by-file (--no-folding): they and
-# herdr's plugins write runtime state (sockets, logs, plugins.json with
-# absolute paths, installed plugins, owned.json) into the same dirs as the
+# herdr is stowed file-by-file (--no-folding): it and its plugins write
+# runtime state (sockets, logs, plugins.json with absolute paths, installed
+# plugins) into the same dirs as the
 # tracked config, which must stay out of the repo.
 for pkg in "${PACKAGES[@]}"; do
-  if [[ "$pkg" == herdr || "$pkg" == herdr-projects ]]; then
+  if [[ "$pkg" == herdr ]]; then
     stow -d "$DOTFILES_DIR" -t "$HOME" --no-folding -R "$pkg"
   else
     stow -d "$DOTFILES_DIR" -t "$HOME" -R "$pkg"

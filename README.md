@@ -16,8 +16,7 @@ dotfiles/
 ├── zsh/.zshrc                    -> ~/.zshrc           (oh-my-zsh plugins + config)
 ├── zsh/.config/zsh/              -> ~/.config/zsh/     (beloglazov prompt theme)
 ├── kitty/.config/kitty/          -> ~/.config/kitty/
-├── herdr/.config/herdr/          -> ~/.config/herdr/   (--no-folding)
-└── herdr-projects/.config/...    -> ~/.config/herdr-projects/ (--no-folding)
+└── herdr/.config/herdr/          -> ~/.config/herdr/   (--no-folding)
 ```
 
 ## Fresh machine
@@ -41,7 +40,7 @@ It is idempotent — safe to re-run.
 ```sh
 cd ~/Projects/dotfiles
 stow -t ~ nvim zsh kitty                  # link everything
-stow -t ~ --no-folding herdr herdr-projects
+stow -t ~ --no-folding herdr
 stow -t ~ -R nvim                   # restow a package (re-link after changes)
 stow -t ~ -D nvim                   # unlink a package
 stow -t ~ -n -v nvim                # dry-run, verbose
