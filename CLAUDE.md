@@ -52,7 +52,7 @@ One-shot, **idempotent** provisioning for a fresh machine: detects OS → instal
 
 ## aerospace (`aerospace/` package, macOS only)
 
-`aerospace.toml` is AeroSpace's default config with hjkl swapped for arrow keys and `auto-reload-config = true`. bootstrap installs the cask and appends `aerospace` to `PACKAGES` only under the macOS guard.
+`aerospace.toml` is AeroSpace's default config with hjkl swapped for arrow keys, `auto-reload-config = true`, and no `persistent-workspaces` (else all are created on the main monitor at startup; without it each workspace is born on the focused monitor). bootstrap installs the cask and appends `aerospace` to `PACKAGES` only under the macOS guard.
 
 ## Not tracked / generated
 

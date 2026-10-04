@@ -43,14 +43,6 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # Also see: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
 automatically-unhide-macos-hidden-apps = false
 
-# List of workspaces that should stay alive even when they contain no windows,
-# even when they are invisible.
-# This config option is only available since 'config-version = 2'
-# Fallback value (if you omit the key): persistent-workspaces = []
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B",
-                         "C", "D", "E", "F", "G", "I", "M", "N", "O", "P", "Q",
-                         "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
@@ -76,20 +68,6 @@ gaps.outer.left =       0
 gaps.outer.bottom =     0
 gaps.outer.top =        0
 gaps.outer.right =      0
-
-# Pin workspaces to monitors, else they all start on the main one.
-# 'secondary' falls back to 'main' with a single display.
-# See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
-[workspace-to-monitor-force-assignment]
-    1 = ['secondary', 'main']
-    2 = ['secondary', 'main']
-    3 = ['secondary', 'main']
-    4 = ['secondary', 'main']
-    5 = ['secondary', 'main']
-    6 = 'main'
-    7 = 'main'
-    8 = 'main'
-    9 = 'main'
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
