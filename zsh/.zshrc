@@ -65,5 +65,8 @@ fi
 # zoxide (https://github.com/ajeetdsouza/zoxide) — smarter cd, provides `z`
 command -v zoxide >/dev/null 2>&1 && eval "$(zoxide init zsh)"
 
+# Scaleway CLI completion
+command -v scw >/dev/null 2>&1 && eval "$(scw autocomplete script shell=zsh)"
+
 # --- machine-local overrides (not tracked) -----------------------------------
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
