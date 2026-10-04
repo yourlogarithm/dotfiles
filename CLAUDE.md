@@ -50,6 +50,10 @@ One-shot, **idempotent** provisioning for a fresh machine: detects OS → instal
 
 `kitty.conf` + a vendored `themes/gruvbox_dark.conf` (same hex palette alacritty used). Icon is [whiskers](https://github.com/igrmk/whiskers): kitty auto-applies `kitty.app.icns` (macOS) / `kitty.app.png` (+ `kitty.app-128.png` on X11) from its config dir; on Fedora bootstrap also writes a `~/.local/share/applications/kitty.desktop` override pointing `Icon=` at it (GNOME uses the desktop file). No `shell` setting on purpose: kitty runs the login shell set by chsh.
 
+## aerospace (`aerospace/` package, macOS only)
+
+`aerospace.toml` is AeroSpace's default config with hjkl swapped for arrow keys and `auto-reload-config = true`. bootstrap installs the cask and appends `aerospace` to `PACKAGES` only under the macOS guard.
+
 ## Not tracked / generated
 
 - `~/.zshrc.local` — machine-specific shell bits (nvm, deno, extra PATH entries); bootstrap moves a pre-existing hand-written `~/.zshrc` there.

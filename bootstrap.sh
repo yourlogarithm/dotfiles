@@ -49,6 +49,9 @@ for p in git curl stow eza zoxide ripgrep; do pkg_install "$p"; done
 # kitty — a cask on Homebrew, a plain package on Fedora.
 if [[ "$OS" == macos ]]; then
   brew list --cask kitty >/dev/null 2>&1 || brew install --cask kitty
+  # AeroSpace tiling WM — macOS only, so its package is only stowed here.
+  brew list --cask aerospace >/dev/null 2>&1 || brew install --cask nikitabobko/tap/aerospace
+  PACKAGES+=(aerospace)
 else
   pkg_install kitty
   # Custom icon: kitty itself applies ~/.config/kitty/kitty.app.{icns,png} on
