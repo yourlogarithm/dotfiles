@@ -21,3 +21,8 @@ herdr/.config/herdr/plugins/config/*
 !herdr/.config/herdr/plugins/config/herdr-navigator/
 herdr/.config/herdr/plugins/config/herdr-navigator/*
 !herdr/.config/herdr/plugins/config/herdr-navigator/config.toml
+# ...and herdr-radar's settings + render hook
+!herdr/.config/herdr/plugins/config/hhdebb.herdr-radar/
+herdr/.config/herdr/plugins/config/hhdebb.herdr-radar/*
+!herdr/.config/herdr/plugins/config/hhdebb.herdr-radar/config.toml
+!herdr/.config/herdr/plugins/config/hhdebb.herdr-radar/model-hook.js

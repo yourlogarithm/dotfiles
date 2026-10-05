@@ -1,0 +1,4 @@
+# herdr-radar settings (prefix+, opens the popup). Only non-defaults live here.
+
+# Appends the model a Claude pane runs to its sidebar title; see model-hook.js.
+render_hook = "model-hook.js"
