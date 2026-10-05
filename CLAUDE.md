@@ -53,7 +53,7 @@ One-shot, **idempotent** provisioning for a fresh machine: detects OS → instal
 ## Not tracked / generated
 
 - `~/.zshrc.local` — machine-specific shell bits (nvm, deno, extra PATH entries); bootstrap moves a pre-existing hand-written `~/.zshrc` there.
-- `~/.config/herdr/config.toml` — generated at zsh startup by `zsh/.zshrc` from `config.base.toml` + the per-OS `config.$(uname).toml` overlay (herdr has no conditional config). Edit those, never `config.toml`.
+- `~/.config/herdr/config.toml` — generated at zsh startup by `zsh/.zshrc` from `config.base.toml` + the per-OS `config.$(uname).toml` overlay (herdr has no conditional config). Edit those, never `config.toml`. Rebuilt only when missing or older than a source, because herdr-radar keeps its own marker-fenced blocks in it; after a rebuild zsh runs the plugin's `configure.js --apply` to restore them.
 - `herdr/.config/herdr/*` except `config.*.toml` and `plugins/config/herdr-navigator/config.toml` — herdr runtime state (sockets, logs, sessions, installed plugins), gitignored. herdr plugins are installed per machine by the plugin list in `bootstrap.sh` (add new ones there). Because tracked config shares dirs with that state, herdr is always stowed with `--no-folding` (`stow -t ~ --no-folding -R herdr`); a folded symlink would make herdr write its state into the repo.
 - `graphify-out/` — generated knowledge-graph artifacts (from the `/graphify` skill). A post-commit hook auto-rebuilds and stages this directory, so it gets swept into commits; it is not hand-maintained source.
 

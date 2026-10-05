@@ -47,11 +47,22 @@ fi
 # herdr has no conditional config: build config.toml from the shared base plus
 # the per-OS overlay (config.Linux.toml / config.Darwin.toml, named by uname).
 # Edit those, never config.toml. tmp+mv replaces a stale stow symlink instead of
-# writing through it.
-if [[ -f ~/.config/herdr/config.base.toml ]]; then
-  cat ~/.config/herdr/config.base.toml ~/.config/herdr/config.$(uname).toml >~/.config/herdr/config.toml.tmp 2>/dev/null
-  mv -f ~/.config/herdr/config.toml.tmp ~/.config/herdr/config.toml
-fi
+# writing through it. Rebuilt only when missing or older than a source, because
+# herdr-radar keeps its own managed blocks in config.toml (machine paths, colours
+# that follow light/dark); after a rebuild it is asked to re-apply them.
+() {
+  local d=~/.config/herdr
+  [[ -f $d/config.base.toml ]] || return
+  [[ -f $d/config.toml && ! -L $d/config.toml \
+    && ! $d/config.base.toml -nt $d/config.toml \
+    && ! $d/config.$(uname).toml -nt $d/config.toml ]] && return
+  cat $d/config.base.toml $d/config.$(uname).toml >$d/config.toml.tmp 2>/dev/null
+  mv -f $d/config.toml.tmp $d/config.toml
+  local p
+  for p in $d/plugins/github/hhdebb.herdr-radar-*(N/); do
+    (cd / && node $p/bin/configure.js --apply --reload &>/dev/null &)
+  done
+}
 
 # --- aliases / tools ---------------------------------------------------------
 # eza (https://github.com/eza-community/eza) as a modern ls

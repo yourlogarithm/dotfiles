@@ -76,6 +76,10 @@ if [[ "$OS" == macos ]]; then pkg_install tree-sitter; else pkg_install tree-sit
 # Homebrew, 'golang' on Fedora.
 if [[ "$OS" == macos ]]; then pkg_install go; else pkg_install golang; fi
 
+# Node (>= 18) — herdr-radar runs on it. Named 'node' on Homebrew, 'nodejs' on
+# Fedora.
+if [[ "$OS" == macos ]]; then pkg_install node; else pkg_install nodejs; fi
+
 # --- neovim ------------------------------------------------------------------
 # The nvim config uses the 0.11+ LSP API (vim.lsp.config / vim.lsp.enable), so
 # we require Neovim >= 0.11. Homebrew ships current stable; Fedora's dnf lags
@@ -209,6 +213,10 @@ if command -v herdr >/dev/null 2>&1; then
     sudo dnf copr enable -y lihaohong/yazi && sudo dnf install -y yazi \
       || warn "yazi install failed (continuing)"
   fi
+  # herdr-radar writes its managed blocks into config.toml at install, so it
+  # must exist first (normally zsh builds it at startup; see .zshrc).
+  hc="$HOME/.config/herdr"
+  [[ -f "$hc/config.toml" ]] || cat "$hc/config.base.toml" "$hc/config.$(uname).toml" >"$hc/config.toml"
   installed="$(herdr plugin list 2>/dev/null)"
   # id  source  [ref, - for default branch]  [macos-only]
   while read -r id src ref mac; do
@@ -226,6 +234,7 @@ dot.terminal-notifier dot/herdr-terminal-notifier - macos
 herdr-navigator thanhdat77/herdr-navigator v0.3.3
 ray.file-explorer speardragon/herdr-yazi
 herdr.auto-title kryptamine/herdr-auto-title
+hhdebb.herdr-radar hhdebb/herdr-radar
 EOF
 else
   warn "herdr not found — skipping herdr plugins"
