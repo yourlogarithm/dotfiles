@@ -79,5 +79,9 @@ command -v zoxide >/dev/null 2>&1 && eval "$(zoxide init zsh)"
 # Scaleway CLI completion
 command -v scw >/dev/null 2>&1 && eval "$(scw autocomplete script shell=zsh)"
 
+# Herdr hides the host terminal (TERM_PROGRAM=herdr), so Claude Code falls back to
+# "title (url)" for links; force OSC 8 hyperlinks inside Herdr panes.
+[[ $TERM_PROGRAM == herdr ]] && export FORCE_HYPERLINK=1
+
 # --- machine-local overrides (not tracked) -----------------------------------
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
