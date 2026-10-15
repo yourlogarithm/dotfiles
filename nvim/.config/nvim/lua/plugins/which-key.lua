@@ -13,6 +13,7 @@ return {
         { "<leader>h", group = "hop" },
         { "<leader>b", group = "buffer" },
         { "<leader>a", group = "AI/Claude" },
+        { "<leader>H", group = "herdr" },
       },
     },
   },

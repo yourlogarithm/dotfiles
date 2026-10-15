@@ -82,6 +82,9 @@ command -v scw >/dev/null 2>&1 && eval "$(scw autocomplete script shell=zsh)"
 # Herdr hides the host terminal (TERM_PROGRAM=herdr), so Claude Code falls back to
 # "title (url)" for links; force OSC 8 hyperlinks inside Herdr panes.
 [[ $TERM_PROGRAM == herdr ]] && export FORCE_HYPERLINK=1
+# Herdr doesn't answer nvim's startup DSR/OSC 11 background query, so nvim waits
+# and warns E1568; skip the query (the colorscheme sets 'background' anyway).
+[[ $TERM_PROGRAM == herdr ]] && export NVIM_NOTTYFAST=1
 
 # --- machine-local overrides (not tracked) -----------------------------------
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
