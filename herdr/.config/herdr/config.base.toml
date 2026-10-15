@@ -9,10 +9,10 @@ status_indicators = "symbols"
 prompt_new_tab_name = false
 
 [[keys.command]]
-key = "prefix+f"
+key = ["prefix+f", "prefix+k"]
 type = "plugin_action"
-command = "herdr-navigator.open"
-description = "jump to anything"
+command = "herdr-bar.open"
+description = "command bar"
 
 [[keys.command]]
 key = "prefix+y"

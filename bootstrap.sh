@@ -231,10 +231,10 @@ if command -v herdr >/dev/null 2>&1; then
     fi
   done <<'EOF'
 dot.terminal-notifier dot/herdr-terminal-notifier - macos
-herdr-navigator thanhdat77/herdr-navigator v0.3.3
 ray.file-explorer speardragon/herdr-yazi
 herdr.auto-title kryptamine/herdr-auto-title
 hhdebb.herdr-radar hhdebb/herdr-radar
+herdr-bar jeffarese/herdr-bar
 EOF
 else
   warn "herdr not found — skipping herdr plugins"

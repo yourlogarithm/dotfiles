@@ -13,15 +13,11 @@ graphify-out/
 # or machine-specific (plugins.json holds absolute plugin paths)
 herdr/.config/herdr/*
 !herdr/.config/herdr/config.*.toml
-# ...and herdr-navigator's settings (its other files there are runtime state)
+# ...and herdr-radar's settings + render hook (its other files there are runtime state)
 !herdr/.config/herdr/plugins/
 herdr/.config/herdr/plugins/*
 !herdr/.config/herdr/plugins/config/
 herdr/.config/herdr/plugins/config/*
-!herdr/.config/herdr/plugins/config/herdr-navigator/
-herdr/.config/herdr/plugins/config/herdr-navigator/*
-!herdr/.config/herdr/plugins/config/herdr-navigator/config.toml
-# ...and herdr-radar's settings + render hook
 !herdr/.config/herdr/plugins/config/hhdebb.herdr-radar/
 herdr/.config/herdr/plugins/config/hhdebb.herdr-radar/*
 !herdr/.config/herdr/plugins/config/hhdebb.herdr-radar/config.toml
