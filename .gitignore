@@ -6,8 +6,6 @@
 
 # nvim: lazy-lock.json IS tracked (LazyVim convention) for reproducible plugin versions.
 
-graphify-out/
-
 # herdr: track only config.*.toml (config.toml is generated from them by
 # zsh/.zshrc at shell startup); the rest is runtime state (sockets, logs, sessions)
 # or machine-specific (plugins.json holds absolute plugin paths)
