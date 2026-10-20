@@ -54,6 +54,10 @@ One-shot, **idempotent** provisioning for a fresh machine: detects OS → instal
 
 `.hammerspoon/init.lua` holds global hotkeys — currently cmd+return → launch/focus kitty. It calls `hs.autoLaunch(true)` so Hammerspoon starts at login. bootstrap installs the cask and appends `hammerspoon` to `PACKAGES` only on macOS, so Fedora never stows it. After editing `init.lua`, reload from the Hammerspoon menu-bar icon → Reload Config.
 
+## AltTab (macOS only, no stow package)
+
+AltTab replaces the native cmd+tab. Its settings live in `defaults` (`com.lwouis.alt-tab-macos`), not a dotfile, so bootstrap sets the one we change — `holdShortcut` = `⌘` (default `⌥`) — with `defaults write` right after installing the cask.
+
 ## Not tracked / generated
 
 - `~/.zshrc.local` — machine-specific shell bits (nvm, deno, extra PATH entries); bootstrap moves a pre-existing hand-written `~/.zshrc` there.

@@ -67,6 +67,14 @@ if [[ "$OS" == macos ]]; then
   PACKAGES+=(hammerspoon)
 fi
 
+# AltTab (macOS only) — Windows-style window switcher, set to replace the native
+# cmd+tab (its default hold key is option). Write the pref before first launch so
+# AltTab picks it up; it asks for Accessibility + Screen Recording on first run.
+if [[ "$OS" == macos ]]; then
+  brew list --cask alt-tab >/dev/null 2>&1 || brew install --cask alt-tab
+  defaults write com.lwouis.alt-tab-macos holdShortcut -string "⌘"
+fi
+
 # fd (used by telescope) — named 'fd' on Homebrew, 'fd-find' on Fedora.
 if [[ "$OS" == macos ]]; then pkg_install fd; else pkg_install fd-find; fi
 

@@ -29,7 +29,7 @@ git clone <repo-url> ~/Projects/dotfiles
 
 `bootstrap.sh` detects the OS (Homebrew on macOS, dnf on Fedora) and:
 1. installs prerequisites — `git`, `curl`, `stow`, `zsh` (Fedora), `kitty`,
-   `hammerspoon` (macOS);
+   `hammerspoon` and `alt-tab` (macOS; AltTab replaces cmd+tab);
 2. installs the **JetBrainsMono Nerd Font**;
 3. makes zsh the login shell, stows every package into `$HOME`;
 4. installs **oh-my-zsh** if missing, then clones the external plugins
