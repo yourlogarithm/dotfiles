@@ -50,6 +50,10 @@ One-shot, **idempotent** provisioning for a fresh machine: detects OS → instal
 
 `kitty.conf` + a vendored `themes/gruvbox_dark.conf` (same hex palette alacritty used). Icon is [whiskers](https://github.com/igrmk/whiskers): kitty auto-applies `kitty.app.icns` (macOS) / `kitty.app.png` (+ `kitty.app-128.png` on X11) from its config dir; on Fedora bootstrap also writes a `~/.local/share/applications/kitty.desktop` override pointing `Icon=` at it (GNOME uses the desktop file). No `shell` setting on purpose: kitty runs the login shell set by chsh.
 
+## Hammerspoon (`hammerspoon/` package, macOS only)
+
+`.hammerspoon/init.lua` holds global hotkeys — currently cmd+return → launch/focus kitty. It calls `hs.autoLaunch(true)` so Hammerspoon starts at login. bootstrap installs the cask and appends `hammerspoon` to `PACKAGES` only on macOS, so Fedora never stows it. After editing `init.lua`, reload from the Hammerspoon menu-bar icon → Reload Config.
+
 ## Not tracked / generated
 
 - `~/.zshrc.local` — machine-specific shell bits (nvm, deno, extra PATH entries); bootstrap moves a pre-existing hand-written `~/.zshrc` there.

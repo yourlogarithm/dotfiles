@@ -16,7 +16,8 @@ dotfiles/
 ├── zsh/.zshrc                    -> ~/.zshrc           (oh-my-zsh plugins + config)
 ├── zsh/.config/zsh/              -> ~/.config/zsh/     (beloglazov prompt theme)
 ├── kitty/.config/kitty/          -> ~/.config/kitty/
-└── herdr/.config/herdr/          -> ~/.config/herdr/   (--no-folding)
+├── herdr/.config/herdr/          -> ~/.config/herdr/   (--no-folding)
+└── hammerspoon/.hammerspoon/     -> ~/.hammerspoon/    (macOS only: cmd+return opens kitty)
 ```
 
 ## Fresh machine
@@ -27,7 +28,8 @@ git clone <repo-url> ~/Projects/dotfiles
 ```
 
 `bootstrap.sh` detects the OS (Homebrew on macOS, dnf on Fedora) and:
-1. installs prerequisites — `git`, `curl`, `stow`, `zsh` (Fedora), `kitty`;
+1. installs prerequisites — `git`, `curl`, `stow`, `zsh` (Fedora), `kitty`,
+   `hammerspoon` (macOS);
 2. installs the **JetBrainsMono Nerd Font**;
 3. makes zsh the login shell, stows every package into `$HOME`;
 4. installs **oh-my-zsh** if missing, then clones the external plugins

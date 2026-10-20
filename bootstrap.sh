@@ -60,6 +60,13 @@ else
     /usr/share/applications/kitty.desktop > "$apps/kitty.desktop"
 fi
 
+# Hammerspoon (macOS only) — global hotkeys, e.g. cmd+return opens kitty. Its
+# config is the hammerspoon package, so stow it here and nowhere else.
+if [[ "$OS" == macos ]]; then
+  brew list --cask hammerspoon >/dev/null 2>&1 || brew install --cask hammerspoon
+  PACKAGES+=(hammerspoon)
+fi
+
 # fd (used by telescope) — named 'fd' on Homebrew, 'fd-find' on Fedora.
 if [[ "$OS" == macos ]]; then pkg_install fd; else pkg_install fd-find; fi
 
@@ -266,4 +273,5 @@ for p in zsh-autosuggestions zsh-syntax-highlighting; do
   fi
 done
 
+[[ "$OS" == macos ]] && open -a Hammerspoon   # loads ~/.hammerspoon; it then starts at login
 log "Done. Open a new kitty window — zsh + gruvbox + Nerd Font."
