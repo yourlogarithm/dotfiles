@@ -68,9 +68,9 @@ if [[ "$OS" == macos ]]; then pkg_install fd; else pkg_install fd-find; fi
 [[ "$OS" == fedora ]] && pkg_install gcc
 
 # tree-sitter CLI — nvim-treesitter's `main` branch builds parsers with it (the
-# old `master` branch needed only a C compiler). Named 'tree-sitter' on Homebrew,
-# 'tree-sitter-cli' on Fedora.
-if [[ "$OS" == macos ]]; then pkg_install tree-sitter; else pkg_install tree-sitter-cli; fi
+# old `master` branch needed only a C compiler). 'tree-sitter-cli' on both:
+# Homebrew's plain 'tree-sitter' formula is now just the library.
+pkg_install tree-sitter-cli
 
 # Go — herdr-auto-title is built from source at plugin install. Named 'go' on
 # Homebrew, 'golang' on Fedora.
@@ -201,7 +201,9 @@ nvim --headless "+Lazy! sync" +qa >/dev/null 2>&1 \
 # (main has no synchronous :TSUpdateSync command). Idempotent: returns at once
 # when every parser is already present.
 log "Compiling Treesitter parsers"
-nvim --headless -c "lua if _G.__ts_install then _G.__ts_install:wait(600000) end" +qa >/dev/null 2>&1 \
+# install() resolves to false when any parser fails; turn that into a non-zero
+# exit so the warning below fires instead of nvim quitting 0 regardless.
+nvim --headless -c "lua if _G.__ts_install and not _G.__ts_install:wait(600000) then vim.cmd('cquit 1') end" +qa >/dev/null 2>&1 \
   || warn "Treesitter parser install reported an issue (continuing)"
 
 # --- herdr plugins -----------------------------------------------------------
