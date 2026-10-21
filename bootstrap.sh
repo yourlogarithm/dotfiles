@@ -95,6 +95,11 @@ if [[ "$OS" == macos ]]; then pkg_install go; else pkg_install golang; fi
 # Fedora.
 if [[ "$OS" == macos ]]; then pkg_install node; else pkg_install nodejs; fi
 
+# Python (>= 3.10) — Mason installs basedpyright into a venv and refuses older
+# interpreters. macOS's /usr/bin/python3 (Xcode CLT) is 3.9, so get Homebrew's;
+# Fedora's python3 is new enough.
+if [[ "$OS" == macos ]]; then pkg_install python; else pkg_install python3; fi
+
 # --- neovim ------------------------------------------------------------------
 # The nvim config uses the 0.11+ LSP API (vim.lsp.config / vim.lsp.enable), so
 # we require Neovim >= 0.11. Homebrew ships current stable; Fedora's dnf lags
