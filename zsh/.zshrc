@@ -76,6 +76,11 @@ fi
 # zoxide (https://github.com/ajeetdsouza/zoxide) — smarter cd, provides `z`
 command -v zoxide >/dev/null 2>&1 && eval "$(zoxide init zsh)"
 
+# kitty: plain ssh leaves remotes with TERM=xterm-kitty and no terminfo for it
+# ("'xterm-kitty': unknown terminal type"). `kitten ssh` copies the terminfo over
+# (and kitty's shell integration) on every connect. Real ssh: `command ssh`.
+[[ $TERM == xterm-kitty ]] && command -v kitten >/dev/null 2>&1 && alias ssh='kitten ssh'
+
 # Scaleway CLI completion
 command -v scw >/dev/null 2>&1 && eval "$(scw autocomplete script shell=zsh)"
 
